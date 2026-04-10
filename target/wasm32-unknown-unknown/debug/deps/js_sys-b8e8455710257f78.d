@@ -1,0 +1,10 @@
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/js_sys-b8e8455710257f78.d: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/queue.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/task/singlethread.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libjs_sys-b8e8455710257f78.rlib: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/queue.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/task/singlethread.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libjs_sys-b8e8455710257f78.rmeta: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/queue.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/task/singlethread.rs
+
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/lib.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/mod.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/queue.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.94/src/futures/task/singlethread.rs:

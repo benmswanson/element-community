@@ -1,0 +1,14 @@
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/serde-592a0048fb98f97e.d: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/build/serde-5a86b8b0c27f43c4/out/private.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libserde-592a0048fb98f97e.rlib: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/build/serde-5a86b8b0c27f43c4/out/private.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libserde-592a0048fb98f97e.rmeta: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/build/serde-5a86b8b0c27f43c4/out/private.rs
+
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/build/serde-5a86b8b0c27f43c4/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/build/serde-5a86b8b0c27f43c4/out

@@ -1,0 +1,611 @@
+/* =========================================================
+   Element Book Club — steipete.me-inspired minimal design
+   with Material UI card accents.
+   Teal (#00897B) as primary accent, system fonts, dark mode.
+   ========================================================= */
+
+/* ----- Reset ----- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Design tokens ----- */
+/* ETC brand colors: Blue #13294B | Cream #e6e1db */
+:root {
+    --bg:           #13294B;   /* ETC Blue */
+    --bg-subtle:    #1a3358;
+    --text:         #e6e1db;   /* ETC Cream */
+    --text-muted:   #a8a49f;
+    --accent:       #e6e1db;   /* Cream as primary accent on navy */
+    --accent-dim:   #cec9c3;
+    --accent-light: rgba(230,225,219,0.1);
+    --border:       rgba(230,225,219,0.15);
+    --tag-bg:       rgba(230,225,219,0.08);
+    --cream:        #e6e1db;   /* ETC Cream */
+    --blue:         #13294B;   /* ETC Blue */
+    --card-shadow:  0 2px 4px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.15);
+    --card-shadow-hover: 0 4px 8px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.2);
+
+    --max-width:    768px;
+    --pad:          1.5rem;
+    --radius:       12px;
+
+    --title: "Bebas Neue", "Impact", "Arial Narrow", sans-serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mono: "SF Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
+}
+
+/* ----- Base ----- */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* =========================================================
+   Layout
+   ========================================================= */
+
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container,
+.nav-inner,
+.footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    padding: 0 0 5rem;
+}
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.nav {
+    border-bottom: 1px solid var(--border);
+    padding: 1.1rem 0;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.nav-logo:hover { text-decoration: none; }
+.nav-logo:hover .nav-logo-lockup { opacity: 0.85; }
+
+.nav-logo-lockup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    line-height: 1;
+    transition: opacity 0.15s;
+}
+
+/* Crop the logo image to show only the "Element" wordmark (top ~58%) */
+.nav-logo-element-wrap {
+    height: 22px;
+    overflow: hidden;
+}
+
+.nav-logo-element {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+/* "Book Club" text next to the Element wordmark */
+.nav-logo-bookclub {
+    font-family: var(--title);
+    font-weight: 400;
+    font-size: 1.35rem;
+    color: var(--cream);
+    letter-spacing: 0.05em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.nav-link:hover { color: var(--text); text-decoration: none; }
+.nav-link.active { color: var(--text); font-weight: 500; }
+
+/* =========================================================
+   Hero
+   ========================================================= */
+
+.hero {
+    padding: 3.5rem 0 2rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-accent { color: var(--accent); }
+
+.hero p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 540px;
+    line-height: 1.7;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 540px;
+    line-height: 1.7;
+    margin-bottom: 0.5rem !important;
+}
+
+.hero-asterisk {
+    color: var(--accent);
+    font-size: 0.85em;
+    vertical-align: super;
+}
+
+.hero-fine-print {
+    font-size: 0.65rem !important;
+    color: var(--text-muted);
+    max-width: 420px;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+/* =========================================================
+   Sections
+   ========================================================= */
+
+.section { margin-top: 3.5rem; }
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.section-title {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.section-link {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: var(--accent);
+}
+
+/* =========================================================
+   Material UI Cards
+   ========================================================= */
+
+.material-card {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    box-shadow: var(--card-shadow);
+}
+
+.material-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.card-media {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: var(--accent-light);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-overline {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    /* Clamp to 3 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+/* Material-style buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 0.02em;
+}
+
+.btn .material-symbols-outlined {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--cream);
+    color: var(--blue);
+}
+.btn-primary:hover {
+    background: var(--accent-dim);
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(230,225,219,0.2);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+.btn-outline:hover {
+    background: var(--accent-light);
+    text-decoration: none;
+}
+
+.btn-text {
+    background: transparent;
+    color: var(--accent);
+    padding: 0.45rem 0.5rem;
+}
+.btn-text:hover {
+    background: var(--accent-light);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* =========================================================
+   Book Cards Grid
+   ========================================================= */
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Featured / current read card - full width */
+.featured-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.featured-card .card-media {
+    height: 100%;
+    min-height: 280px;
+    width: 180px;
+}
+
+.featured-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-card .card-text {
+    -webkit-line-clamp: 4;
+    flex: 1;
+}
+
+.featured-card .card-actions {
+    margin-top: auto;
+}
+
+/* Badge for current read */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+.badge-active {
+    background: var(--cream);
+    color: var(--blue);
+}
+
+.badge-upcoming {
+    background: var(--tag-bg);
+    color: var(--text-muted);
+}
+
+.badge .material-symbols-outlined {
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   How It Works / Info Cards
+   ========================================================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.info-card {
+    background: var(--bg-subtle);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-align: center;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.info-card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--card-shadow);
+}
+
+.info-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.info-card h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.info-card p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* =========================================================
+   About page
+   ========================================================= */
+
+.about-page { padding: 3rem 0; }
+.about-page h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+.about-page p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    max-width: 540px;
+}
+.about-page a { color: var(--accent); }
+
+/* =========================================================
+   Schedule page
+   ========================================================= */
+
+.schedule-page { padding: 3rem 0; }
+
+.schedule-page-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.4rem;
+}
+
+.schedule-page-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 2px solid var(--border);
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: 2px solid var(--bg);
+}
+
+.timeline-item.active::before {
+    background: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.timeline-month {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.35rem;
+}
+
+.timeline-book {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.timeline-author {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* =========================================================
+   Utility
+   ========================================================= */
+
+.loading {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 4rem;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 640px) {
+    .hero h1 { font-size: 1.6rem; }
+    .book-grid { grid-template-columns: 1fr; }
+    .info-grid { grid-template-columns: 1fr 1fr; }
+    .featured-card {
+        grid-template-columns: 1fr;
+    }
+    .featured-card .card-media {
+        width: 100%;
+        height: 200px;
+        min-height: auto;
+    }
+    .footer-inner { flex-direction: column; gap: 0.4rem; text-align: center; }
+    .card-actions { flex-direction: column; }
+}

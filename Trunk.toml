@@ -1,0 +1,8 @@
+[build]
+target = "frontend/index.html"
+dist = "dist"
+
+# In development, proxy /api requests to the backend server
+[[proxy]]
+rewrite = "/api"
+backend = "http://localhost:3000/api"

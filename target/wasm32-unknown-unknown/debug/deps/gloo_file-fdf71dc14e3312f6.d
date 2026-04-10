@@ -1,0 +1,11 @@
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/gloo_file-fdf71dc14e3312f6.d: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/blob.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_list.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_reader.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/object_url.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libgloo_file-fdf71dc14e3312f6.rlib: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/blob.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_list.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_reader.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/object_url.rs
+
+/Users/benswanson/book-club/target/wasm32-unknown-unknown/debug/deps/libgloo_file-fdf71dc14e3312f6.rmeta: /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/lib.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/blob.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_list.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_reader.rs /Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/object_url.rs
+
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/lib.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/blob.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_list.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/file_reader.rs:
+/Users/benswanson/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gloo-file-0.2.3/src/object_url.rs:
