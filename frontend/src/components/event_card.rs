@@ -11,6 +11,8 @@ pub struct EventCardProps {
     pub description: String,
     pub icon: String,
     #[prop_or_default]
+    pub location: Option<String>,
+    #[prop_or_default]
     pub image_url: Option<String>,
     #[prop_or_default]
     pub rsvp_url: Option<String>,
@@ -44,6 +46,12 @@ pub fn event_card(props: &EventCardProps) -> Html {
                 }
                 <div class="card-overline">{&props.date}</div>
                 <div class="card-title">{&props.title}</div>
+                if let Some(loc) = &props.location {
+                    <div class="card-location">
+                        <span class="material-symbols-outlined" style="font-size:0.95rem;vertical-align:middle;margin-right:0.25rem;">{"location_on"}</span>
+                        {loc.clone()}
+                    </div>
+                }
                 <p class="card-text">{&props.description}</p>
                 <div class="card-actions">
                     if let (Some(url), Some(label)) = (&props.secondary_url, &props.secondary_label) {

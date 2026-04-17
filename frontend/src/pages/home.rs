@@ -36,9 +36,10 @@ pub fn home() -> Html {
 
                 // Community Events — April 18
                 <EventCard
-                    title="Element Community Event"
-                    date="Saturday, April 18"
-                    description="Join the Element community this Saturday. Click RSVP to see details and let us know you're coming."
+                    title="HYROX PFT | April 18th"
+                    date="Saturday, April 18 · 11:00 AM EDT"
+                    location="667 Grand St, Brooklyn, NY 11211"
+                    description="The official HYROX Physical Fitness Test — 6 stations for time: 1000m run, 50 burpee broad jumps, 100 stationary lunges, 1000m row, 30 hand-release push-ups, 100 wall balls. Running heats at 11am and 12pm. Open to all levels."
                     icon="celebration"
                     image_url="https://withforte.co/_next/image?url=https%3A%2F%2Ffleetath.s3.us-east-1.amazonaws.com%2Ffile_20260324202010420_29119816.PNG&w=1200&q=75"
                     badge_label="Community"
