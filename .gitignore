@@ -1,5 +1,7 @@
 # Rust build artifacts
-target/
+/target/
+frontend/target/
+backend/target/
 
 # macOS
 .DS_Store
