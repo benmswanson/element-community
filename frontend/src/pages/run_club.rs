@@ -1,5 +1,6 @@
 // frontend/src/pages/run_club.rs
 
+use crate::components::event_card::EventCard;
 use yew::prelude::*;
 
 #[function_component(RunClub)]
@@ -14,7 +15,24 @@ pub fn run_club() -> Html {
                 </p>
             </section>
 
-            // --- Run Schedule ---
+            // --- Next Run ---
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">{"// next run"}</span>
+                </div>
+                <EventCard
+                    title="Saturday Morning Run"
+                    date="Saturday, April 18"
+                    description="Join us for this week's group run. All paces welcome — we start together and finish together. Check the Strava route for distance and elevation before you show up."
+                    icon="directions_run"
+                    badge_label="Upcoming"
+                    badge_icon="schedule"
+                    secondary_label="View Route"
+                    secondary_url="https://www.strava.com/routes/3480270817809452530"
+                />
+            </section>
+
+            // --- Schedule ---
             <section class="section">
                 <div class="section-header">
                     <span class="section-title">{"// run schedule"}</span>
@@ -68,16 +86,27 @@ pub fn run_club() -> Html {
                 </div>
             </section>
 
-            // --- Strava CTA ---
+            // --- Info Cards ---
             <section class="section">
                 <div class="section-header">
-                    <span class="section-title">{"// find us on strava"}</span>
+                    <span class="section-title">{"// get involved"}</span>
                 </div>
-                <div class="card-actions" style="border-top: none; padding-top: 0;">
-                    <a class="btn btn-primary" href="https://www.strava.com/athletes/161795832" target="_blank" rel="noopener">
-                        <span class="material-symbols-outlined">{"directions_run"}</span>
-                        {"Follow on Strava"}
+                <div class="info-grid">
+                    <a class="info-card" href="https://www.strava.com/athletes/161795832" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+                        <span class="info-icon material-symbols-outlined">{"directions_run"}</span>
+                        <h3>{"Follow on Strava"}</h3>
+                        <p>{"See routes, track runs, and follow along with the crew."}</p>
                     </a>
+                    <div class="info-card">
+                        <span class="info-icon material-symbols-outlined">{"calendar_month"}</span>
+                        <h3>{"Every Wed & Sat"}</h3>
+                        <p>{"We run twice a week. Show up, no sign-up required."}</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon material-symbols-outlined">{"social_leaderboard"}</span>
+                        <h3>{"All Paces Welcome"}</h3>
+                        <p>{"Whether you're training for a race or just getting started — come run with us."}</p>
+                    </div>
                 </div>
             </section>
         </>

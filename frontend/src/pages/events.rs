@@ -1,5 +1,6 @@
 // frontend/src/pages/events.rs
 
+use crate::components::event_card::EventCard;
 use yew::prelude::*;
 
 #[function_component(Events)]
@@ -12,6 +13,22 @@ pub fn events() -> Html {
                 <p class="hero-subtitle">
                     {"Socials, one-offs, and everything else Element"}
                 </p>
+            </section>
+
+            // --- Next Event ---
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">{"// next event"}</span>
+                </div>
+                <EventCard
+                    title="Element Community Event"
+                    date="Saturday, April 18"
+                    description="Join the Element community this Saturday. Click RSVP to see details and let us know you're coming."
+                    icon="celebration"
+                    badge_label="Upcoming"
+                    badge_icon="schedule"
+                    rsvp_url="https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"
+                />
             </section>
 
             // --- Timeline ---
@@ -64,6 +81,30 @@ pub fn events() -> Html {
                             </a>
                         </div>
                         <div class="timeline-author">{"Past event"}</div>
+                    </div>
+                </div>
+            </section>
+
+            // --- Info Cards ---
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">{"// get involved"}</span>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="info-icon material-symbols-outlined">{"celebration"}</span>
+                        <h3>{"Socials"}</h3>
+                        <p>{"Post-workout hangs, happy hours, and community get-togethers."}</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon material-symbols-outlined">{"fitness_center"}</span>
+                        <h3>{"Fitness Events"}</h3>
+                        <p>{"Races, group workouts, and challenges open to the whole community."}</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon material-symbols-outlined">{"group"}</span>
+                        <h3>{"Bring a Friend"}</h3>
+                        <p>{"All events are open — the more the merrier. Tag someone in."}</p>
                     </div>
                 </div>
             </section>
