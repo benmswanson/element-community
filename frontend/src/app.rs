@@ -4,11 +4,13 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::components::{footer::Footer, nav::Nav};
-use crate::pages::{book_club::BookClub, run_club::RunClub, events::Events};
+use crate::pages::{home::Home, book_club::BookClub, run_club::RunClub, events::Events};
 
 #[derive(Clone, Routable, PartialEq)]
 pub enum Route {
     #[at("/")]
+    Home,
+    #[at("/book-club")]
     BookClub,
     #[at("/run-club")]
     RunClub,
@@ -21,10 +23,11 @@ pub enum Route {
 
 fn switch(route: Route) -> Html {
     match route {
+        Route::Home => html! { <Home /> },
         Route::BookClub => html! { <BookClub /> },
         Route::RunClub => html! { <RunClub /> },
         Route::Events => html! { <Events /> },
-        Route::NotFound => html! { <Redirect<Route> to={Route::BookClub} /> },
+        Route::NotFound => html! { <Redirect<Route> to={Route::Home} /> },
     }
 }
 
