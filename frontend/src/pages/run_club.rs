@@ -21,7 +21,7 @@ pub fn run_club() -> Html {
                 </div>
                 <div class="timeline">
                     <div class="timeline-item active">
-                        <div class="timeline-month">{"Saturday, April 19"}</div>
+                        <div class="timeline-month">{"Saturday, April 18"}</div>
                         <div class="timeline-book">
                             <a href="https://www.strava.com/routes/3480270817809452530" target="_blank" rel="noopener" style="color:inherit;">
                                 {"View Route →"}
@@ -39,7 +39,7 @@ pub fn run_club() -> Html {
                         <div class="timeline-author">{"Past run"}</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-month">{"Saturday, April 12"}</div>
+                        <div class="timeline-month">{"Saturday, April 11"}</div>
                         <div class="timeline-book">
                             <a href="https://www.strava.com/routes/3476595695882355858" target="_blank" rel="noopener" style="color:inherit;">
                                 {"View Route →"}
@@ -57,7 +57,7 @@ pub fn run_club() -> Html {
                         <div class="timeline-author">{"Past run"}</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-month">{"Saturday, April 5"}</div>
+                        <div class="timeline-month">{"Saturday, April 4"}</div>
                         <div class="timeline-book">
                             <a href="https://www.strava.com/routes/3475160646034726692" target="_blank" rel="noopener" style="color:inherit;">
                                 {"View Route →"}
