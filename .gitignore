@@ -15,3 +15,10 @@ ssh-keys.pub
 
 # Trunk temp files (but keep dist/)
 .trunk/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
