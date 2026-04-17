@@ -69,21 +69,21 @@ pub fn book_club() -> Html {
                     <span class="section-title">{"// how it works"}</span>
                 </div>
                 <div class="info-grid">
-                    <div class="info-card">
+                    <a class="info-card" href="https://www.goodreads.com/group/show/7267353-element-book-club" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
                         <span class="info-icon material-symbols-outlined">{"group_add"}</span>
                         <h3>{"Join the Group"}</h3>
                         <p>{"Hop into our Goodreads group to see picks, chat, and track your reading."}</p>
-                    </div>
-                    <div class="info-card">
+                    </a>
+                    <a class="info-card" href="https://www.amazon.com/Headshot-Novel-Rita-Bullwinkel/dp/0593654129/ref=sr_1_1?crid=2N3LASO74LGJ0&dib=eyJ2IjoiMSJ9.RD3JcqgbdTOwTE51qHLMkZAlUbG1xjeraIG3g9A_HNKz0_3kRe5w_8-iBrzGVXu-mkHGTOORebyKBX0y0TGg43fklHJlEQImpjh_9Nn_Kc4.ohSsz7HmFfDu8aW96Brx9KnlwOwmX0O1iBkGAiUOglo&dib_tag=se&keywords=headshot+rita+bullwinkel&qid=1776451187&sprefix=headshot+rita+%2Caps%2C139&sr=8-1" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
                         <span class="info-icon material-symbols-outlined">{"auto_stories"}</span>
                         <h3>{"Read the Book"}</h3>
                         <p>{"We announce the pick at the start of each month. Read at your own pace."}</p>
-                    </div>
-                    <div class="info-card">
+                    </a>
+                    <a class="info-card" href="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
                         <span class="info-icon material-symbols-outlined">{"forum"}</span>
                         <h3>{"Meet & Discuss"}</h3>
                         <p>{"RSVP to the meetup and come share your thoughts — spoilers welcome."}</p>
-                    </div>
+                    </a>
                 </div>
             </section>
 
