@@ -24,7 +24,7 @@ pub fn home() -> Html {
                 // Run Club — April 18
                 <EventCard
                     title="Saturday Morning Run"
-                    date="Saturday, April 18"
+                    date="Saturday, April 18 · 9:00 AM"
                     description="Join us for this week's group run. All paces welcome, we start together and finish together!"
                     icon="directions_run"
                     image_url="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"
@@ -53,7 +53,7 @@ pub fn home() -> Html {
                     author="Rita Bullwinkel"
                     description="An electrifying novel about a women's boxing tournament in Reno, Nevada, featuring eight teenage competitors. The narrative mirrors the tournament bracket, weaving together each fighter's past, present, and future while exploring themes of ambition, physicality, and the fleeting nature of pivotal moments."
                     cover_url="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691077222i/174156218.jpg"
-                    month="April 30, 2026"
+                    month="April 30, 2026 · 8:00 PM"
                     goodreads_url="https://www.goodreads.com/book/show/174156218"
                     partiful_url="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML"
                     is_current=true

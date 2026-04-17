@@ -31,7 +31,7 @@ pub fn book_club() -> Html {
                     author="Rita Bullwinkel"
                     description="An electrifying novel about a women's boxing tournament in Reno, Nevada, featuring eight teenage competitors. The narrative mirrors the tournament bracket, weaving together each fighter's past, present, and future while exploring themes of ambition, physicality, and the fleeting nature of pivotal moments."
                     cover_url="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691077222i/174156218.jpg"
-                    month="April 30, 2026"
+                    month="April 30, 2026 · 8:00 PM"
                     goodreads_url="https://www.goodreads.com/book/show/174156218"
                     partiful_url="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML"
                     is_current=true

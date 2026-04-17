@@ -22,7 +22,7 @@ pub fn run_club() -> Html {
                 </div>
                 <EventCard
                     title="Saturday Morning Run"
-                    date="Saturday, April 18"
+                    date="Saturday, April 18 · 9:00 AM"
                     description="Join us for this week's group run. All paces welcome, we start together and finish together!"
                     icon="directions_run"
                     image_url="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"
@@ -40,7 +40,7 @@ pub fn run_club() -> Html {
                 </div>
                 <div class="timeline">
                     <div class="timeline-item active">
-                        <div class="timeline-month">{"Saturday, April 18"}</div>
+                        <div class="timeline-month">{"Saturday, April 18 · 9:00 AM"}</div>
                         <div class="timeline-book">
                             <a href="https://www.strava.com/routes/3480270817809452530" target="_blank" rel="noopener" style="color:inherit;">
                                 {"View Route →"}
