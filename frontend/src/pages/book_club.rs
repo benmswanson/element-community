@@ -82,7 +82,7 @@ pub fn book_club() -> Html {
                     <a class="info-card" href="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
                         <span class="info-icon material-symbols-outlined">{"forum"}</span>
                         <h3>{"Meet & Discuss"}</h3>
-                        <p>{"RSVP to the meetup and come share your thoughts — spoilers welcome."}</p>
+                        <p>{"RSVP to the meetup and come share your thoughts."}</p>
                     </a>
                 </div>
             </section>
