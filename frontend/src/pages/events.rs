@@ -39,6 +39,15 @@ pub fn events() -> Html {
                         <div class="timeline-author">{"Upcoming"}</div>
                     </div>
                     <div class="timeline-item">
+                        <div class="timeline-month">{"Saturday, April 11"}</div>
+                        <div class="timeline-book">
+                            <a href="https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-or-sculpt-social" target="_blank" rel="noopener" style="color:inherit;">
+                                {"View Event →"}
+                            </a>
+                        </div>
+                        <div class="timeline-author">{"Past event"}</div>
+                    </div>
+                    <div class="timeline-item">
                         <div class="timeline-month">{"Friday, March 14"}</div>
                         <div class="timeline-book">
                             <a href="https://partiful.com/e/MheGKxIXEhqwMXeF1fJh" target="_blank" rel="noopener" style="color:inherit;">
