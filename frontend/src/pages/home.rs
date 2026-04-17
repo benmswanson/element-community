@@ -12,7 +12,7 @@ pub fn home() -> Html {
         <>
             <section class="hero">
                 <h1>{"Element "}<span class="hero-accent">{"Community"}</span></h1>
-                <p class="hero-subtitle">{"Books, runs, and everything in between"}</p>
+                <p class="hero-subtitle">{"Books, runs, and everything in between!"}</p>
             </section>
 
             // --- Upcoming Events (sorted by date) ---
