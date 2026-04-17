@@ -1,6 +1,8 @@
 // frontend/src/pages/home.rs
 
 use crate::app::Route;
+use crate::components::book_card::BookCard;
+use crate::components::event_card::EventCard;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
@@ -13,7 +15,56 @@ pub fn home() -> Html {
                 <p class="hero-subtitle">{"Books, runs, and everything in between"}</p>
             </section>
 
+            // --- Upcoming Events (sorted by date) ---
             <section class="section">
+                <div class="section-header">
+                    <span class="section-title">{"// upcoming"}</span>
+                </div>
+
+                // Run Club — April 18
+                <EventCard
+                    title="Saturday Morning Run"
+                    date="Saturday, April 18"
+                    description="Join us for this week's group run. \"All paces welcome, we start together and finish together!\""
+                    icon="directions_run"
+                    image_url="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"
+                    badge_label="Run Club"
+                    badge_icon="directions_run"
+                    secondary_label="View Route"
+                    secondary_url="https://www.strava.com/routes/3480270817809452530"
+                />
+
+                // Community Events — April 18
+                <EventCard
+                    title="Element Community Event"
+                    date="Saturday, April 18"
+                    description="Join the Element community this Saturday. Click RSVP to see details and let us know you're coming."
+                    icon="celebration"
+                    image_url="https://withforte.co/_next/image?url=https%3A%2F%2Ffleetath.s3.us-east-1.amazonaws.com%2Ffile_20260324202010420_29119816.PNG&w=1200&q=75"
+                    badge_label="Community"
+                    badge_icon="celebration"
+                    rsvp_url="https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"
+                />
+
+                // Book Club — April 2026 (ongoing)
+                <BookCard
+                    title="Headshot"
+                    author="Rita Bullwinkel"
+                    description="An electrifying novel about a women's boxing tournament in Reno, Nevada, featuring eight teenage competitors. The narrative mirrors the tournament bracket, weaving together each fighter's past, present, and future while exploring themes of ambition, physicality, and the fleeting nature of pivotal moments."
+                    cover_url="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691077222i/174156218.jpg"
+                    month="April 30, 2026"
+                    goodreads_url="https://www.goodreads.com/book/show/174156218"
+                    partiful_url="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML"
+                    is_current=true
+                    featured=true
+                />
+            </section>
+
+            // --- Hub Cards ---
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-title">{"// explore"}</span>
+                </div>
                 <div class="info-grid">
                     <Link<Route> to={Route::BookClub} classes="info-card home-hub-card">
                         <span class="info-icon material-symbols-outlined">{"auto_stories"}</span>
