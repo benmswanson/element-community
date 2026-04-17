@@ -1,3 +1,3 @@
-pub mod home;
-pub mod schedule;
-pub mod about;
+pub mod book_club;
+pub mod run_club;
+pub mod events;

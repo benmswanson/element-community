@@ -6,7 +6,7 @@ use yew_router::prelude::*;
 
 #[function_component(Nav)]
 pub fn nav() -> Html {
-    let current = use_route::<Route>().unwrap_or(Route::Home);
+    let current = use_route::<Route>().unwrap_or(Route::BookClub);
 
     let active = |route: &Route| -> &'static str {
         if &current == route {
@@ -26,18 +26,18 @@ pub fn nav() -> Html {
                 </a>
                 <ul class="nav-links">
                     <li>
-                        <Link<Route> to={Route::Home} classes={active(&Route::Home)}>
-                            {"Home"}
+                        <Link<Route> to={Route::BookClub} classes={active(&Route::BookClub)}>
+                            {"Book Club"}
                         </Link<Route>>
                     </li>
                     <li>
-                        <Link<Route> to={Route::Schedule} classes={active(&Route::Schedule)}>
-                            {"Schedule"}
+                        <Link<Route> to={Route::RunClub} classes={active(&Route::RunClub)}>
+                            {"Run Club"}
                         </Link<Route>>
                     </li>
                     <li>
-                        <Link<Route> to={Route::About} classes={active(&Route::About)}>
-                            {"About"}
+                        <Link<Route> to={Route::Events} classes={active(&Route::Events)}>
+                            {"Community Events"}
                         </Link<Route>>
                     </li>
                 </ul>
