@@ -11,6 +11,8 @@ pub struct EventCardProps {
     pub description: String,
     pub icon: String,
     #[prop_or_default]
+    pub image_url: Option<String>,
+    #[prop_or_default]
     pub rsvp_url: Option<String>,
     #[prop_or_default]
     pub secondary_url: Option<String>,
@@ -26,9 +28,13 @@ pub struct EventCardProps {
 pub fn event_card(props: &EventCardProps) -> Html {
     html! {
         <div class="material-card featured-card">
-            <div class="card-media event-card-media">
-                <span class="event-card-icon material-symbols-outlined">{&props.icon}</span>
-            </div>
+            if let Some(url) = &props.image_url {
+                <img class="card-media" src={url.clone()} alt={props.title.clone()} loading="lazy" />
+            } else {
+                <div class="card-media event-card-media">
+                    <span class="event-card-icon material-symbols-outlined">{&props.icon}</span>
+                </div>
+            }
             <div class="card-body">
                 if let (Some(label), Some(icon)) = (&props.badge_label, &props.badge_icon) {
                     <span class="badge badge-active">

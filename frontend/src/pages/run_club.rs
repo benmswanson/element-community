@@ -25,6 +25,7 @@ pub fn run_club() -> Html {
                     date="Saturday, April 18"
                     description="Join us for this week's group run. All paces welcome — we start together and finish together. Check the Strava route for distance and elevation before you show up."
                     icon="directions_run"
+                    image_url="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"
                     badge_label="Upcoming"
                     badge_icon="schedule"
                     secondary_label="View Route"
