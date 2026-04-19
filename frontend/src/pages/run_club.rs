@@ -1,115 +1,67 @@
-// frontend/src/pages/run_club.rs
-
-use crate::components::event_card::EventCard;
 use yew::prelude::*;
+
+use crate::community::{RUN_CLUB_FEATURED, RUN_CLUB_INFO, RUN_CLUB_TIMELINE};
+use crate::components::{cta_button::CtaButton, event_card::EventCard, hero::Hero, section::Section, timeline::Timeline};
 
 #[function_component(RunClub)]
 pub fn run_club() -> Html {
     html! {
         <>
-            // --- Hero ---
-            <section class="hero">
-                <h1>{"Element "}<span class="hero-accent">{"Run Club"}</span></h1>
-                <p class="hero-subtitle">
-                    {"Get moving with the Element community"}
-                </p>
-            </section>
+            <Hero
+                kicker="Run Club"
+                title="Get moving with the"
+                accent={Some(AttrValue::from("Element community."))}
+                subtitle="Weekly runs stay light, welcoming, and easy to join, with routes and cadence still visible in the familiar card-and-timeline format."
+            />
 
-            // --- Next Run ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// next run"}</span>
-                </div>
+            <Section
+                eyebrow="Next Run"
+                title="The next route is ready."
+                description="Featured run details still lead the page so people can see the immediate plan first."
+            >
                 <EventCard
-                    title="Saturday Morning Run"
-                    date="Saturday, April 18 · 9:00 AM"
-                    description="Join us for this week's group run. All paces welcome, we start together and finish together!"
-                    icon="directions_run"
-                    image_url="https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"
-                    badge_label="Upcoming"
-                    badge_icon="schedule"
-                    secondary_label="View Route"
-                    secondary_url="https://www.strava.com/routes/3480270817809452530"
+                    title={RUN_CLUB_FEATURED.title}
+                    date={RUN_CLUB_FEATURED.date}
+                    description={RUN_CLUB_FEATURED.description}
+                    badge={Some(AttrValue::from("Upcoming"))}
+                    location={RUN_CLUB_FEATURED.location.map(AttrValue::from)}
+                    image_url={RUN_CLUB_FEATURED.image_url.map(AttrValue::from)}
+                    primary_href={RUN_CLUB_FEATURED.primary_href.map(AttrValue::from)}
+                    primary_label={RUN_CLUB_FEATURED.primary_label.map(AttrValue::from)}
+                    secondary_href={RUN_CLUB_FEATURED.secondary_href.map(AttrValue::from)}
+                    secondary_label={RUN_CLUB_FEATURED.secondary_label.map(AttrValue::from)}
+                    featured=true
                 />
-            </section>
+            </Section>
 
-            // --- Schedule ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// run schedule"}</span>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item active">
-                        <div class="timeline-month">{"Saturday, April 18 · 9:00 AM"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.strava.com/routes/3480270817809452530" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Route →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Upcoming"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Wednesday, April 15"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.strava.com/routes/3478757606243375166" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Route →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past run"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Saturday, April 11"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.strava.com/routes/3476595695882355858" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Route →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past run"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Wednesday, April 8"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.strava.com/routes/3476735579330903130" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Route →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past run"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Saturday, April 4"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.strava.com/routes/3475160646034726692" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Route →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past run"}</div>
-                    </div>
-                </div>
-            </section>
+            <Section
+                eyebrow="Timeline"
+                title="The run schedule is back."
+                description="Routes and recent runs stay visible in the same rolling timeline format as the older site."
+            >
+                <Timeline items={RUN_CLUB_TIMELINE.to_vec()} />
+            </Section>
 
-            // --- Info Cards ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// get involved"}</span>
+            <Section
+                eyebrow="Get Involved"
+                title="Follow along or just show up."
+                description="The supporting run-club cards stay intact so people can quickly understand cadence and vibe."
+            >
+                <div class="community-links-grid">
+                    {RUN_CLUB_INFO.iter().map(|card| html! {
+                        <article class="info-panel">
+                            <p class="card-label">{card.label}</p>
+                            <h3>{card.title}</h3>
+                            <p class="card-copy">{card.description}</p>
+                            if let Some(href) = card.href {
+                                <div class="inline-actions">
+                                    <CtaButton href={href} label="Open link" primary={card.primary} />
+                                </div>
+                            }
+                        </article>
+                    }).collect::<Html>()}
                 </div>
-                <div class="info-grid">
-                    <a class="info-card" href="https://www.strava.com/athletes/161795832" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
-                        <span class="info-icon material-symbols-outlined">{"directions_run"}</span>
-                        <h3>{"Follow on Strava"}</h3>
-                        <p>{"See routes, track runs, and follow along with the crew."}</p>
-                    </a>
-                    <div class="info-card">
-                        <span class="info-icon material-symbols-outlined">{"calendar_month"}</span>
-                        <h3>{"Every Wed & Sat"}</h3>
-                        <p>{"We run twice a week. Show up, no sign-up required."}</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-icon material-symbols-outlined">{"social_leaderboard"}</span>
-                        <h3>{"All Paces Welcome"}</h3>
-                        <p>{"Whether you're training for a race or just getting started — come run with us."}</p>
-                    </div>
-                </div>
-            </section>
+            </Section>
         </>
     }
 }

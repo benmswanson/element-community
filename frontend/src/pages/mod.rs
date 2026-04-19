@@ -1,4 +1,9 @@
-pub mod home;
+pub mod about;
 pub mod book_club;
-pub mod run_club;
+pub mod classes;
 pub mod events;
+pub mod home;
+pub mod pricing;
+pub mod run_club;
+pub mod schedule;
+pub mod team;

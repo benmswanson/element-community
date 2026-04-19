@@ -1,115 +1,67 @@
-// frontend/src/pages/events.rs
-
-use crate::components::event_card::EventCard;
 use yew::prelude::*;
+
+use crate::community::{COMMUNITY_EVENT_FEATURED, COMMUNITY_EVENTS_INFO, COMMUNITY_EVENTS_TIMELINE};
+use crate::components::{cta_button::CtaButton, event_card::EventCard, hero::Hero, section::Section, timeline::Timeline};
 
 #[function_component(Events)]
 pub fn events() -> Html {
     html! {
         <>
-            // --- Hero ---
-            <section class="hero">
-                <h1>{"Community "}<span class="hero-accent">{"Events"}</span></h1>
-                <p class="hero-subtitle">
-                    {"Socials, one-offs, and everything else Element"}
-                </p>
-            </section>
+            <Hero
+                kicker="Community Events"
+                title="Socials, one-offs, and everything else that keeps"
+                accent={Some(AttrValue::from("Element social."))}
+                subtitle="The broader community calendar stays visible here with the same featured event and timeline rhythm as the older site."
+            />
 
-            // --- Next Event ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// next event"}</span>
-                </div>
+            <Section
+                eyebrow="Next Event"
+                title="The next community event leads the page."
+                description="This keeps the most immediate RSVP item front and center, just like the earlier version."
+            >
                 <EventCard
-                    title="HYROX PFT | April 18th"
-                    date="Saturday, April 18 · 11:00 AM EDT"
-                    location="667 Grand St, Brooklyn, NY 11211"
-                    description="The official HYROX Physical Fitness Test — 6 stations for time: 1000m run, 50 burpee broad jumps, 100 stationary lunges, 1000m row, 30 hand-release push-ups, 100 wall balls. Running heats at 11am and 12pm. Arrive 15–20 min early. Open to all levels."
-                    icon="celebration"
-                    image_url="https://withforte.co/_next/image?url=https%3A%2F%2Ffleetath.s3.us-east-1.amazonaws.com%2Ffile_20260324202010420_29119816.PNG&w=1200&q=75"
-                    badge_label="Upcoming"
-                    badge_icon="schedule"
-                    rsvp_url="https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"
+                    title={COMMUNITY_EVENT_FEATURED.title}
+                    date={COMMUNITY_EVENT_FEATURED.date}
+                    description={COMMUNITY_EVENT_FEATURED.description}
+                    badge={Some(AttrValue::from("Upcoming"))}
+                    location={COMMUNITY_EVENT_FEATURED.location.map(AttrValue::from)}
+                    image_url={COMMUNITY_EVENT_FEATURED.image_url.map(AttrValue::from)}
+                    primary_href={COMMUNITY_EVENT_FEATURED.primary_href.map(AttrValue::from)}
+                    primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
+                    secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}
+                    secondary_label={COMMUNITY_EVENT_FEATURED.secondary_label.map(AttrValue::from)}
+                    featured=true
                 />
-            </section>
+            </Section>
 
-            // --- Timeline ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// events"}</span>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item active">
-                        <div class="timeline-month">{"Saturday, April 18"}</div>
-                        <div class="timeline-book">
-                            <a href="https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj" target="_blank" rel="noopener" style="color:inherit;">
-                                {"RSVP →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Upcoming"}</div>
-                    </div>
-                    <div class="timeline-item active">
-                        <div class="timeline-month">{"Friday, April 25"}</div>
-                        <div class="timeline-book">
-                            <a href="https://partiful.com/e/eK4W7NufhtWs20oXbeQV" target="_blank" rel="noopener" style="color:inherit;">
-                                {"RSVP →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Upcoming"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Saturday, April 11"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-or-sculpt-social" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Event →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past event"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Friday, March 14"}</div>
-                        <div class="timeline-book">
-                            <a href="https://partiful.com/e/MheGKxIXEhqwMXeF1fJh" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Event →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past event"}</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-month">{"Wednesday, February 19"}</div>
-                        <div class="timeline-book">
-                            <a href="https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-social?fbclid=PAQ0xDSwQELiRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafflu5JWBPwhIg5HDZRpvtbnwKAeLQSfcFwTX9HOYSNDeTKuXJfTJcWZ9Gykw_aem_Vvg5jiBZM5klee0MdU_6rg" target="_blank" rel="noopener" style="color:inherit;">
-                                {"View Event →"}
-                            </a>
-                        </div>
-                        <div class="timeline-author">{"Past event"}</div>
-                    </div>
-                </div>
-            </section>
+            <Section
+                eyebrow="Timeline"
+                title="Upcoming and past events stay visible."
+                description="The event history and upcoming RSVP links remain in a dedicated timeline view."
+            >
+                <Timeline items={COMMUNITY_EVENTS_TIMELINE.to_vec()} />
+            </Section>
 
-            // --- Info Cards ---
-            <section class="section">
-                <div class="section-header">
-                    <span class="section-title">{"// get involved"}</span>
+            <Section
+                eyebrow="Get Involved"
+                title="A lighter way into the community."
+                description="Socials, special events, and bring-a-friend energy still have their own space."
+            >
+                <div class="community-links-grid">
+                    {COMMUNITY_EVENTS_INFO.iter().map(|card| html! {
+                        <article class="info-panel">
+                            <p class="card-label">{card.label}</p>
+                            <h3>{card.title}</h3>
+                            <p class="card-copy">{card.description}</p>
+                            if let Some(href) = card.href {
+                                <div class="inline-actions">
+                                    <CtaButton href={href} label="Open link" primary={card.primary} />
+                                </div>
+                            }
+                        </article>
+                    }).collect::<Html>()}
                 </div>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <span class="info-icon material-symbols-outlined">{"celebration"}</span>
-                        <h3>{"Socials"}</h3>
-                        <p>{"Post-workout hangs, happy hours, and community get-togethers."}</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-icon material-symbols-outlined">{"fitness_center"}</span>
-                        <h3>{"Fitness Events"}</h3>
-                        <p>{"Races, group workouts, and challenges open to the whole community."}</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="info-icon material-symbols-outlined">{"group"}</span>
-                        <h3>{"Bring a Friend"}</h3>
-                        <p>{"All events are open — the more the merrier. Tag someone in."}</p>
-                    </div>
-                </div>
-            </section>
+            </Section>
         </>
     }
 }

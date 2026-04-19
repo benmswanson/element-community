@@ -1,4 +1,11 @@
-pub mod nav;
-pub mod footer;
+pub mod class_card;
 pub mod book_card;
+pub mod cta_button;
 pub mod event_card;
+pub mod footer;
+pub mod hero;
+pub mod nav;
+pub mod pricing_card;
+pub mod section;
+pub mod team_card;
+pub mod timeline;

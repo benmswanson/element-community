@@ -1,73 +1,81 @@
-// frontend/src/components/event_card.rs
-//
-// Featured event card matching the BookCard layout but for runs and events.
-
 use yew::prelude::*;
+use yew_router::prelude::*;
+
+use crate::app::Route;
 
 #[derive(Properties, PartialEq, Clone)]
 pub struct EventCardProps {
-    pub title: String,
-    pub date: String,
-    pub description: String,
-    pub icon: String,
+    pub title: AttrValue,
+    pub date: AttrValue,
+    pub description: AttrValue,
     #[prop_or_default]
-    pub location: Option<String>,
+    pub badge: Option<AttrValue>,
     #[prop_or_default]
-    pub image_url: Option<String>,
+    pub location: Option<AttrValue>,
     #[prop_or_default]
-    pub rsvp_url: Option<String>,
+    pub image_url: Option<AttrValue>,
     #[prop_or_default]
-    pub secondary_url: Option<String>,
+    pub primary_href: Option<AttrValue>,
     #[prop_or_default]
-    pub secondary_label: Option<String>,
+    pub primary_label: Option<AttrValue>,
     #[prop_or_default]
-    pub badge_label: Option<String>,
+    pub secondary_href: Option<AttrValue>,
     #[prop_or_default]
-    pub badge_icon: Option<String>,
+    pub secondary_label: Option<AttrValue>,
+    #[prop_or_default]
+    pub detail_route: Option<Route>,
+    #[prop_or_default]
+    pub detail_label: Option<AttrValue>,
+    #[prop_or(false)]
+    pub featured: bool,
 }
 
 #[function_component(EventCard)]
 pub fn event_card(props: &EventCardProps) -> Html {
+    let classes = classes!("community-card", props.featured.then_some("featured-card"));
+
     html! {
-        <div class="material-card featured-card">
+        <article class={classes}>
             if let Some(url) = &props.image_url {
-                <img class="card-media" src={url.clone()} alt={props.title.clone()} loading="lazy" />
+                <img
+                    class="community-card-media"
+                    src={url.clone()}
+                    alt={props.title.clone()}
+                    loading="lazy"
+                />
             } else {
-                <div class="card-media event-card-media">
-                    <span class="event-card-icon material-symbols-outlined">{&props.icon}</span>
+                <div class="community-card-media community-card-media-fallback">
+                    <span>{"Element Community"}</span>
                 </div>
             }
-            <div class="card-body">
-                if let (Some(label), Some(icon)) = (&props.badge_label, &props.badge_icon) {
-                    <span class="badge badge-active">
-                        <span class="material-symbols-outlined">{icon.clone()}</span>
-                        {label.clone()}
-                    </span>
+            <div class="community-card-body">
+                if let Some(badge) = &props.badge {
+                    <span class="community-badge">{badge.clone()}</span>
                 }
-                <div class="card-overline">{&props.date}</div>
-                <div class="card-title">{&props.title}</div>
-                if let Some(loc) = &props.location {
-                    <div class="card-location">
-                        <span class="material-symbols-outlined" style="font-size:0.95rem;vertical-align:middle;margin-right:0.25rem;">{"location_on"}</span>
-                        {loc.clone()}
-                    </div>
+                <p class="community-card-overline">{props.date.clone()}</p>
+                <h3 class="community-card-title">{props.title.clone()}</h3>
+                if let Some(location) = &props.location {
+                    <p class="community-card-subtitle">{location.clone()}</p>
                 }
-                <p class="card-text">{&props.description}</p>
-                <div class="card-actions">
-                    if let (Some(url), Some(label)) = (&props.secondary_url, &props.secondary_label) {
-                        <a class="btn btn-outline" href={url.clone()} target="_blank" rel="noopener">
+                <p class="community-card-copy">{props.description.clone()}</p>
+                <div class="community-card-actions">
+                    if let (Some(route), Some(label)) = (&props.detail_route, &props.detail_label) {
+                        <Link<Route> to={route.clone()} classes={classes!("cta-button", "primary")}>
                             {label.clone()}
-                            <span class="material-symbols-outlined">{"open_in_new"}</span>
+                        </Link<Route>>
+                    }
+                    if let (Some(href), Some(label)) = (&props.secondary_href, &props.secondary_label) {
+                        <a class="cta-button" href={href.clone()} target="_blank" rel="noopener noreferrer">
+                            {label.clone()}
                         </a>
                     }
-                    if let Some(url) = &props.rsvp_url {
-                        <a class="btn btn-primary" href={url.clone()} target="_blank" rel="noopener">
-                            <span class="material-symbols-outlined">{"event"}</span>
-                            {"RSVP"}
+                    if let (Some(href), Some(label)) = (&props.primary_href, &props.primary_label) {
+                        <a class="cta-button primary" href={href.clone()} target="_blank" rel="noopener noreferrer">
+                            {label.clone()}
                         </a>
                     }
                 </div>
             </div>
-        </div>
+        </article>
     }
 }

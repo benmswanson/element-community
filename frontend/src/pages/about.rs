@@ -1,44 +1,74 @@
-// frontend/src/pages/about.rs
-
 use yew::prelude::*;
+
+use crate::components::{cta_button::CtaButton, hero::Hero, section::Section};
 
 #[function_component(About)]
 pub fn about() -> Html {
     html! {
-        <div class="about-page">
-            <h1>{"About Element Book Club"}</h1>
-            <p>
-                {"Element Book Club is a monthly reading group for people who want to read more intentionally. Each month we pick a book together, read it on our own time, and then meet up to talk about it."}
-            </p>
-            <p>
-                {"No pressure, no quizzes, no homework — just good books and good conversation. Whether you finish the whole thing or only get through a few chapters, you're welcome at the table."}
-            </p>
-            <p>
-                {"We coordinate through our Goodreads group and host meetups via Partiful. Want to suggest the next read? We've got a form for that."}
-            </p>
+        <>
+            <Hero
+                kicker="About"
+                title="A training club built to make progress feel"
+                accent={Some(AttrValue::from("more human."))}
+                subtitle="Element Training Club is a strength, conditioning, and mobility gym in Williamsburg centered around team-based workouts and a genuinely supportive community."
+            >
+                <CtaButton
+                    href="mailto:blake@element-training.com"
+                    label="Email the team"
+                    primary=true
+                />
+            </Hero>
 
-            <div class="section" style="margin-top: 2.5rem;">
-                <div class="section-header">
-                    <span class="section-title">{"// links"}</span>
+            <Section
+                eyebrow="Mission"
+                title="Meaningful training starts with people."
+                description="Element was built to help members train with intention, consistency, and confidence while feeling supported by the people around them."
+            >
+                <div class="narrative-grid">
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"Our mission is to build a strong community by delivering balanced programming designed to help members reach their goals. Classes are challenging but approachable, with space for both first-timers and experienced athletes to keep growing."}
+                        </p>
+                    </article>
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"Element started with a simple belief: training should help people show up for themselves and for each other. Consistency, confidence, and momentum inside the gym should carry into everyday life."}
+                        </p>
+                    </article>
+                    <article class="info-panel accent-panel">
+                        <p class="card-label">{"The difference"}</p>
+                        <h3>{"At Element, we train together."}</h3>
+                        <p class="card-copy">{"That changes the energy in the room, the accountability people feel, and the progress they’re able to sustain."}</p>
+                    </article>
                 </div>
-                <div class="info-grid">
-                    <a class="info-card" href="https://www.goodreads.com/group/invite/7267353-element-book-club?invite_token=MmNiYmVkZTYtMWM5ZC00MzMyLThhMWEtMDMxMDUyNTliZDNi&utm_medium=email&utm_source=copypastegroup" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
-                        <span class="info-icon material-symbols-outlined">{"group"}</span>
-                        <h3>{"Goodreads Group"}</h3>
-                        <p>{"Join the group, see what we're reading, and leave reviews."}</p>
-                    </a>
-                    <a class="info-card" href="https://forms.gle/eQFo1SqXJwRfr3tX6" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
-                        <span class="info-icon material-symbols-outlined">{"lightbulb"}</span>
-                        <h3>{"Suggest a Book"}</h3>
-                        <p>{"Got a book you think we should read? Drop it in the form."}</p>
-                    </a>
-                    <a class="info-card" href="https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
-                        <span class="info-icon material-symbols-outlined">{"event"}</span>
-                        <h3>{"April Meetup"}</h3>
-                        <p>{"RSVP for our discussion of Headshot by Rita Bullwinkel."}</p>
-                    </a>
+            </Section>
+
+            <Section
+                eyebrow="Visit & Contact"
+                title="Come by, ask questions, and get to know the room."
+                description="Whether you are new to strength training or looking for a better long-term home base, the team is easy to reach."
+            >
+                <div class="visit-grid">
+                    <article class="info-panel">
+                        <p class="card-label">{"Address"}</p>
+                        <h3>{"667 Grand Street"}</h3>
+                        <p class="card-copy">{"Brooklyn, NY 11211"}</p>
+                    </article>
+                    <article class="info-panel">
+                        <p class="card-label">{"Contact"}</p>
+                        <h3>{"blake@element-training.com"}</h3>
+                        <p class="card-copy">{"(954) 778-5650"}</p>
+                    </article>
+                    <article class="info-panel">
+                        <p class="card-label">{"Follow"}</p>
+                        <h3>{"Stay connected"}</h3>
+                        <div class="inline-actions">
+                            <CtaButton href="https://www.instagram.com/elementtrainingclub/" label="Instagram" primary=true />
+                            <CtaButton href="https://open.spotify.com/" label="Spotify" />
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
+            </Section>
+        </>
     }
 }

@@ -1,47 +1,76 @@
-// frontend/src/components/nav.rs
-
-use crate::app::Route;
 use yew::prelude::*;
 use yew_router::prelude::*;
+
+use crate::app::Route;
 
 #[function_component(Nav)]
 pub fn nav() -> Html {
     let current = use_route::<Route>().unwrap_or(Route::Home);
+    let menu_open = use_state(|| false);
 
-    let active = |route: &Route| -> &'static str {
-        if &current == route {
-            "nav-link active"
-        } else {
-            "nav-link"
+    let is_active = |route: &Route| current == *route;
+
+    let toggle_menu = {
+        let menu_open = menu_open.clone();
+        Callback::from(move |_| menu_open.set(!*menu_open))
+    };
+
+    let nav_link = |route: Route, label: &'static str| {
+        let classes = classes!(
+            "site-nav-link",
+            is_active(&route).then_some("active"),
+        );
+
+        html! {
+            <Link<Route> to={route} classes={classes}>
+                {label}
+            </Link<Route>>
         }
     };
 
     html! {
-        <nav class="nav">
-            <div class="nav-inner">
-                <Link<Route> to={Route::Home} classes="nav-logo">
-                    <div class="nav-logo-element-wrap">
-                        <img src="/assets/etc-logo-white.png" alt="Element Training Club" class="nav-logo-element" />
-                    </div>
+        <header class="site-header">
+            <div class="shell-container site-header-inner">
+                <Link<Route> to={Route::Home} classes="site-brand">
+                    <img src="/assets/etc-logo-white.png" alt="Element Training Club" class="site-brand-mark" />
+                    <span class="site-brand-text">
+                        <span class="site-brand-title">{"Element Training Club"}</span>
+                        <span class="site-brand-subtitle">{"Williamsburg, Brooklyn"}</span>
+                    </span>
                 </Link<Route>>
-                <ul class="nav-links">
-                    <li>
-                        <Link<Route> to={Route::BookClub} classes={active(&Route::BookClub)}>
-                            {"Book Club"}
-                        </Link<Route>>
-                    </li>
-                    <li>
-                        <Link<Route> to={Route::RunClub} classes={active(&Route::RunClub)}>
-                            {"Run Club"}
-                        </Link<Route>>
-                    </li>
-                    <li>
-                        <Link<Route> to={Route::Events} classes={active(&Route::Events)}>
-                            {"Community Events"}
-                        </Link<Route>>
-                    </li>
-                </ul>
+
+                <button
+                    class={classes!("site-menu-toggle", (*menu_open).then_some("open"))}
+                    type="button"
+                    aria-label="Toggle menu"
+                    aria-expanded={(*menu_open).to_string()}
+                    onclick={toggle_menu}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class={classes!("site-nav", (*menu_open).then_some("open"))} aria-label="Primary">
+                    {nav_link(Route::Home, "Home")}
+                    {nav_link(Route::About, "About")}
+                    {nav_link(Route::Team, "Team")}
+                    {nav_link(Route::Schedule, "Schedule")}
+                    {nav_link(Route::Pricing, "Pricing")}
+                    {nav_link(Route::Classes, "Classes")}
+                    {nav_link(Route::BookClub, "Book Club")}
+                    {nav_link(Route::RunClub, "Run Club")}
+                    {nav_link(Route::Events, "Community Events")}
+                    <a
+                        class="site-nav-cta"
+                        href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {"Book a Class"}
+                    </a>
+                </nav>
             </div>
-        </nav>
+        </header>
     }
 }

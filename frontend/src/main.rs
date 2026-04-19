@@ -1,6 +1,7 @@
 // frontend/src/main.rs
 
 mod app;
+mod community;
 mod components;
 mod pages;
 

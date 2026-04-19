@@ -1,20 +1,31 @@
-// frontend/src/app.rs
-
 use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::components::{footer::Footer, nav::Nav};
-use crate::pages::{home::Home, book_club::BookClub, run_club::RunClub, events::Events};
+use crate::pages::{
+    about::About, book_club::BookClub, classes::Classes, events::Events, home::Home,
+    pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
+};
 
-#[derive(Clone, Routable, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Routable)]
 pub enum Route {
     #[at("/")]
     Home,
+    #[at("/about")]
+    About,
+    #[at("/team")]
+    Team,
+    #[at("/schedule")]
+    Schedule,
+    #[at("/pricing")]
+    Pricing,
+    #[at("/classes")]
+    Classes,
     #[at("/book-club")]
     BookClub,
     #[at("/run-club")]
     RunClub,
-    #[at("/events")]
+    #[at("/community-events")]
     Events,
     #[not_found]
     #[at("/404")]
@@ -24,6 +35,11 @@ pub enum Route {
 fn switch(route: Route) -> Html {
     match route {
         Route::Home => html! { <Home /> },
+        Route::About => html! { <About /> },
+        Route::Team => html! { <Team /> },
+        Route::Schedule => html! { <Schedule /> },
+        Route::Pricing => html! { <Pricing /> },
+        Route::Classes => html! { <Classes /> },
         Route::BookClub => html! { <BookClub /> },
         Route::RunClub => html! { <RunClub /> },
         Route::Events => html! { <Events /> },
@@ -35,12 +51,10 @@ fn switch(route: Route) -> Html {
 pub fn app() -> Html {
     html! {
         <BrowserRouter>
-            <div class="site-wrapper">
+            <div class="site-shell">
                 <Nav />
-                <main class="main-content">
-                    <div class="container">
-                        <Switch<Route> render={switch} />
-                    </div>
+                <main class="site-main">
+                    <Switch<Route> render={switch} />
                 </main>
                 <Footer />
             </div>
