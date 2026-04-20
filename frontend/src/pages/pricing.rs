@@ -46,7 +46,7 @@ const PLANS: [Plan; 4] = [
         title: "$36 Drop-In",
         price: "$36",
         cadence: "1 class",
-        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0",
+        cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?stype=43&pMode=4&reSchedule=&origId=&recType=&recNum=",
         cta_label: "Book a class",
         badge: None,
         bullets: &[
