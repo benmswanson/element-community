@@ -1,19 +1,12 @@
 use yew::prelude::*;
 
 use crate::community::{COMMUNITY_EVENT_FEATURED, COMMUNITY_EVENTS_INFO, COMMUNITY_EVENTS_TIMELINE};
-use crate::components::{cta_button::CtaButton, event_card::EventCard, hero::Hero, section::Section, timeline::Timeline};
+use crate::components::{cta_button::CtaButton, event_card::EventCard, section::Section, timeline::Timeline};
 
 #[function_component(Events)]
 pub fn events() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Community Events"
-                title="Socials, one-offs, and everything else that keeps"
-                accent={Some(AttrValue::from("Element social."))}
-                subtitle="The broader community calendar stays visible here with the same featured event and timeline rhythm as the older site."
-            />
-
             <Section
                 eyebrow="Next Event"
                 title="The next community event leads the page."

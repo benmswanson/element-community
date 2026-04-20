@@ -1,19 +1,12 @@
 use yew::prelude::*;
 
 use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_INFO, BOOK_CLUB_TIMELINE};
-use crate::components::{book_card::BookCard, cta_button::CtaButton, hero::Hero, section::Section, timeline::Timeline};
+use crate::components::{book_card::BookCard, cta_button::CtaButton, section::Section, timeline::Timeline};
 
 #[function_component(BookClub)]
 pub fn book_club() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Book Club"
-                title="The unofficially serious side of"
-                accent={Some(AttrValue::from("reading together."))}
-                subtitle="One book a month, one meetup at a time, with enough structure to keep it going and enough flexibility to keep it fun."
-            />
-
             <Section
                 eyebrow="Currently Reading"
                 title="This month’s pick is ready."

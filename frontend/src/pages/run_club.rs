@@ -1,19 +1,12 @@
 use yew::prelude::*;
 
 use crate::community::{RUN_CLUB_FEATURED, RUN_CLUB_INFO, RUN_CLUB_TIMELINE};
-use crate::components::{cta_button::CtaButton, event_card::EventCard, hero::Hero, section::Section, timeline::Timeline};
+use crate::components::{cta_button::CtaButton, event_card::EventCard, section::Section, timeline::Timeline};
 
 #[function_component(RunClub)]
 pub fn run_club() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Run Club"
-                title="Get moving with the"
-                accent={Some(AttrValue::from("Element community."))}
-                subtitle="Weekly runs stay light, welcoming, and easy to join, with routes and cadence still visible in the familiar card-and-timeline format."
-            />
-
             <Section
                 eyebrow="Next Run"
                 title="The next route is ready."
