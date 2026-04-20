@@ -5,6 +5,7 @@ use crate::components::{footer::Footer, nav::Nav};
 use crate::pages::{
     about::About, book_club::BookClub, classes::Classes, events::Events, home::Home,
     pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
+    team_bio::{BioBlake, BioSierra, BioDaniel, BioMiguel, BioSimba, BioMaria},
 };
 
 #[derive(Clone, Debug, PartialEq, Routable)]
@@ -15,6 +16,18 @@ pub enum Route {
     About,
     #[at("/team")]
     Team,
+    #[at("/team/blake")]
+    TeamBlake,
+    #[at("/team/sierra")]
+    TeamSierra,
+    #[at("/team/daniel")]
+    TeamDaniel,
+    #[at("/team/miguel")]
+    TeamMiguel,
+    #[at("/team/simba")]
+    TeamSimba,
+    #[at("/team/maria")]
+    TeamMaria,
     #[at("/schedule")]
     Schedule,
     #[at("/pricing")]
@@ -37,6 +50,12 @@ fn switch(route: Route) -> Html {
         Route::Home => html! { <Home /> },
         Route::About => html! { <About /> },
         Route::Team => html! { <Team /> },
+        Route::TeamBlake => html! { <BioBlake /> },
+        Route::TeamSierra => html! { <BioSierra /> },
+        Route::TeamDaniel => html! { <BioDaniel /> },
+        Route::TeamMiguel => html! { <BioMiguel /> },
+        Route::TeamSimba => html! { <BioSimba /> },
+        Route::TeamMaria => html! { <BioMaria /> },
         Route::Schedule => html! { <Schedule /> },
         Route::Pricing => html! { <Pricing /> },
         Route::Classes => html! { <Classes /> },

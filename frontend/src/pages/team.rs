@@ -1,65 +1,64 @@
 use yew::prelude::*;
+use yew_router::prelude::*;
 
-use crate::components::{section::Section, team_card::TeamCard};
+use crate::app::Route;
 
 struct Coach {
-    name: &'static str,
+    first_name: &'static str,
+    full_name: &'static str,
     role: &'static str,
-    bio: &'static str,
+    photo_url: &'static str,
+    route: Route,
 }
 
-const COACHES: [Coach; 6] = [
+const COACHES: [Coach; 4] = [
     Coach {
-        name: "Blake Guillaume",
+        first_name: "Blake",
+        full_name: "Blake Guillaume",
         role: "General Manager | Group Coach",
-        bio: "Keeps the experience grounded, welcoming, and community-first while helping members find the right way into training.",
+        photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/cc3d75ca-38a3-4a6a-bae8-5e3980b56302/select-5.jpg",
+        route: Route::TeamBlake,
     },
     Coach {
-        name: "Sierra Baker",
+        first_name: "Sierra",
+        full_name: "Sierra Baker",
         role: "Head Coach | Group Coach",
-        bio: "Leads programming with a balanced approach to strength, conditioning, and mobility so classes stay challenging, clear, and approachable.",
+        photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/daafa140-2927-4d82-9a09-52724bc127fe/select-2.jpg",
+        route: Route::TeamSierra,
     },
     Coach {
-        name: "Daniel Garcia",
+        first_name: "Miguel",
+        full_name: "Miguel Sira",
         role: "Group Coach",
-        bio: "Brings steady energy to the floor and helps members feel coached through each session rather than left to figure it out alone.",
+        photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/cf7fd3d8-3908-4853-9856-689c7d294d8e/select-15.jpg",
+        route: Route::TeamMiguel,
     },
     Coach {
-        name: "Miguel Sira",
+        first_name: "Simba",
+        full_name: "Simba Wedderburn",
         role: "Group Coach",
-        bio: "Supports strong movement quality and consistency with a coaching style that is clear, encouraging, and athlete-minded.",
-    },
-    Coach {
-        name: "Simba Wedderburn",
-        role: "Group Coach",
-        bio: "Creates a welcoming training atmosphere where members can push hard, learn the work, and enjoy doing it together.",
-    },
-    Coach {
-        name: "Maria Sui",
-        role: "Group Coach",
-        bio: "Helps members build confidence in class through guidance that is attentive, upbeat, and rooted in progress over perfection.",
+        photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/1d2a7cfb-d4b6-4cf2-81e0-10d1e0ff2e25/select-3.jpg",
+        route: Route::TeamSimba,
     },
 ];
 
 #[function_component(Team)]
 pub fn team() -> Html {
     html! {
-        <>
-            <Section
-                eyebrow="Our Team"
-                title="Meet the people who set the tone."
-                description="The coaching staff brings the programming to life and makes the room feel motivating, inclusive, and consistent."
-            >
-                <div class="team-grid">
-                    {COACHES.iter().map(|coach| html! {
-                        <TeamCard
-                            name={coach.name}
-                            role={coach.role}
-                            bio={Some(AttrValue::from(coach.bio))}
-                        />
-                    }).collect::<Html>()}
-                </div>
-            </Section>
-        </>
+        <div class="shell-container team-page">
+            <div class="team-cards-grid">
+                {COACHES.iter().map(|coach| html! {
+                    <Link<Route> to={coach.route.clone()} classes="team-photo-card">
+                        <div class="team-photo-wrap">
+                            <img src={coach.photo_url} alt={coach.full_name} />
+                        </div>
+                        <div class="team-photo-card-body">
+                            <p class="card-label">{coach.role}</p>
+                            <h3>{format!("About {}", coach.first_name)}</h3>
+                        </div>
+                    </Link<Route>>
+                }).collect::<Html>()}
+            </div>
+        </div>
     }
 }
