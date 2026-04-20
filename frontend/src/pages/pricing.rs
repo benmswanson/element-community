@@ -79,7 +79,7 @@ pub fn pricing() -> Html {
             <Section
                 eyebrow="Memberships & Pricing"
                 title="Choose the option that fits your rhythm."
-                description="All plans can be used across class types. Full details continue to live in the existing checkout flow."
+                description=""
             >
                 <div class="pricing-grid">
                     {PLANS.iter().map(|plan| html! {
