@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_INFO};
+use crate::community::BOOK_CLUB_CURRENT;
 use crate::components::{book_card::BookCard, cta_button::CtaButton, section::Section};
 
 #[function_component(BookClub)]
@@ -27,28 +27,7 @@ pub fn book_club() -> Html {
                 />
             </Section>
 
-            <Section
-                eyebrow="How It Works"
-                title="Join the group, read the pick, show up for the discussion."
-                description="The old book-club cards are back here inside the ETC shell so the flow still feels familiar."
-            >
-                <div class="community-links-grid">
-                    {BOOK_CLUB_INFO.iter().map(|card| html! {
-                        <article class="info-panel">
-                            <p class="card-label">{card.label}</p>
-                            <h3>{card.title}</h3>
-                            <p class="card-copy">{card.description}</p>
-                            if let Some(href) = card.href {
-                                <div class="inline-actions">
-                                    <CtaButton href={href} label="Open link" primary={card.primary} />
-                                </div>
-                            }
-                        </article>
-                    }).collect::<Html>()}
-                </div>
-            </Section>
-
-            <Section
+<Section
                 eyebrow="Get Involved"
                 title="Have a pick for the next month?"
                 description="The core book-club actions stay available as direct CTAs."
