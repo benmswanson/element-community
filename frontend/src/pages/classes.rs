@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::components::{class_card::ClassCard, hero::Hero, section::Section};
+use crate::components::{class_card::ClassCard, section::Section};
 
 struct ClassInfo {
     title: &'static str,
@@ -42,13 +42,6 @@ const CLASSES: [ClassInfo; 3] = [
 pub fn classes() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Classes"
-                title="Element’s training philosophy in"
-                accent={Some(AttrValue::from("class form."))}
-                subtitle="Every class is coach-led, structured, and designed to be challenging while staying approachable for all levels."
-            />
-
             <Section
                 eyebrow="Our Classes"
                 title="Choose the training style that fits your week."

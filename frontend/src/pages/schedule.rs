@@ -2,29 +2,12 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::app::Route;
-use crate::components::{cta_button::CtaButton, hero::Hero, section::Section};
+use crate::components::{cta_button::CtaButton, section::Section};
 
 #[function_component(Schedule)]
 pub fn schedule() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Schedule"
-                title="A simple way to"
-                accent={Some(AttrValue::from("get in the room."))}
-                subtitle="Use the live schedule to browse classes, book sessions, and find the format that matches your week."
-            >
-                <CtaButton
-                    href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
-                    label="Open live schedule"
-                    primary=true
-                />
-                <CtaButton
-                    href="https://apps.apple.com/us/app/element-training-club/id6743843274"
-                    label="Download the app"
-                />
-            </Hero>
-
             <Section
                 eyebrow="How it works"
                 title="Browse classes, choose your time, and book directly."
@@ -46,6 +29,17 @@ pub fn schedule() -> Html {
                         <h3>{"Book in the existing system"}</h3>
                         <p>{"Reservations, account actions, and purchases continue through the current booking platform."}</p>
                     </article>
+                </div>
+                <div class="inline-actions">
+                    <CtaButton
+                        href="https://www.element-training.com/schedule"
+                        label="Open live schedule"
+                        primary=true
+                    />
+                    <CtaButton
+                        href="https://apps.apple.com/us/app/element-training-club/id6743843274"
+                        label="Download the app"
+                    />
                 </div>
             </Section>
 

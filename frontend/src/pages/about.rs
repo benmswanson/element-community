@@ -1,24 +1,11 @@
 use yew::prelude::*;
 
-use crate::components::{cta_button::CtaButton, hero::Hero, section::Section};
+use crate::components::{cta_button::CtaButton, section::Section};
 
 #[function_component(About)]
 pub fn about() -> Html {
     html! {
         <>
-            <Hero
-                kicker="About"
-                title="A training club built to make progress feel"
-                accent={Some(AttrValue::from("more human."))}
-                subtitle="Element Training Club is a strength, conditioning, and mobility gym in Williamsburg centered around team-based workouts and a genuinely supportive community."
-            >
-                <CtaButton
-                    href="mailto:blake@element-training.com"
-                    label="Email the team"
-                    primary=true
-                />
-            </Hero>
-
             <Section
                 eyebrow="Mission"
                 title="Meaningful training starts with people."

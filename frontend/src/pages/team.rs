@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::components::{hero::Hero, section::Section, team_card::TeamCard};
+use crate::components::{section::Section, team_card::TeamCard};
 
 struct Coach {
     name: &'static str,
@@ -45,13 +45,6 @@ const COACHES: [Coach; 6] = [
 pub fn team() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Team"
-                title="Coaches who feel like"
-                accent={Some(AttrValue::from("teammates."))}
-                subtitle="Element’s coaching team combines experience, structure, and welcoming energy so members feel supported from their first class onward."
-            />
-
             <Section
                 eyebrow="Our Team"
                 title="Meet the people who set the tone."

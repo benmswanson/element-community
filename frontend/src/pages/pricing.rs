@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::components::{hero::Hero, pricing_card::PricingCard, section::Section};
+use crate::components::{pricing_card::PricingCard, section::Section};
 
 struct Plan {
     title: &'static str,
@@ -76,13 +76,6 @@ const PLANS: [Plan; 4] = [
 pub fn pricing() -> Html {
     html! {
         <>
-            <Hero
-                kicker="Pricing"
-                title="Simple memberships built for"
-                accent={Some(AttrValue::from("consistent training."))}
-                subtitle="Whether you want a flexible drop-in or full access, every option is designed to make getting into class straightforward."
-            />
-
             <Section
                 eyebrow="Memberships & Pricing"
                 title="Choose the option that fits your rhythm."
