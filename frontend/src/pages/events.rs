@@ -29,8 +29,8 @@ pub fn events() -> Html {
 
             <Section
                 eyebrow="Timeline"
-                title="Upcoming and past events stay visible."
-                description="The event history and upcoming RSVP links remain in a dedicated timeline view."
+                title=""
+                description=""
             >
                 <Timeline items={COMMUNITY_EVENTS_TIMELINE.to_vec()} />
             </Section>
