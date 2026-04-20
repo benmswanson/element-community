@@ -29,8 +29,8 @@ pub fn run_club() -> Html {
 
             <Section
                 eyebrow="Timeline"
-                title="The run schedule is back."
-                description="Routes and recent runs stay visible in the same rolling timeline format as the older site."
+                title="See our previous routes."
+                description=""
             >
                 <Timeline items={RUN_CLUB_TIMELINE.to_vec()} />
             </Section>
