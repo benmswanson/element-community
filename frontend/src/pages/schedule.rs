@@ -20,7 +20,7 @@ pub fn schedule() -> Html {
                     primary=true
                 />
                 <CtaButton
-                    href="https://apps.apple.com/"
+                    href="https://apps.apple.com/us/app/element-training-club/id6743843274"
                     label="Download the app"
                 />
             </Hero>

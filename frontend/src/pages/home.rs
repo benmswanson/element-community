@@ -27,7 +27,7 @@ pub fn home() -> Html {
                                 primary=true
                             />
                             <CtaButton
-                                href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
+                                href="https://www.element-training.com/schedule"
                                 label="See the class schedule"
                             />
                         </div>
@@ -199,7 +199,7 @@ pub fn home() -> Html {
                                 primary=true
                             />
                             <CtaButton
-                                href="https://apps.apple.com/"
+                                href="https://apps.apple.com/us/app/element-training-club/id6743843274"
                                 label="Download the app"
                             />
                         </div>
