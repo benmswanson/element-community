@@ -235,10 +235,7 @@ button {
 }
 
 .page-hero-inner.home-hero-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-    gap: 24px;
-    align-items: end;
+    display: block;
 }
 
 .hero-video-panel {
@@ -411,7 +408,7 @@ button {
 
 .community-card-media {
     width: 100%;
-    min-height: 240px;
+    min-height: 140px;
     object-fit: cover;
     background: linear-gradient(135deg, rgba(19, 41, 75, 0.96), rgba(29, 58, 102, 0.92));
 }
@@ -431,8 +428,8 @@ button {
 
 .community-card-body {
     display: grid;
-    gap: 12px;
-    padding: 24px;
+    gap: 8px;
+    padding: 16px;
 }
 
 .community-badge {
