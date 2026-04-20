@@ -97,19 +97,6 @@ pub fn pricing() -> Html {
                 </div>
             </Section>
 
-            <Section
-                eyebrow="Questions"
-                title="Have a unique schedule or visiting needs?"
-                description="If you are dropping in occasionally or want help choosing the right option, reach out directly."
-            >
-                <div class="visit-grid">
-                    <article class="info-panel">
-                        <p class="card-label">{"Email"}</p>
-                        <h3>{"blake@element-training.com"}</h3>
-                        <p class="card-copy">{"Questions about memberships, drop-ins, or where to begin are always welcome."}</p>
-                    </article>
-                </div>
-            </Section>
         </>
     }
 }
