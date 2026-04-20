@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
-use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_INFO, BOOK_CLUB_TIMELINE};
-use crate::components::{book_card::BookCard, cta_button::CtaButton, section::Section, timeline::Timeline};
+use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_INFO};
+use crate::components::{book_card::BookCard, cta_button::CtaButton, section::Section};
 
 #[function_component(BookClub)]
 pub fn book_club() -> Html {
@@ -25,14 +25,6 @@ pub fn book_club() -> Html {
                     secondary_label={BOOK_CLUB_CURRENT.secondary_label.map(AttrValue::from)}
                     featured=true
                 />
-            </Section>
-
-            <Section
-                eyebrow="Timeline"
-                title="The reading schedule stays visible."
-                description="Monthly picks and next steps stay in one timeline so people can catch up quickly."
-            >
-                <Timeline items={BOOK_CLUB_TIMELINE.to_vec()} />
             </Section>
 
             <Section
