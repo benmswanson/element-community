@@ -18,7 +18,7 @@ const PLANS: [Plan; 4] = [
         title: "Unlimited First Week Intro Offer",
         price: "$65",
         cadence: "All classes • 7 days after first visit",
-        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=41&sTG=23&prodId=10313",
+        cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=43&view=&trn=0&page=&catid=&prodid=100050&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=3&loc=1",
         cta_label: "Get started",
         badge: Some("Best value"),
         bullets: &[
