@@ -211,27 +211,15 @@ button {
     overflow: hidden;
     padding: 72px clamp(24px, 4vw, 56px);
     border-radius: var(--radius-xl);
-    background:
-        radial-gradient(circle at top right, rgba(214, 180, 122, 0.35), transparent 30%),
-        linear-gradient(135deg, var(--navy-950) 0%, var(--navy-900) 52%, var(--navy-800) 100%);
+    background: var(--navy-950);
     color: var(--cream-100);
     box-shadow: var(--shadow-strong);
-}
-
-.page-hero-inner::after {
-    content: "";
-    position: absolute;
-    inset: auto -120px -120px auto;
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
 }
 
 .page-hero-copy {
     position: relative;
     z-index: 1;
-    max-width: 760px;
+    max-width: 100%;
 }
 
 .page-hero-inner.home-hero-layout {
