@@ -86,31 +86,7 @@ pub fn home() -> Html {
                 </div>
             </Section>
 
-            <Section
-                eyebrow="Community"
-                title="Three ways to plug into Element outside the usual class flow."
-                description="Each community section still has its own page, timeline, and cards if you want the full picture."
-            >
-                <div class="community-links-grid">
-                    <Link<Route> to={Route::BookClub} classes="info-panel community-link-panel">
-                        <p class="card-label">{"Book Club"}</p>
-                        <h3>{"Read together"}</h3>
-                        <p class="card-copy">{"Monthly picks, discussion meetups, and a running reading timeline."}</p>
-                    </Link<Route>>
-                    <Link<Route> to={Route::RunClub} classes="info-panel community-link-panel">
-                        <p class="card-label">{"Run Club"}</p>
-                        <h3>{"Move together"}</h3>
-                        <p class="card-copy">{"Weekly routes, upcoming runs, and pace-friendly ways to join in."}</p>
-                    </Link<Route>>
-                    <Link<Route> to={Route::Events} classes="info-panel community-link-panel">
-                        <p class="card-label">{"Community Events"}</p>
-                        <h3>{"Show up together"}</h3>
-                        <p class="card-copy">{"Socials, race-adjacent events, and one-off community gatherings."}</p>
-                    </Link<Route>>
-                </div>
-            </Section>
-
-            <Section
+<Section
                 eyebrow="Why Element"
                 title="Training that balances structure, challenge, and community."
                 description="Element combines clear coaching, team energy, and smart programming so members can build strength and momentum that lasts."
