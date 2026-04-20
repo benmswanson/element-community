@@ -54,7 +54,8 @@ pub fn team() -> Html {
                         </div>
                         <div class="team-photo-card-body">
                             <p class="card-label">{coach.role}</p>
-                            <h3>{format!("About {}", coach.first_name)}</h3>
+                            <h3>{coach.full_name}</h3>
+                            <p class="team-card-link-hint">{format!("About {}", coach.first_name)}</p>
                         </div>
                     </Link<Route>>
                 }).collect::<Html>()}
