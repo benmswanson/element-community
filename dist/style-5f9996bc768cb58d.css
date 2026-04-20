@@ -16,7 +16,7 @@
     --radius-xl: 32px;
     --radius-lg: 22px;
     --radius-md: 16px;
-    --title-font: "Bebas Neue", sans-serif;
+    --title-font: "Barlow", sans-serif;
     --body-font: "Instrument Sans", sans-serif;
 }
 
@@ -281,7 +281,8 @@ button {
 .pricing-card h3 {
     margin: 0;
     font-family: var(--title-font);
-    letter-spacing: 0.02em;
+    font-weight: 800;
+    letter-spacing: -0.01em;
     line-height: 0.94;
 }
 
