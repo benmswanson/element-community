@@ -25,9 +25,8 @@ pub fn nav() -> Html {
             "site-nav-link",
             is_active(&route).then_some("active"),
         );
-        let close = close_menu.clone();
         html! {
-            <Link<Route> to={route} classes={classes} onclick={close}>
+            <Link<Route> to={route} classes={classes}>
                 {label}
             </Link<Route>>
         }
@@ -36,7 +35,7 @@ pub fn nav() -> Html {
     html! {
         <header class="site-header">
             <div class="shell-container site-header-inner">
-                <Link<Route> to={Route::Home} classes="site-brand" onclick={close_menu.clone()}>
+                <Link<Route> to={Route::Home} classes="site-brand">
                     <img src="/assets/etc-logo-white.png" alt="Element Training Club" class="site-brand-mark" />
                 </Link<Route>>
 
@@ -52,7 +51,7 @@ pub fn nav() -> Html {
                     <span></span>
                 </button>
 
-                <nav class={classes!("site-nav", (*menu_open).then_some("open"))} aria-label="Primary">
+                <nav class={classes!("site-nav", (*menu_open).then_some("open"))} aria-label="Primary" onclick={close_menu.clone()}>
                     {nav_link(Route::Home, "Home")}
                     {nav_link(Route::About, "About")}
                     {nav_link(Route::Team, "Team")}
@@ -67,7 +66,6 @@ pub fn nav() -> Html {
                         href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onclick={close_menu.clone()}
                     >
                         {"Book a Class"}
                     </a>
