@@ -15,14 +15,19 @@ pub fn nav() -> Html {
         Callback::from(move |_| menu_open.set(!*menu_open))
     };
 
+    let close_menu = {
+        let menu_open = menu_open.clone();
+        Callback::from(move |_: MouseEvent| menu_open.set(false))
+    };
+
     let nav_link = |route: Route, label: &'static str| {
         let classes = classes!(
             "site-nav-link",
             is_active(&route).then_some("active"),
         );
-
+        let close = close_menu.clone();
         html! {
-            <Link<Route> to={route} classes={classes}>
+            <Link<Route> to={route} classes={classes} onclick={close}>
                 {label}
             </Link<Route>>
         }
@@ -31,7 +36,7 @@ pub fn nav() -> Html {
     html! {
         <header class="site-header">
             <div class="shell-container site-header-inner">
-                <Link<Route> to={Route::Home} classes="site-brand">
+                <Link<Route> to={Route::Home} classes="site-brand" onclick={close_menu.clone()}>
                     <img src="/assets/etc-logo-white.png" alt="Element Training Club" class="site-brand-mark" />
                 </Link<Route>>
 
@@ -62,6 +67,7 @@ pub fn nav() -> Html {
                         href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onclick={close_menu.clone()}
                     >
                         {"Book a Class"}
                     </a>
