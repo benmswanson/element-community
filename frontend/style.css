@@ -412,9 +412,9 @@ button {
 }
 
 .book-card-media {
-    object-fit: cover;
-    max-height: 180px;
-    object-position: center top;
+    object-fit: contain;
+    height: 200px;
+    background: var(--navy-950);
 }
 
 .community-preview-grid .community-card-title {
