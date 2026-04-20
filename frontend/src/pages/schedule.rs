@@ -11,7 +11,7 @@ pub fn schedule() -> Html {
             <Section
                 eyebrow="How it works"
                 title="Browse classes, choose your time, and book directly."
-                description="Scheduling remains powered by Element’s existing booking flow, so members can use the same trusted system for class reservations and account management."
+                description=""
             >
                 <div class="feature-grid">
                     <article class="feature-card">
