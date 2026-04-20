@@ -28,11 +28,20 @@ pub fn events() -> Html {
             </Section>
 
             <Section
-                eyebrow="Timeline"
+                eyebrow="Events"
                 title=""
                 description=""
             >
-                <Timeline items={COMMUNITY_EVENTS_TIMELINE.to_vec()} />
+                <div class="events-two-col">
+                    <div class="events-col">
+                        <h3 class="events-col-heading">{"Upcoming"}</h3>
+                        <Timeline items={COMMUNITY_EVENTS_TIMELINE.iter().filter(|e| e.active).cloned().collect::<Vec<_>>()} />
+                    </div>
+                    <div class="events-col">
+                        <h3 class="events-col-heading">{"Past"}</h3>
+                        <Timeline items={COMMUNITY_EVENTS_TIMELINE.iter().filter(|e| !e.active).cloned().collect::<Vec<_>>()} />
+                    </div>
+                </div>
             </Section>
 
             <Section

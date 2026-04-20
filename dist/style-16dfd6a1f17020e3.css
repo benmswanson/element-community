@@ -846,3 +846,25 @@ button {
         aspect-ratio: 1 / 1;
     }
 }
+
+/* ── Events two-column layout ── */
+.events-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.events-col-heading {
+    margin: 0 0 16px;
+    font-family: var(--title-font);
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--navy-950);
+}
+
+@media (max-width: 640px) {
+    .events-two-col {
+        grid-template-columns: 1fr;
+    }
+}
