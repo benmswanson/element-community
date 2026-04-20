@@ -223,7 +223,16 @@ button {
 }
 
 .page-hero-inner.home-hero-layout {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr minmax(260px, 380px);
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-intro-card {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
 }
 
 .hero-video-panel {
@@ -664,7 +673,10 @@ button {
         border-radius: 28px;
     }
 
-    .page-hero-inner.home-hero-layout,
+    .page-hero-inner.home-hero-layout {
+        grid-template-columns: 1fr;
+    }
+
     .featured-card {
         grid-template-columns: 1fr;
     }

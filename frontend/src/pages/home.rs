@@ -36,6 +36,22 @@ pub fn home() -> Html {
                             />
                         </div>
                     </div>
+                    <div class="hero-intro-card">
+                        <PricingCard
+                            title="Unlimited First Week Intro Offer"
+                            price="$65"
+                            cadence="All classes • 7 days after first visit"
+                            cta_href="https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=43&view=&trn=0&page=&catid=&prodid=100050&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=3&loc=1"
+                            cta_label="Claim intro offer"
+                            badge={Some(AttrValue::from("Best way to start"))}
+                            bullets={vec![
+                                AttrValue::from("Try all our class formats for a full week"),
+                                AttrValue::from("Meet the coaches and learn the flow of the space"),
+                                AttrValue::from("The easiest entry point into the community"),
+                            ]}
+                            featured=true
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -90,64 +106,6 @@ pub fn home() -> Html {
                 </div>
             </Section>
 
-<Section
-                eyebrow="Why Element"
-                title="Training that balances structure, challenge, and community."
-                description="Element combines clear coaching, team energy, and smart programming so members can build strength and momentum that lasts."
-            >
-                <div class="feature-grid">
-                    <article class="feature-card">
-                        <p class="card-label">{"01"}</p>
-                        <h3>{"Team-based format"}</h3>
-                        <p>{"Training is a team sport at Element. The group format creates accountability, support, and the energy that keeps people coming back."}</p>
-                    </article>
-                    <article class="feature-card">
-                        <p class="card-label">{"02"}</p>
-                        <h3>{"Balanced training"}</h3>
-                        <p>{"Programming blends strength, conditioning, and mobility so progress feels sustainable and well-rounded instead of one-dimensional."}</p>
-                    </article>
-                    <article class="feature-card">
-                        <p class="card-label">{"03"}</p>
-                        <h3>{"Functionality first"}</h3>
-                        <p>{"Classes are designed to help members move better, get stronger, and build confidence that carries into daily life."}</p>
-                    </article>
-                    <article class="feature-card">
-                        <p class="card-label">{"04"}</p>
-                        <h3>{"Expert coaching"}</h3>
-                        <p>{"Experienced coaches guide every session with clear instruction, welcoming energy, and an emphasis on progress for all levels."}</p>
-                    </article>
-                </div>
-            </Section>
-
-            <Section
-                eyebrow="New Here"
-                title="Try your first week of unlimited classes for $65."
-                description="Meet the team, experience the training style, and explore every class format with a one-week intro offer."
-            >
-                <div class="split-band">
-                    <div class="split-band-copy">
-                        <ul class="detail-list">
-                            <li>{"7 days start after your first visit"}</li>
-                            <li>{"Unlimited access to all class formats"}</li>
-                            <li>{"No pressure and no long-term commitment"}</li>
-                        </ul>
-                    </div>
-                    <PricingCard
-                        title="Unlimited First Week Intro Offer"
-                        price="$65"
-                        cadence="All classes • 7 days after first visit"
-                        cta_href="https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=43&view=&trn=0&page=&catid=&prodid=100050&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=3&loc=1"
-                        cta_label="Claim intro offer"
-                        badge={Some(AttrValue::from("Best way to start"))}
-                        bullets={vec![
-                            AttrValue::from("Try all our class formats for a full week"),
-                            AttrValue::from("Meet the coaches and learn the flow of the space"),
-                            AttrValue::from("The easiest entry point into the community"),
-                        ]}
-                        featured=true
-                    />
-                </div>
-            </Section>
 
         </>
     }
