@@ -33,10 +33,6 @@ pub fn nav() -> Html {
             <div class="shell-container site-header-inner">
                 <Link<Route> to={Route::Home} classes="site-brand">
                     <img src="/assets/etc-logo-white.png" alt="Element Training Club" class="site-brand-mark" />
-                    <span class="site-brand-text">
-                        <span class="site-brand-title">{"Element Training Club"}</span>
-                        <span class="site-brand-subtitle">{"Williamsburg, Brooklyn"}</span>
-                    </span>
                 </Link<Route>>
 
                 <button
