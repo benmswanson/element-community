@@ -30,6 +30,10 @@ pub fn home() -> Html {
                                 href="https://www.element-training.com/schedule"
                                 label="See the class schedule"
                             />
+                            <CtaButton
+                                href="https://apps.apple.com/us/app/element-training-club/id6743843274"
+                                label="Download the app"
+                            />
                         </div>
                     </div>
                 </div>
@@ -145,36 +149,6 @@ pub fn home() -> Html {
                 </div>
             </Section>
 
-            <Section
-                eyebrow="Visit"
-                title="Train in the heart of Williamsburg."
-                description="Element Training Club is located at 667 Grand Street in Brooklyn, with a schedule designed to make coach-led group training easy to fit into real life."
-            >
-                <div class="visit-grid">
-                    <article class="info-panel">
-                        <p class="card-label">{"Address"}</p>
-                        <h3>{"Element Training Club"}</h3>
-                        <p class="card-copy">{"667 Grand Street"}</p>
-                        <p class="card-copy">{"Brooklyn, NY 11211"}</p>
-                    </article>
-                    <article class="info-panel">
-                        <p class="card-label">{"Next step"}</p>
-                        <h3>{"Book your first class"}</h3>
-                        <p class="card-copy">{"Browse the live schedule, choose a format, and get into the room with the team."}</p>
-                        <div class="inline-actions">
-                            <CtaButton
-                                href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
-                                label="Open schedule"
-                                primary=true
-                            />
-                            <CtaButton
-                                href="https://apps.apple.com/us/app/element-training-club/id6743843274"
-                                label="Download the app"
-                            />
-                        </div>
-                    </article>
-                </div>
-            </Section>
         </>
     }
 }
