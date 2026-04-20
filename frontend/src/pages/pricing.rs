@@ -32,7 +32,7 @@ const PLANS: [Plan; 4] = [
         title: "Unlimited Classes Membership",
         price: "$275 / month",
         cadence: "All classes • Monthly membership",
-        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=40&prodId=10007",
+        cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=40&view=&trn=0&page=&catid=&prodid=104&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1",
         cta_label: "Buy membership",
         badge: None,
         bullets: &[
