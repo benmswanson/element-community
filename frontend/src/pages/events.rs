@@ -9,8 +9,8 @@ pub fn events() -> Html {
         <>
             <Section
                 eyebrow="Next Event"
-                title="The next community event leads the page."
-                description="This keeps the most immediate RSVP item front and center, just like the earlier version."
+                title=""
+                description=""
             >
                 <EventCard
                     title={COMMUNITY_EVENT_FEATURED.title}

@@ -413,6 +413,17 @@ button {
 
 .book-card-media {
     object-fit: cover;
+    max-height: 180px;
+    object-position: center top;
+}
+
+.community-preview-grid .community-card-title {
+    font-size: 1.35rem;
+}
+
+.community-preview-grid .community-card-body {
+    gap: 4px;
+    padding: 12px 14px 14px;
 }
 
 .community-card-media-fallback {
