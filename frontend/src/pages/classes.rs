@@ -44,8 +44,8 @@ pub fn classes() -> Html {
         <>
             <Section
                 eyebrow="Our Classes"
-                title="Choose the training style that fits your week."
-                description="Programming is developed by Head Coach Sierra Baker to help the community build strength and endurance in a fun, welcoming environment."
+                title=""
+                description=""
             >
                 <div class="class-grid">
                     {CLASSES.iter().map(|item| html! {
