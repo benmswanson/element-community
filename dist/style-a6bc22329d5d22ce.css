@@ -273,6 +273,10 @@ button {
     text-transform: uppercase;
 }
 
+.section-eyebrow {
+    font-size: 1.1rem;
+}
+
 .page-hero h1,
 .section-heading h2,
 .site-footer h2,
