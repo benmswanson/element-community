@@ -62,7 +62,7 @@ pub fn nav() -> Html {
                     {nav_link(Route::Events, "Community Events")}
                     <a
                         class="site-nav-cta"
-                        href="https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=-7&sTG=23&sVT=517&sView=day&sLoc=0"
+                        href="https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=43&prodid=100036"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
