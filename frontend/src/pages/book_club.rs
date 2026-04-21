@@ -9,8 +9,8 @@ pub fn book_club() -> Html {
         <>
             <Section
                 eyebrow="Currently Reading"
-                title="This month’s pick is ready."
-                description="The featured pick, meetup date, and reading links all stay here, with the timeline below showing what is current and what is next."
+                title=""
+                description=""
             >
                 <BookCard
                     title={BOOK_CLUB_CURRENT.title}
@@ -30,7 +30,7 @@ pub fn book_club() -> Html {
 <Section
                 eyebrow="Get Involved"
                 title="Have a pick for the next month?"
-                description="The core book-club actions stay available as direct CTAs."
+                description=""
             >
                 <div class="inline-actions">
                     <CtaButton
