@@ -73,7 +73,7 @@ pub fn home() -> Html {
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"We started because we believed training should feel like something worth showing up for, both for yourself and for the people around you. That’s the difference that we’re building at Element."}
+                            {"We believe that training is better with community, and our events outside of classes are there to build connection. Check out our run club, book club, and other community events!"}
                         </p>
                     </article>
                 </div>
