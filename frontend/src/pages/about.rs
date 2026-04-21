@@ -14,18 +14,18 @@ pub fn about() -> Html {
                 <div class="narrative-grid">
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Our mission is to build a strong community by delivering balanced programming designed to help members reach their goals. Classes are challenging but approachable, with space for both first-timers and experienced athletes to keep growing."}
+                            {"Element Training Club is a strength, conditioning, and mobility gym in Williamsburg, Brooklyn. We’re home to a supportive, inclusive, and motivating community centered around team-based workouts."}
                         </p>
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Element started with a simple belief: training should help people show up for themselves and for each other. Consistency, confidence, and momentum inside the gym should carry into everyday life."}
+                            {"Our mission is to build a strong community by delivering balanced programming designed to help our members reach their goals. We offer challenging yet approachable workout classes that support growth and progress for all levels."}
                         </p>
                     </article>
-                    <article class="info-panel accent-panel">
-                        <p class="card-label">{"The difference"}</p>
-                        <h3>{"At Element, we train together."}</h3>
-                        <p class="card-copy">{"That changes the energy in the room, the accountability people feel, and the progress they’re able to sustain."}</p>
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"We started with a mission to make training more meaningful— and more human. We believe training is about showing up for yourself and others, building confidence through consistency, and creating momentum that carries into everyday life."}
+                        </p>
                     </article>
                 </div>
             </Section>
