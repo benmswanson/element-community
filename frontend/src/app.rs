@@ -3,7 +3,7 @@ use yew_router::prelude::*;
 
 use crate::components::{footer::Footer, nav::Nav};
 use crate::pages::{
-    about::About, book_club::BookClub, classes::Classes, events::Events, home::Home,
+    book_club::BookClub, classes::Classes, events::Events, home::Home,
     pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
     team_bio::{BioBlake, BioSierra, BioDaniel, BioMiguel, BioSimba, BioMaria},
 };
@@ -12,8 +12,6 @@ use crate::pages::{
 pub enum Route {
     #[at("/")]
     Home,
-    #[at("/about")]
-    About,
     #[at("/team")]
     Team,
     #[at("/team/blake")]
@@ -48,7 +46,6 @@ pub enum Route {
 fn switch(route: Route) -> Html {
     match route {
         Route::Home => html! { <Home /> },
-        Route::About => html! { <About /> },
         Route::Team => html! { <Team /> },
         Route::TeamBlake => html! { <BioBlake /> },
         Route::TeamSierra => html! { <BioSierra /> },

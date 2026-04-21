@@ -56,6 +56,30 @@ pub fn home() -> Html {
             </section>
 
             <Section
+                eyebrow="About"
+                title="Meaningful training starts with people."
+                description=""
+            >
+                <div class="narrative-grid">
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"Element Training Club is a strength, conditioning, and mobility gym in Williamsburg, Brooklyn. We’re home to a supportive, inclusive, and motivating community centered around team-based workouts."}
+                        </p>
+                    </article>
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"Our mission is to build a strong community by delivering balanced programming designed to help our members reach their goals. We offer challenging yet approachable workout classes that support growth and progress for all levels."}
+                        </p>
+                    </article>
+                    <article class="info-panel">
+                        <p class="card-copy">
+                            {"We started with a mission to make training more meaningful— and more human. We believe training is about showing up for yourself and others, building confidence through consistency, and creating momentum that carries into everyday life."}
+                        </p>
+                    </article>
+                </div>
+            </Section>
+
+            <Section
                 eyebrow="Upcoming"
                 title="What’s happening in the community right now."
                 description=""

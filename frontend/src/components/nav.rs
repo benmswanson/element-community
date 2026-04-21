@@ -53,7 +53,6 @@ pub fn nav() -> Html {
 
                 <nav class={classes!("site-nav", (*menu_open).then_some("open"))} aria-label="Primary" onclick={close_menu.clone()}>
                     {nav_link(Route::Home, "Home")}
-                    {nav_link(Route::About, "About")}
                     {nav_link(Route::Team, "Team")}
                     {nav_link(Route::Schedule, "Schedule")}
                     {nav_link(Route::Pricing, "Pricing")}

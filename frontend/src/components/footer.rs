@@ -46,6 +46,7 @@ pub fn footer() -> Html {
 
                 <div class="site-footer-block">
                     <p class="footer-eyebrow">{"Visit"}</p>
+                    <p class="footer-contact-tagline">{"Stop by or give us a call, we'd love to chat!"}</p>
                     <p>{"667 Grand Street"}</p>
                     <p>{"Brooklyn, NY 11211"}</p>
                 </div>

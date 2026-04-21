@@ -645,6 +645,13 @@ button {
     gap: 8px;
 }
 
+.footer-contact-tagline {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream-100);
+    margin-bottom: 4px;
+}
+
 .site-footer a {
     color: rgba(244, 239, 232, 0.88);
 }
