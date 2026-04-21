@@ -31,6 +31,7 @@ pub struct TimelineEntry {
     pub detail: &'static str,
     pub href: Option<&'static str>,
     pub link_label: Option<&'static str>,
+    pub image_url: Option<&'static str>,
     pub active: bool,
 }
 
@@ -68,12 +69,12 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "HYROX PFT | April 18th",
-    date: "Saturday, April 18 · 11:00 AM EDT",
-    description: "The official HYROX Physical Fitness Test with six stations for time, open to all levels and built for the community to show up together.",
+    title: "Community Meetup | April 25th",
+    date: "Friday, April 25",
+    description: "Come hang with the Element community. Details on the Partiful page.",
     location: Some("667 Grand St, Brooklyn, NY 11211"),
-    image_url: Some("https://withforte.co/_next/image?url=https%3A%2F%2Ffleetath.s3.us-east-1.amazonaws.com%2Ffile_20260324202010420_29119816.PNG&w=1200&q=75"),
-    primary_href: Some("https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"),
+    image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FZOk91HF7JyNhpWXc1BhhxGPGWdG2%2Fs1Dk8hckJ9M7lbJJgZu75?alt=media&token=6a22e362-75eb-4f5f-8034-a21ca275389a"),
+    primary_href: Some("https://partiful.com/e/eK4W7NufhtWs20oXbeQV"),
     primary_label: Some("RSVP"),
     secondary_href: None,
     secondary_label: None,
@@ -86,6 +87,7 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
         detail: "Rita Bullwinkel",
         href: None,
         link_label: None,
+        image_url: None,
         active: true,
     },
     TimelineEntry {
@@ -94,6 +96,7 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
         detail: "Suggest the next read.",
         href: Some("https://forms.gle/eQFo1SqXJwRfr3tX6"),
         link_label: Some("Submit a pick"),
+        image_url: None,
         active: false,
     },
 ];
@@ -105,6 +108,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Upcoming",
         href: Some("https://www.strava.com/routes/3480270817809452530"),
         link_label: Some("View Route"),
+        image_url: None,
         active: true,
     },
     TimelineEntry {
@@ -113,6 +117,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3478757606243375166"),
         link_label: Some("View Route"),
+        image_url: None,
         active: false,
     },
     TimelineEntry {
@@ -121,6 +126,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476595695882355858"),
         link_label: Some("View Route"),
+        image_url: None,
         active: false,
     },
     TimelineEntry {
@@ -129,6 +135,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476735579330903130"),
         link_label: Some("View Route"),
+        image_url: None,
         active: false,
     },
     TimelineEntry {
@@ -137,26 +144,29 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3475160646034726692"),
         link_label: Some("View Route"),
+        image_url: None,
         active: false,
     },
 ];
 
 pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
     TimelineEntry {
-        when: "Saturday, April 18",
-        title: "HYROX PFT",
-        detail: "Upcoming",
-        href: Some("https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"),
-        link_label: Some("RSVP"),
-        active: true,
-    },
-    TimelineEntry {
         when: "Friday, April 25",
         title: "Community Meetup",
         detail: "Upcoming",
         href: Some("https://partiful.com/e/eK4W7NufhtWs20oXbeQV"),
         link_label: Some("RSVP"),
+        image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FZOk91HF7JyNhpWXc1BhhxGPGWdG2%2Fs1Dk8hckJ9M7lbJJgZu75?alt=media&token=6a22e362-75eb-4f5f-8034-a21ca275389a"),
         active: true,
+    },
+    TimelineEntry {
+        when: "Saturday, April 18",
+        title: "HYROX PFT",
+        detail: "Past event",
+        href: Some("https://withforte.co/events/wdsbGbuxMw6ynjLMrcHj"),
+        link_label: Some("View Event"),
+        image_url: Some("https://withforte.co/_next/image?url=https%3A%2F%2Ffleetath.s3.us-east-1.amazonaws.com%2Ffile_20260324202010420_29119816.PNG&w=1200&q=75"),
+        active: false,
     },
     TimelineEntry {
         when: "Saturday, April 11",
@@ -164,6 +174,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-or-sculpt-social"),
         link_label: Some("View Event"),
+        image_url: None,
         active: false,
     },
     TimelineEntry {
@@ -172,6 +183,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://partiful.com/e/MheGKxIXEhqwMXeF1fJh"),
         link_label: Some("View Event"),
+        image_url: None,
         active: false,
     },
     TimelineEntry {
@@ -180,6 +192,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-social?fbclid=PAQ0xDSwQELiRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafflu5JWBPwhIg5HDZRpvtbnwKAeLQSfcFwTX9HOYSNDeTKuXJfTJcWZ9Gykw_aem_Vvg5jiBZM5klee0MdU_6rg"),
         link_label: Some("View Event"),
+        image_url: None,
         active: false,
     },
 ];

@@ -13,6 +13,9 @@ pub fn timeline(props: &TimelineProps) -> Html {
         <div class="timeline">
             {props.items.iter().map(|item| html! {
                 <article class={classes!("timeline-item", item.active.then_some("active"))}>
+                    if let Some(url) = item.image_url {
+                        <img class="timeline-image" src={url} alt={item.title} loading="lazy" />
+                    }
                     <p class="timeline-when">{item.when}</p>
                     <h3 class="timeline-title">{item.title}</h3>
                     <p class="timeline-detail">{item.detail}</p>
