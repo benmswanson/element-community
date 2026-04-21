@@ -43,8 +43,8 @@ pub fn classes() -> Html {
     html! {
         <>
             <Section
-                eyebrow="Our Classes"
-                title=""
+                eyebrow=""
+                title="Our Classes"
                 description=""
             >
                 <div class="class-grid">
