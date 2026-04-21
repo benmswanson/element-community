@@ -109,7 +109,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
     },
     TimelineEntry {
         when: "Wednesday, April 15",
-        title: "Midweek Route",
+        title: "Wednesday Longer Run",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3478757606243375166"),
         link_label: Some("View Route"),
@@ -117,7 +117,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
     },
     TimelineEntry {
         when: "Saturday, April 11",
-        title: "Weekend Long Run",
+        title: "Saturday Morning Run",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476595695882355858"),
         link_label: Some("View Route"),
@@ -125,7 +125,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
     },
     TimelineEntry {
         when: "Wednesday, April 8",
-        title: "Midweek Route",
+        title: "Wednesday Longer Run",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476735579330903130"),
         link_label: Some("View Route"),
@@ -133,7 +133,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
     },
     TimelineEntry {
         when: "Saturday, April 4",
-        title: "Weekend Long Run",
+        title: "Saturday Morning Run",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3475160646034726692"),
         link_label: Some("View Route"),
