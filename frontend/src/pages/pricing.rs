@@ -8,6 +8,8 @@ struct Plan {
     cadence: &'static str,
     cta_href: &'static str,
     cta_label: &'static str,
+    secondary_href: Option<&'static str>,
+    secondary_label: Option<&'static str>,
     badge: Option<&'static str>,
     bullets: &'static [&'static str],
     featured: bool,
@@ -20,6 +22,8 @@ const PLANS: [Plan; 4] = [
         cadence: "All classes • 7 days after first visit",
         cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=43&view=&trn=0&page=&catid=&prodid=100050&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=3&loc=1",
         cta_label: "Get started",
+        secondary_href: None,
+        secondary_label: None,
         badge: Some("Best value"),
         bullets: &[
             "Try all our class formats for a full week",
@@ -32,8 +36,10 @@ const PLANS: [Plan; 4] = [
         title: "Unlimited Classes Membership",
         price: "$275 / month",
         cadence: "All classes • Monthly membership",
-        cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=40&view=&trn=0&page=&catid=&prodid=104&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1",
+        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=40&prodid=104",
         cta_label: "Buy membership",
+        secondary_href: None,
+        secondary_label: None,
         badge: None,
         bullets: &[
             "Full access to every class type",
@@ -46,8 +52,10 @@ const PLANS: [Plan; 4] = [
         title: "$36 Drop-In",
         price: "$36",
         cadence: "1 class",
-        cta_href: "https://clients.mindbodyonline.com/ASP/main_shop.asp?stype=43&pMode=4&reSchedule=&origId=&recType=&recNum=",
+        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=43&prodid=100036",
         cta_label: "Book a class",
+        secondary_href: None,
+        secondary_label: None,
         badge: None,
         bullets: &[
             "Perfect for visiting",
@@ -60,8 +68,10 @@ const PLANS: [Plan; 4] = [
         title: "Class Packs",
         price: "$105 / $330",
         cadence: "3-class or 10-class pack",
-        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5735683&stype=42",
-        cta_label: "Buy a pack",
+        cta_href: "https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=43&prodid=100038",
+        cta_label: "Buy 3-class pack",
+        secondary_href: Some("https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=43&prodid=100039"),
+        secondary_label: Some("Buy 10-class pack"),
         badge: None,
         bullets: &[
             "3-class pack for flexible schedules",
@@ -89,6 +99,8 @@ pub fn pricing() -> Html {
                             cadence={plan.cadence}
                             cta_href={plan.cta_href}
                             cta_label={plan.cta_label}
+                            secondary_href={plan.secondary_href.map(AttrValue::from)}
+                            secondary_label={plan.secondary_label.map(AttrValue::from)}
                             badge={plan.badge.map(AttrValue::from)}
                             bullets={plan.bullets.iter().map(|item| AttrValue::from(*item)).collect::<Vec<_>>()}
                             featured={plan.featured}

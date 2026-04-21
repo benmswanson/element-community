@@ -10,6 +10,10 @@ pub struct PricingCardProps {
     pub cta_href: AttrValue,
     pub cta_label: AttrValue,
     #[prop_or_default]
+    pub secondary_href: Option<AttrValue>,
+    #[prop_or_default]
+    pub secondary_label: Option<AttrValue>,
+    #[prop_or_default]
     pub badge: Option<AttrValue>,
     #[prop_or_default]
     pub bullets: Vec<AttrValue>,
@@ -38,7 +42,12 @@ pub fn pricing_card(props: &PricingCardProps) -> Html {
                 }).collect::<Html>()}
             </ul>
 
-            <CtaButton href={props.cta_href.clone()} label={props.cta_label.clone()} primary={props.featured} />
+            <div class="pricing-card-actions">
+                <CtaButton href={props.cta_href.clone()} label={props.cta_label.clone()} primary={props.featured} />
+                if let (Some(href), Some(label)) = (&props.secondary_href, &props.secondary_label) {
+                    <CtaButton href={href.clone()} label={label.clone()} primary=false />
+                }
+            </div>
         </article>
     }
 }
