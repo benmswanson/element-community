@@ -131,6 +131,10 @@ pub fn home() -> Html {
             </Section>
 
 
+            <div class="shell-container home-contact-tagline">
+                <p>{"Stop by or give us a call, we'd love to chat!"}</p>
+            </div>
+
         </>
     }
 }
