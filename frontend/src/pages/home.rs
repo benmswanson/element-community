@@ -58,7 +58,7 @@ pub fn home() -> Html {
             <Section
                 eyebrow="Upcoming"
                 title="What’s happening in the community right now."
-                description="See the next run, the next community event, and the current book club pick without leaving the landing page."
+                description=""
             >
                 <div class="community-preview-grid">
                     <EventCard

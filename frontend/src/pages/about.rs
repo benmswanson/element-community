@@ -9,7 +9,7 @@ pub fn about() -> Html {
             <Section
                 eyebrow="Mission"
                 title="Meaningful training starts with people."
-                description="Element was built to help members train with intention, consistency, and confidence while feeling supported by the people around them."
+                description=""
             >
                 <div class="narrative-grid">
                     <article class="info-panel">
@@ -33,7 +33,7 @@ pub fn about() -> Html {
             <Section
                 eyebrow="Visit & Contact"
                 title="Come by, ask questions, and get to know the room."
-                description="Whether you are new to strength training or looking for a better long-term home base, the team is easy to reach."
+                description=""
             >
                 <div class="visit-grid">
                     <article class="info-panel">
