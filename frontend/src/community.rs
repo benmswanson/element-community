@@ -108,7 +108,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Upcoming",
         href: Some("https://www.strava.com/routes/3480270817809452530"),
         link_label: Some("View Route"),
-        image_url: None,
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"),
         active: true,
     },
     TimelineEntry {
@@ -117,7 +117,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3478757606243375166"),
         link_label: Some("View Route"),
-        image_url: None,
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/YMO3Q2KK72RKGVLNXKYRUWAH2SY7TORUBLL67WDXUN5DOHB76PFTYJFPP5LYE5MDXJXMTKDI5BMPCXAXCQI6Q2EAR52QZOOAPRLXMQA27LA4IGRBDDRPN7OP7TYBYBR5HC4L57AR6XOW6RY7O2JT7FVLQZBJZIC6ZYPMV4I3GFS62HAOYQKY5S4CBMNWRU3QGE======"),
         active: false,
     },
     TimelineEntry {
@@ -126,7 +126,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476595695882355858"),
         link_label: Some("View Route"),
-        image_url: None,
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======"),
         active: false,
     },
     TimelineEntry {
@@ -135,7 +135,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476735579330903130"),
         link_label: Some("View Route"),
-        image_url: None,
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/7QY2CPBLZZCBIPWTPLJIGORUHQP46QRN44B5Y273NANB6TH6RSXRFUTXSDACPSLTUBE7FSNWDLZYWHEBD6M4332NH767D6TMSZTL6CRA6DYAONETPY4WFCYV26MAX4OV7MQZEQD4IQXJZ7V3INEZUK7IT6V227DUKTLKOUJOU7INX6WZ2C67X32USIPUL7W5FY======"),
         active: false,
     },
     TimelineEntry {
@@ -144,7 +144,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3475160646034726692"),
         link_label: Some("View Route"),
-        image_url: None,
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/BJNOM7WQ7M6OU6ZJZUSUDZ7BF6ESHANZ3QJSZCFS6ZID6K3TZ37O43J43S5TG36NP3EHBDWKKXZKBUZLLH2FZZIXO5O4BVBJV453EDZO3B2U4UB7XCMGDRPUNJMTFLJJLSPTHAHXAHMF6KOIAOPQAXK4LHSAJMUQ2JHM6YJTU7UMQVCUBX7SDSUVLAR42725WM======"),
         active: false,
     },
 ];
