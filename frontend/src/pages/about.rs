@@ -32,7 +32,7 @@ pub fn about() -> Html {
 
             <Section
                 eyebrow="Visit & Contact"
-                title="Come by, ask questions, and get to know the room."
+                title="Stop by, give us a call, ask questions!"
                 description=""
             >
                 <div class="visit-grid">
