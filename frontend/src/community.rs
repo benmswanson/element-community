@@ -174,7 +174,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-or-sculpt-social"),
         link_label: Some("View Event"),
-        image_url: None,
+        image_url: Some("https://static.wixstatic.com/media/ff0109_8b354e42729e4fa1b96f0402cf77629c~mv2.jpg/v1/fill/w_4125,h_6224,al_c,q_90/ff0109_8b354e42729e4fa1b96f0402cf77629c~mv2.jpg"),
         active: false,
     },
     TimelineEntry {
@@ -183,7 +183,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://partiful.com/e/MheGKxIXEhqwMXeF1fJh"),
         link_label: Some("View Event"),
-        image_url: None,
+        image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FwLlYiJOlCJMCDD1qK73vHWjmZiA2%2FRAnTWQS9QXRG6aXd7QOPH?alt=media&token=c063cb0d-37b8-4752-b23c-29b4c84552d6"),
         active: false,
     },
     TimelineEntry {
@@ -192,7 +192,7 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 5] = [
         detail: "Past event",
         href: Some("https://www.rallemovements.com/event-details-registration/ralle-element-training-club-run-hyrox-social?fbclid=PAQ0xDSwQELiRleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafflu5JWBPwhIg5HDZRpvtbnwKAeLQSfcFwTX9HOYSNDeTKuXJfTJcWZ9Gykw_aem_Vvg5jiBZM5klee0MdU_6rg"),
         link_label: Some("View Event"),
-        image_url: None,
+        image_url: Some("https://static.wixstatic.com/media/ff0109_239b533ee7924f1d948049546b5a58f8~mv2.jpeg/v1/fill/w_1024,h_768,al_c,q_85/ff0109_239b533ee7924f1d948049546b5a58f8~mv2.jpeg"),
         active: false,
     },
 ];
