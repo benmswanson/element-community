@@ -9,8 +9,8 @@ pub fn run_club() -> Html {
         <>
             <Section
                 eyebrow="Next Run"
-                title="The next route is ready."
-                description="Featured run details still lead the page so people can see the immediate plan first."
+                title=""
+                description=""
             >
                 <EventCard
                     title={RUN_CLUB_FEATURED.title}
