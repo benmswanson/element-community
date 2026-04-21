@@ -646,9 +646,9 @@ button {
 }
 
 .home-contact-tagline {
-    padding: 32px 0 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
+    padding: 8px 0 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: var(--navy-900);
 }
 
