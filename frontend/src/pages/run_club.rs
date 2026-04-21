@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
-use crate::community::{RUN_CLUB_FEATURED, RUN_CLUB_INFO, RUN_CLUB_TIMELINE};
-use crate::components::{cta_button::CtaButton, event_card::EventCard, section::Section, timeline::Timeline};
+use crate::community::{RUN_CLUB_FEATURED, RUN_CLUB_TIMELINE};
+use crate::components::{event_card::EventCard, section::Section, timeline::Timeline};
 
 #[function_component(RunClub)]
 pub fn run_club() -> Html {
@@ -35,26 +35,6 @@ pub fn run_club() -> Html {
                 <Timeline items={RUN_CLUB_TIMELINE.to_vec()} />
             </Section>
 
-            <Section
-                eyebrow="Get Involved"
-                title="Follow along or just show up."
-                description="The supporting run-club cards stay intact so people can quickly understand cadence and vibe."
-            >
-                <div class="community-links-grid">
-                    {RUN_CLUB_INFO.iter().map(|card| html! {
-                        <article class="info-panel">
-                            <p class="card-label">{card.label}</p>
-                            <h3>{card.title}</h3>
-                            <p class="card-copy">{card.description}</p>
-                            if let Some(href) = card.href {
-                                <div class="inline-actions">
-                                    <CtaButton href={href} label="Open link" primary={card.primary} />
-                                </div>
-                            }
-                        </article>
-                    }).collect::<Html>()}
-                </div>
-            </Section>
         </>
     }
 }
