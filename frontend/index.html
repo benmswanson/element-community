@@ -18,6 +18,24 @@
     />
     <script src="https://s3.amazonaws.com/bowtie.ai/bowtieJS/bowtie_widget.js" async></script>
     <script src="https://brandedweb.mindbodyonline.com/embed/widget.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+      function initHeroVideo() {
+        var video = document.getElementById('hero-bg-video');
+        if (!video) { setTimeout(initHeroVideo, 150); return; }
+        var src = 'https://video.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/492d8a76-0c68-410a-8447-fa348578bc4a/playlist.m3u8';
+        if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+          var hls = new Hls({ autoStartLoad: true });
+          hls.loadSource(src);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function() { video.play(); });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = src;
+          video.play();
+        }
+      }
+      document.addEventListener('DOMContentLoaded', initHeroVideo);
+    </script>
   </head>
   <body>
     <link data-trunk rel="copy-dir" href="assets" />

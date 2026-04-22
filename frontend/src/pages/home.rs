@@ -13,6 +13,7 @@ pub fn home() -> Html {
     html! {
         <>
             <section class="page-hero">
+                <video id="hero-bg-video" class="hero-bg-video" autoplay=true muted=true loop=true playsinline=true />
                 <div class="shell-container page-hero-inner home-hero-layout">
                     <div class="page-hero-copy">
                         <p class="page-kicker">{"Williamsburg, Brooklyn"}</p>

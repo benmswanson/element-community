@@ -9,7 +9,7 @@
     />
     <title>Element Training Club</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="/style-a0fb6b467fd97615.css" integrity="sha384-Et0daOO+eEsl5qZzY08KmMO+KFjKelfDazxDi4mnidGeRLBlF0m97nx7YW0uLSUc"/>
+    <link rel="stylesheet" href="/style-90a4362537f29ba4.css" integrity="sha384-GCLDKGpZHhOLboPqAtjadNhKSTFM5GkI3PjWtf7TwUpBRpuhGQ0pIJJpVgo+cwxw"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,13 +18,31 @@
     />
     <script src="https://s3.amazonaws.com/bowtie.ai/bowtieJS/bowtie_widget.js" async></script>
     <script src="https://brandedweb.mindbodyonline.com/embed/widget.js" async></script>
-  <link rel="modulepreload" href="/book-club-frontend-d4086541961093b6.js" crossorigin="anonymous" integrity="sha384-j/LKZKk3EcZ7teRY5tDyEApoEcjrKi6P3ZwpJ+FdeTGKI6Hsc2pqZmH11uXknt7e"><link rel="preload" href="/book-club-frontend-d4086541961093b6_bg.wasm" crossorigin="anonymous" integrity="sha384-keWtWNT9lnJaME5UwxD5KKvOKqa05aZ+4IFi/QFUFlPXWfN+ckD8I8ATkszdqDvi" as="fetch" type="application/wasm"></head>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+      function initHeroVideo() {
+        var video = document.getElementById('hero-bg-video');
+        if (!video) { setTimeout(initHeroVideo, 150); return; }
+        var src = 'https://video.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/492d8a76-0c68-410a-8447-fa348578bc4a/playlist.m3u8';
+        if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+          var hls = new Hls({ autoStartLoad: true });
+          hls.loadSource(src);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function() { video.play(); });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = src;
+          video.play();
+        }
+      }
+      document.addEventListener('DOMContentLoaded', initHeroVideo);
+    </script>
+  <link rel="modulepreload" href="/book-club-frontend-34c4d4579f4988fd.js" crossorigin="anonymous" integrity="sha384-9wDcno8SrIlnhJPXJYex8VS9zWGErIxZnBLsJ1b1vRedjQrfXifqJj0V+hbV23vC"><link rel="preload" href="/book-club-frontend-34c4d4579f4988fd_bg.wasm" crossorigin="anonymous" integrity="sha384-/w+K90nV8r9CdoLFCm81MtbI8j3BUrifVEltL5vhH8Dq4127fxaEvT0pbIjN1G6+" as="fetch" type="application/wasm"></head>
   <body>
     
   
 <script type="module">
-import init, * as bindings from '/book-club-frontend-d4086541961093b6.js';
-const wasm = await init({ module_or_path: '/book-club-frontend-d4086541961093b6_bg.wasm' });
+import init, * as bindings from '/book-club-frontend-34c4d4579f4988fd.js';
+const wasm = await init({ module_or_path: '/book-club-frontend-34c4d4579f4988fd_bg.wasm' });
 
 
 window.wasmBindings = bindings;
