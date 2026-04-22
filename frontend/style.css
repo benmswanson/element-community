@@ -818,7 +818,7 @@ button {
 
 .team-photo-wrap img.photo-position-high {
     object-position: center 0%;
-    transform: scale(1.5) translateY(-12%);
+    transform: scale(1.5) translateY(-22%);
     transform-origin: center 0%;
 }
 
