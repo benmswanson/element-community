@@ -133,6 +133,14 @@ pub fn home() -> Html {
                 <p>{"Stop by or give us a call, we'd love to chat!"}</p>
             </div>
 
+            <div class="shell-container home-contact-card">
+                <p class="home-contact-address">{"667 Grand Street, Brooklyn, NY 11211"}</p>
+                <div class="home-contact-buttons">
+                    <a class="home-contact-btn" href="tel:+19547785650">{"Call Us"}</a>
+                    <a class="home-contact-btn" href="mailto:blake@element-training.com">{"Email Us"}</a>
+                </div>
+            </div>
+
         </>
     }
 }

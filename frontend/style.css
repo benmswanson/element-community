@@ -677,6 +677,49 @@ button {
     color: var(--navy-900);
 }
 
+.home-contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: var(--cream-200);
+    border-radius: var(--radius-lg);
+    padding: 24px 32px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.home-contact-address {
+    font-size: 1rem;
+    color: var(--navy-900);
+    font-weight: 500;
+    margin: 0;
+}
+
+.home-contact-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.home-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(19, 41, 75, 0.18);
+    background: transparent;
+    color: var(--navy-900);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.home-contact-btn:hover {
+    background: rgba(19, 41, 75, 0.08);
+    transform: translateY(-1px);
+}
+
 .site-footer a {
     color: rgba(244, 239, 232, 0.88);
 }
