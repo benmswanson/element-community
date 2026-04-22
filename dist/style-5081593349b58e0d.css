@@ -218,20 +218,15 @@ button {
     overflow: hidden;
 }
 
-.hero-bg-video {
+.hero-card-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.22;
+    border-radius: var(--radius-lg);
     pointer-events: none;
     z-index: 0;
-}
-
-.page-hero .shell-container {
-    position: relative;
-    z-index: 1;
 }
 
 .page-hero-inner {
@@ -261,6 +256,9 @@ button {
     align-self: stretch;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
 }
 
 .hero-video-panel {
@@ -608,8 +606,10 @@ button {
 }
 
 .pricing-card.featured {
-    background: linear-gradient(180deg, rgba(19, 41, 75, 0.96), rgba(29, 58, 102, 0.96));
+    background: linear-gradient(180deg, rgba(19, 41, 75, 0.88), rgba(29, 58, 102, 0.88));
     color: var(--cream-100);
+    position: relative;
+    z-index: 1;
 }
 
 .pricing-card.featured h3,
