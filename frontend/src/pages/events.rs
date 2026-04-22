@@ -46,7 +46,7 @@ pub fn events() -> Html {
 
             <Section
                 eyebrow="Get Involved"
-                title="A lighter way into the community."
+                title="A lighter way into the community"
                 description="Socials, special events, and bring-a-friend energy still have their own space."
             >
                 <div class="community-links-grid">

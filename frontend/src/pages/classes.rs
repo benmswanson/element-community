@@ -60,7 +60,7 @@ pub fn classes() -> Html {
 
             <Section
                 eyebrow="Expectations"
-                title="Structured coaching without guesswork."
+                title="Structured coaching without guesswork"
                 description="You choose your own weights, move at your own pace, and get guidance throughout class from a coach who is there to help you train well."
             >
                 <div class="feature-grid">

@@ -8,7 +8,7 @@ pub fn about() -> Html {
         <>
             <Section
                 eyebrow="Mission"
-                title="Meaningful training starts with people."
+                title="Meaningful training starts with people"
                 description=""
             >
                 <div class="narrative-grid">

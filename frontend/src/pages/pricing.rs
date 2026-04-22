@@ -88,7 +88,7 @@ pub fn pricing() -> Html {
         <>
             <Section
                 eyebrow="Memberships & Pricing"
-                title="Choose the option that fits your rhythm."
+                title="Choose the option that fits your rhythm"
                 description=""
             >
                 <div class="pricing-grid">

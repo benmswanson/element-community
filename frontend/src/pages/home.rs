@@ -57,7 +57,7 @@ pub fn home() -> Html {
 
             <Section
                 eyebrow="About"
-                title="Meaningful training starts with people."
+                title="Meaningful training starts with people"
                 description=""
             >
                 <div class="narrative-grid">
@@ -81,7 +81,7 @@ pub fn home() -> Html {
 
             <Section
                 eyebrow="Upcoming"
-                title="What’s happening in the community right now."
+                title="What’s happening in the community right now"
                 description=""
             >
                 <div class="community-preview-grid">
