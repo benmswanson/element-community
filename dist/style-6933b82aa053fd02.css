@@ -816,6 +816,15 @@ button {
     transform-origin: center 20%;
 }
 
+.team-photo-wrap img.photo-position-high {
+    object-position: center 0%;
+}
+
+.team-photo-wrap img.photo-zoom-more {
+    transform: scale(1.8);
+    transform-origin: center 20%;
+}
+
 .team-photo-card-body {
     padding: 16px 20px 20px;
 }

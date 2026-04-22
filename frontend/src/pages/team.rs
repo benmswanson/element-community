@@ -34,7 +34,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Miguel Sira",
         role: "Group Coach",
         photo_url: "/assets/select-15.jpg",
-        photo_class: "photo-zoom-in",
+        photo_class: "photo-zoom-in photo-position-high",
         route: Route::TeamMiguel,
     },
     Coach {
@@ -42,7 +42,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Simba Wedderburn",
         role: "Group Coach",
         photo_url: "/assets/select-3.jpg",
-        photo_class: "photo-zoom-in",
+        photo_class: "photo-zoom-more",
         route: Route::TeamSimba,
     },
 ];
