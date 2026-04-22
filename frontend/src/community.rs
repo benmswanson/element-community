@@ -57,14 +57,14 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "Saturday Morning Run",
-    date: "Saturday, April 18 · 9:00 AM",
+    title: "Wednesday Longer Run",
+    date: "Wednesday, April 22",
     description: "Join this week's group run. All paces welcome. We start together and finish together.",
     location: None,
-    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"),
+    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
     primary_href: None,
     primary_label: None,
-    secondary_href: Some("https://www.strava.com/routes/3480270817809452530"),
+    secondary_href: Some("https://www.strava.com/routes/3469355877184440860"),
     secondary_label: Some("View Route"),
 };
 
@@ -105,11 +105,11 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     TimelineEntry {
         when: "Wednesday, April 22",
         title: "Wednesday Longer Run",
-        detail: "Upcoming",
+        detail: "Past run",
         href: Some("https://www.strava.com/routes/3469355877184440860"),
         link_label: Some("View Route"),
         image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Saturday, April 18 · 9:00 AM",
