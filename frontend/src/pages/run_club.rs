@@ -28,8 +28,8 @@ pub fn run_club() -> Html {
             </Section>
 
             <Section
-                eyebrow="Timeline"
-                title="See our previous routes."
+                eyebrow="Previous Routes"
+                title=""
                 description=""
             >
                 <Timeline items={RUN_CLUB_TIMELINE.to_vec()} />
