@@ -823,8 +823,8 @@ button {
 }
 
 .team-photo-wrap img.photo-zoom-more {
-    transform: scale(2.2) translateY(8%);
-    transform-origin: center 30%;
+    transform: scale(1.4) translateY(5%);
+    transform-origin: center 25%;
 }
 
 .team-photo-card-body {
