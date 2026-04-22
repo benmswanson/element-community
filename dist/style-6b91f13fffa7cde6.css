@@ -640,7 +640,7 @@ button {
 }
 
 .site-footer {
-    padding: 20px 0 40px;
+    padding: 10px 0 40px;
 }
 
 .site-footer-grid,
@@ -673,7 +673,8 @@ button {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-lg);
-    margin-bottom: 16px;
+    margin-top: 40px;
+    margin-bottom: 0;
     background: var(--navy-950);
 }
 
@@ -683,11 +684,9 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center top;
     opacity: 0.22;
     pointer-events: none;
-    transform: scale(0.85);
-    transform-origin: center center;
 }
 
 .home-contact-inner {
