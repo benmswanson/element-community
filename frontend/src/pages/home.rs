@@ -61,12 +61,12 @@ pub fn home() -> Html {
                 <div class="narrative-grid">
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Coach-led strength, conditioning, mobility, and hybrid training."}
+                            {"Coach-led strength, conditioning, mobility, and hybrid training"}
                         </p>
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Welcoming, fun, and the right level of challenging."}
+                            {"Welcoming, fun, and the right level of challenging"}
                         </p>
                     </article>
                     <article class="info-panel">
