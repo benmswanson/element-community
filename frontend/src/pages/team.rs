@@ -8,6 +8,7 @@ struct Coach {
     full_name: &'static str,
     role: &'static str,
     photo_url: &'static str,
+    photo_class: &'static str,
     route: Route,
 }
 
@@ -17,6 +18,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Blake Guillaume",
         role: "General Manager | Group Coach",
         photo_url: "/assets/select-5.jpg",
+        photo_class: "photo-zoom-in",
         route: Route::TeamBlake,
     },
     Coach {
@@ -24,6 +26,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Sierra Baker",
         role: "Head Coach | Group Coach",
         photo_url: "/assets/select-2.jpg",
+        photo_class: "",
         route: Route::TeamSierra,
     },
     Coach {
@@ -31,6 +34,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Miguel Sira",
         role: "Group Coach",
         photo_url: "/assets/select-15.jpg",
+        photo_class: "photo-zoom-in",
         route: Route::TeamMiguel,
     },
     Coach {
@@ -38,6 +42,7 @@ const COACHES: [Coach; 4] = [
         full_name: "Simba Wedderburn",
         role: "Group Coach",
         photo_url: "/assets/select-3.jpg",
+        photo_class: "photo-zoom-in",
         route: Route::TeamSimba,
     },
 ];
@@ -50,7 +55,7 @@ pub fn team() -> Html {
                 {COACHES.iter().map(|coach| html! {
                     <Link<Route> to={coach.route.clone()} classes="team-photo-card">
                         <div class="team-photo-wrap">
-                            <img src={coach.photo_url} alt={coach.full_name} />
+                            <img src={coach.photo_url} alt={coach.full_name} class={coach.photo_class} />
                         </div>
                         <div class="team-photo-card-body">
                             <p class="card-label">{coach.role}</p>
