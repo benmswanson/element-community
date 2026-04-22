@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::components::{footer::Footer, nav::Nav};
+use crate::components::{footer::Footer, nav::Nav, scroll_to_top::ScrollToTop};
 use crate::pages::{
     book_club::BookClub, classes::Classes, events::Events, home::Home,
     pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
@@ -67,6 +67,7 @@ fn switch(route: Route) -> Html {
 pub fn app() -> Html {
     html! {
         <BrowserRouter>
+            <ScrollToTop />
             <div class="site-shell">
                 <Nav />
                 <main class="site-main">

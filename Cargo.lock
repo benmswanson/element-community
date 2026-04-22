@@ -111,6 +111,7 @@ name = "book-club-frontend"
 version = "0.1.0"
 dependencies = [
  "gloo-net 0.6.0",
+ "js-sys",
  "serde",
  "serde_json",
  "wasm-bindgen",

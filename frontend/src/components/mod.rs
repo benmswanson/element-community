@@ -6,6 +6,7 @@ pub mod footer;
 pub mod hero;
 pub mod nav;
 pub mod pricing_card;
+pub mod scroll_to_top;
 pub mod section;
 pub mod team_card;
 pub mod timeline;
