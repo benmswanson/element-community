@@ -22,17 +22,14 @@ pub fn home() -> Html {
                         </p>
                         <div class="page-hero-actions">
                             <CtaButton
-                                href="https://clients.mindbodyonline.com/ASP/main_shop.asp?studioid=5743626&tg=&vt=&lvl=&stype=43&view=&trn=0&page=&catid=&prodid=100050&date=4%2f20%2f2026&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=3&loc=1"
-                                label="Start with the intro offer"
-                                primary=true
-                            />
-                            <CtaButton
                                 href="https://www.element-training.com/schedule"
                                 label="See the class schedule"
+                                light=true
                             />
                             <CtaButton
                                 href="https://apps.apple.com/us/app/element-training-club/id6743843274"
                                 label="Download the app"
+                                light=true
                             />
                         </div>
                     </div>

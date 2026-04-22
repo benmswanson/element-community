@@ -166,6 +166,16 @@ button {
     border-color: var(--navy-900);
 }
 
+.cta-button.light {
+    background: transparent;
+    color: var(--cream-100);
+    border-color: rgba(230, 225, 219, 0.45);
+}
+
+.cta-button.light:hover {
+    background: rgba(230, 225, 219, 0.1);
+}
+
 .site-menu-toggle {
     display: none;
     width: 46px;

@@ -6,11 +6,17 @@ pub struct CtaButtonProps {
     pub label: AttrValue,
     #[prop_or(false)]
     pub primary: bool,
+    #[prop_or(false)]
+    pub light: bool,
 }
 
 #[function_component(CtaButton)]
 pub fn cta_button(props: &CtaButtonProps) -> Html {
-    let classes = classes!("cta-button", props.primary.then_some("primary"));
+    let classes = classes!(
+        "cta-button",
+        props.primary.then_some("primary"),
+        props.light.then_some("light"),
+    );
 
     html! {
         <a
