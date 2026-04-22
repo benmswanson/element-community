@@ -32,6 +32,11 @@ pub fn home() -> Html {
                                 label="Download the app"
                                 light=true
                             />
+                            <CtaButton
+                                href="https://maps.app.goo.gl/fuXVS1vZ678Ay8V16"
+                                label="Community reviews"
+                                light=true
+                            />
                         </div>
                     </div>
                     <div class="hero-intro-card">
