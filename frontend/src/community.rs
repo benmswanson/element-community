@@ -101,15 +101,24 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     },
 ];
 
-pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
+pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     TimelineEntry {
-        when: "Saturday, April 18 · 9:00 AM",
-        title: "Saturday Morning Run",
+        when: "Wednesday, April 23",
+        title: "Wednesday Longer Run",
         detail: "Upcoming",
+        href: Some("https://www.strava.com/routes/3469355877184440860"),
+        link_label: Some("View Route"),
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
+        active: true,
+    },
+    TimelineEntry {
+        when: "Saturday, April 19 · 9:00 AM",
+        title: "Saturday Morning Run",
+        detail: "Past run",
         href: Some("https://www.strava.com/routes/3480270817809452530"),
         link_label: Some("View Route"),
         image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/2P3KS7NLCSFNKIATCIYWJV64CCQVKCLZEPQNWVXGRAXYOW5ARUIAVR6N5FOCLFS3CZVUCH4ZF64GPT3WTACH4WZO22RXVJFPGDY3SZBTFZK6WKQ6RCNLTW6VFZGKPZCHEU7QP5L4YRFJHBDYN2CY2FVH5M5JGJRALYYCI3SO6FM2HINS7NGSAMJ45ZPMWEC674======"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Wednesday, April 15",
