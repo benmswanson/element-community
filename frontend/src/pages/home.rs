@@ -61,17 +61,17 @@ pub fn home() -> Html {
                 <div class="narrative-grid">
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Element is a strength, conditioning, and mobility gym in Williamsburg, Brooklyn. We train in groups, the energy in the room is part of what makes it work."}
+                            {"Coach-led strength, conditioning, mobility, and hybrid training."}
                         </p>
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"The programming is built to be challenging without being intimidating. Whether you’re just getting started or you’ve been training for years, there’s room to push and room to grow."}
+                            {"Welcoming, fun, and the right level of challenging."}
                         </p>
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"We believe that training is better with community, and our events outside of classes are there to build connection. Check out our run club, book club, and other community events!"}
+                            {"Run club, book club, community events, and more."}
                         </p>
                     </article>
                 </div>
