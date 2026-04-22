@@ -224,7 +224,6 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-lg);
     pointer-events: none;
     z-index: 0;
 }
@@ -256,9 +255,6 @@ button {
     align-self: stretch;
     display: flex;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
 }
 
 .hero-video-panel {

@@ -14,6 +14,7 @@ pub fn home() -> Html {
         <>
             <section class="page-hero">
                 <div class="shell-container page-hero-inner home-hero-layout">
+                        <video id="hero-bg-video" class="hero-card-video" autoplay=true muted=true loop=true playsinline=true />
                     <div class="page-hero-copy">
                         <p class="page-kicker">{"Williamsburg, Brooklyn"}</p>
                         <h1>{"We all go further when we "} <span>{"train together."}</span></h1>
@@ -34,7 +35,6 @@ pub fn home() -> Html {
                         </div>
                     </div>
                     <div class="hero-intro-card">
-                        <video id="hero-bg-video" class="hero-card-video" autoplay=true muted=true loop=true playsinline=true />
                         <PricingCard
                             title="Unlimited First Week Intro Offer"
                             price="$65"
