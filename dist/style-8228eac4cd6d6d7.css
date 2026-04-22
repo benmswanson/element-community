@@ -698,44 +698,38 @@ button {
 .home-contact-inner {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
     align-items: center;
-    gap: 32px;
-    padding: 36px 40px;
-}
-
-.home-contact-copy {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--cream-100);
-    margin: 0;
-    line-height: 1.25;
+    justify-content: center;
+    padding: 40px;
 }
 
 .home-contact-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .home-contact-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 14px 28px;
     border-radius: 999px;
-    border: 1px solid rgba(230, 225, 219, 0.35);
-    background: transparent;
+    border: 1.5px solid rgba(230, 225, 219, 0.5);
+    background: rgba(0, 0, 0, 0.25);
     color: var(--cream-100);
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 700;
+    font-size: 1rem;
     white-space: nowrap;
     transition: background 0.18s ease, transform 0.18s ease;
+    backdrop-filter: blur(8px);
 }
 
 .home-contact-btn:hover {
-    background: rgba(230, 225, 219, 0.1);
+    background: rgba(230, 225, 219, 0.15);
     transform: translateY(-1px);
 }
 
