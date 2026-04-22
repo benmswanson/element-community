@@ -38,7 +38,6 @@ pub fn footer() -> Html {
             <div class="shell-container site-footer-grid">
                 <div class="site-footer-block">
                     <p class="footer-eyebrow">{"Element Training Club"}</p>
-                    <h2>{"Train with strength. Show up with people."}</h2>
                     <p>
                         {"Coach-led strength, conditioning, and mobility training in Williamsburg, Brooklyn."}
                     </p>

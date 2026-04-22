@@ -422,6 +422,7 @@ button {
 .community-card {
     display: grid;
     gap: 0;
+    padding: 0;
     overflow: hidden;
     padding: 0;
 }
@@ -554,6 +555,11 @@ button {
 .accent-panel .card-copy,
 .accent-panel .card-label {
     color: inherit;
+}
+
+.narrative-grid .card-copy {
+    font-size: 1.25rem;
+    line-height: 1.45;
 }
 
 .feature-card h3,
