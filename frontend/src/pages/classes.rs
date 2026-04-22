@@ -10,15 +10,6 @@ struct ClassInfo {
 
 const CLASSES: [ClassInfo; 3] = [
     ClassInfo {
-        title: "Strength",
-        description: "Build strength through barbell lifts and accessory work with a focus on form, progression, and consistency.",
-        bullets: &[
-            "Lower body emphasis with squats, lunges, and posterior chain work",
-            "Upper body pressing and pulling sessions",
-            "Full-body training days that tie the work together",
-        ],
-    },
-    ClassInfo {
         title: "Strength & Conditioning",
         description: "Circuit-style training that blends strength and cardio in formats that keep the room moving together at different intensities.",
         bullets: &[
@@ -34,6 +25,15 @@ const CLASSES: [ClassInfo; 3] = [
             "Longer efforts, repeat intervals, and race-style formats",
             "Partner and team elements throughout training",
             "Useful for race prep and still beginner-friendly",
+        ],
+    },
+    ClassInfo {
+        title: "Strength",
+        description: "Build strength through barbell lifts and accessory work with a focus on form, progression, and consistency.",
+        bullets: &[
+            "Lower body emphasis with squats, lunges, and posterior chain work",
+            "Upper body pressing and pulling sessions",
+            "Full-body training days that tie the work together",
         ],
     },
 ];
