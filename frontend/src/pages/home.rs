@@ -71,7 +71,7 @@ pub fn home() -> Html {
                     </article>
                     <article class="info-panel">
                         <p class="card-copy">
-                            {"Run club, book club, community events, and more."}
+                            {"Run club, book club, community events, and more on the way."}
                         </p>
                     </article>
                 </div>
