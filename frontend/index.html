@@ -22,8 +22,11 @@
       function initHeroVideo() {
         var video = document.getElementById('hero-bg-video');
         if (!video) { setTimeout(initHeroVideo, 150); return; }
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;
         video.src = '/assets/hero-video.mp4';
-        video.play();
+        video.play().catch(function() {});
       }
       document.addEventListener('DOMContentLoaded', initHeroVideo);
     </script>
