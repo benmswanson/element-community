@@ -101,16 +101,7 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     },
 ];
 
-pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
-    TimelineEntry {
-        when: "Wednesday, April 22",
-        title: "Wednesday Longer Run",
-        detail: "Past run",
-        href: Some("https://www.strava.com/routes/3469355877184440860"),
-        link_label: Some("View Route"),
-        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
-        active: false,
-    },
+pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
     TimelineEntry {
         when: "Saturday, April 18 · 9:00 AM",
         title: "Saturday Morning Run",
