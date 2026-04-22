@@ -14,7 +14,7 @@ pub struct BioData {
 pub const BLAKE: BioData = BioData {
     full_name: "Blake Guillaume",
     role: "General Manager | Group Coach",
-    photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/cc3d75ca-38a3-4a6a-bae8-5e3980b56302/select-5.jpg",
+    photo_url: "/assets/select-5.jpg",
     paragraphs: &[
         "Blake is a former Bain consultant who transitioned from corporate consulting to pursue his passion for building community through fitness.",
         "As a lifelong athlete, he founded Element Training Club in Williamsburg with a commitment to inclusive, community-centered fitness. Blake's philosophy centers on three core principles: physical gratitude, balanced training, and self-challenge.",
@@ -26,7 +26,7 @@ pub const BLAKE: BioData = BioData {
 pub const SIERRA: BioData = BioData {
     full_name: "Sierra Baker",
     role: "Head Coach | Programming Lead",
-    photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/daafa140-2927-4d82-9a09-52724bc127fe/select-2.jpg",
+    photo_url: "/assets/select-2.jpg",
     paragraphs: &[
         "Sierra was raised in Washington, D.C. and began competitive swimming at age five. She competed at Division I level for four years at Rice University while earning a degree in Mechanical Engineering.",
         "Her athletic accomplishments include being a two-time HYROX champion, HYROX World Championships competitor, 70.3 Ironman Triathlon racer who qualified for World Championships in Nice, France, and amateur boxing competitor.",
@@ -38,7 +38,7 @@ pub const SIERRA: BioData = BioData {
 pub const DANIEL: BioData = BioData {
     full_name: "Daniel Garcia",
     role: "Group Coach",
-    photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/cf7fd3d8-3908-4853-9856-689c7d294d8e/select-15.jpg",
+    photo_url: "/assets/select-15.jpg",
     paragraphs: &[
         "Daniel started his fitness journey in 2017 through CrossFit, initially pursuing weight loss but eventually committing to lifelong movement and strength training.",
         "He competes in endurance races and HYROX events while maintaining a consistent training routine. Daniel is passionate about weightlifting, particularly Olympic lifting, with the Clean and Jerk as his favorite lift.",
@@ -50,7 +50,7 @@ pub const DANIEL: BioData = BioData {
 pub const MIGUEL: BioData = BioData {
     full_name: "Miguel Sira",
     role: "Group Coach",
-    photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/cf7fd3d8-3908-4853-9856-689c7d294d8e/select-15.jpg",
+    photo_url: "/assets/select-15.jpg",
     paragraphs: &[
         "Miguel brings an athlete-minded coaching style to every session, focused on strong movement quality and helping members build consistency over time.",
     ],
@@ -59,7 +59,7 @@ pub const MIGUEL: BioData = BioData {
 pub const SIMBA: BioData = BioData {
     full_name: "Simba Wedderburn",
     role: "Group Coach",
-    photo_url: "https://images.squarespace-cdn.com/content/v1/67c33d5dc8308d77d48dcc4c/1d2a7cfb-d4b6-4cf2-81e0-10d1e0ff2e25/select-3.jpg",
+    photo_url: "/assets/select-3.jpg",
     paragraphs: &[
         "Simba focuses on functional strength and athletic performance with an emphasis on moving well, building resilience, and developing real-world strength.",
         "His training integrates mobility, stability, core control, and joint-friendly methods alongside strength endurance and body recomposition to create balanced, capable bodies.",
