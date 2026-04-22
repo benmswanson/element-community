@@ -646,7 +646,7 @@ button {
 }
 
 .site-footer {
-    padding: 10px 0 40px;
+    padding: 0 0 40px;
 }
 
 .site-footer-grid,
@@ -680,7 +680,7 @@ button {
     overflow: hidden;
     border-radius: var(--radius-lg);
     margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
     background: var(--navy-950);
 }
 
