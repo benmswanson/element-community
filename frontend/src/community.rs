@@ -103,7 +103,7 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
 
 pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     TimelineEntry {
-        when: "Wednesday, April 23",
+        when: "Wednesday, April 22",
         title: "Wednesday Longer Run",
         detail: "Upcoming",
         href: Some("https://www.strava.com/routes/3469355877184440860"),
@@ -112,7 +112,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
         active: true,
     },
     TimelineEntry {
-        when: "Saturday, April 19 · 9:00 AM",
+        when: "Saturday, April 18 · 9:00 AM",
         title: "Saturday Morning Run",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3480270817809452530"),
