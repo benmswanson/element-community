@@ -129,16 +129,15 @@ pub fn home() -> Html {
             </Section>
 
 
-            <div class="shell-container home-contact-tagline">
-                <p>{"Stop by or give us a call, we'd love to chat!"}</p>
-            </div>
-
             <div class="shell-container home-contact-card">
                 <img class="home-contact-img" src="/assets/element-front.avif" alt="Element Training Club" />
-                <div class="home-contact-buttons">
-                    <a class="home-contact-btn" href="https://maps.app.goo.gl/fuXVS1vZ678Ay8V16" target="_blank" rel="noopener noreferrer">{"667 Grand St, Brooklyn"}</a>
-                    <a class="home-contact-btn" href="tel:+19547785650">{"Call Us"}</a>
-                    <a class="home-contact-btn" href="mailto:blake@element-training.com">{"Email Us"}</a>
+                <div class="home-contact-inner">
+                    <p class="home-contact-copy">{"Stop by or give us a call, we'd love to chat!"}</p>
+                    <div class="home-contact-buttons">
+                        <a class="home-contact-btn" href="https://maps.app.goo.gl/fuXVS1vZ678Ay8V16" target="_blank" rel="noopener noreferrer">{"667 Grand St, Brooklyn"}</a>
+                        <a class="home-contact-btn" href="tel:+19547785650">{"Call Us"}</a>
+                        <a class="home-contact-btn" href="mailto:blake@element-training.com">{"Email Us"}</a>
+                    </div>
                 </div>
             </div>
 
