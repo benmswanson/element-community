@@ -17,7 +17,7 @@ pub fn home() -> Html {
                         <video id="hero-bg-video" class="hero-card-video" autoplay=true muted=true loop=true playsinline=true />
                     <div class="page-hero-copy">
                         <p class="page-kicker">{"Williamsburg, Brooklyn"}</p>
-                        <h1>{"We all go further when we "} <span>{"train together."}</span></h1>
+                        <h1>{"We all go further when we "} <span>{"train together"}</span></h1>
                         <p class="page-subtitle">
                             {"Coach-led strength, conditioning, and mobility classes built around a welcoming team environment."}
                         </p>
