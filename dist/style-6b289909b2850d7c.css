@@ -894,7 +894,7 @@ button {
 }
 
 .team-photo-wrap img.photo-zoom-more {
-    transform: scale(1.9) translateY(-3%);
+    transform: scale(1.9) translateY(2%);
     transform-origin: center 55%;
 }
 
