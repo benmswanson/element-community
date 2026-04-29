@@ -57,7 +57,7 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "Wednesday Longer Run",
+    title: "The K it is",
     date: "Wednesday, April 29 · 6:30 PM",
     description: "Join this week's group run. All paces welcome. We start together and finish together.",
     location: None,
@@ -104,7 +104,7 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
 pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     TimelineEntry {
         when: "Wednesday, April 22 · 6:30 PM",
-        title: "Wednesday Longer Run",
+        title: "Park Pace",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3469355877184440860"),
         link_label: Some("View Route"),
@@ -113,7 +113,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     },
     TimelineEntry {
         when: "Saturday, April 18 · 9:00 AM",
-        title: "Saturday Morning Run",
+        title: "To The Wharf",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3480270817809452530"),
         link_label: Some("View Route"),
@@ -122,7 +122,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     },
     TimelineEntry {
         when: "Wednesday, April 15 · 6:30 PM",
-        title: "Wednesday Longer Run",
+        title: "Angler Fish",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3478757606243375166"),
         link_label: Some("View Route"),
@@ -131,7 +131,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     },
     TimelineEntry {
         when: "Saturday, April 11 · 9:00 AM",
-        title: "Saturday Morning Run",
+        title: "Feel the Stern",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476595695882355858"),
         link_label: Some("View Route"),
@@ -140,7 +140,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     },
     TimelineEntry {
         when: "Wednesday, April 8 · 6:30 PM",
-        title: "Wednesday Longer Run",
+        title: "I'm Just Kent",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3476735579330903130"),
         link_label: Some("View Route"),
@@ -149,7 +149,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
     },
     TimelineEntry {
         when: "Saturday, April 4 · 9:00 AM",
-        title: "Saturday Morning Run",
+        title: "Williamsburg Bri—",
         detail: "Past run",
         href: Some("https://www.strava.com/routes/3475160646034726692"),
         link_label: Some("View Route"),
