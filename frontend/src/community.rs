@@ -58,13 +58,13 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
     title: "Wednesday Longer Run",
-    date: "Wednesday, April 22",
+    date: "Wednesday, April 29 · 6:30 PM",
     description: "Join this week's group run. All paces welcome. We start together and finish together.",
     location: None,
-    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
+    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/SMEKSUDCVLPYOFIOJO3CEW3IPCAD63AKQEQ7BARCNUG5GY3WIIS2GMGUMV32UJ6AF2U2CNT257TFUDQKC4VTSXMKGWBVN2NNQKSSI2XP3P2TUZPRYPJG7X7YE5NZZHUIKPPM5LBDQVNJR6DU47SMIZSBSHGHZ33QLQJ4NLYXSFUBU2RDCJYBS2M22UYXSHBGOI======"),
     primary_href: None,
     primary_label: None,
-    secondary_href: Some("https://www.strava.com/routes/3469355877184440860"),
+    secondary_href: Some("https://www.strava.com/routes/3484365772880850286"),
     secondary_label: Some("View Route"),
 };
 
@@ -101,7 +101,16 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     },
 ];
 
-pub const RUN_CLUB_TIMELINE: [TimelineEntry; 5] = [
+pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
+    TimelineEntry {
+        when: "Wednesday, April 22 · 6:30 PM",
+        title: "Wednesday Longer Run",
+        detail: "Past run",
+        href: Some("https://www.strava.com/routes/3469355877184440860"),
+        link_label: Some("View Route"),
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/5HYO55RACTPLMU3WKTF75UR4OVOZ5GRXPICVCALPNMUVIITQS42TAYKOR4QJOWZDVZZNGBUF4VNDQYOZI4MXSKWTZXPWRDHDD3AK7RAM7UXDVEDUAQW5PVINDSLYFZMVZVTOSVBYVAU6P2OOQ4BMFARRH4TG7TEL3C2R5VIGY4H4O6IJE4GLMV2CV5T72A3TTA======"),
+        active: false,
+    },
     TimelineEntry {
         when: "Saturday, April 18 · 9:00 AM",
         title: "Saturday Morning Run",
