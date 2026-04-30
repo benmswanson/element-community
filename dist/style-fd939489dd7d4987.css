@@ -1202,8 +1202,9 @@ button {
     align-items: center;
     justify-content: center;
     filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.25));
-    width: 110px;
-    height: 110px;
+    box-sizing: border-box;
+    width: 142px;
+    height: 182px;
 }
 
 .tv-qr-code {
