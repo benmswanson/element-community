@@ -1184,7 +1184,7 @@ button {
 .tv-qr-postit,
 .tv-logo-postit {
     position: relative;
-    background: #ffef00;
+    background: #dce8ff;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
     display: flex;
@@ -1210,7 +1210,7 @@ button {
 
 .tv-text-postit {
     position: relative;
-    background: #ffef00;
+    background: #dce8ff;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
     display: flex;
@@ -1255,7 +1255,7 @@ button {
 }
 
 .tv-qr-note {
-    background: #ffef00;
+    background: #dce8ff;
     padding: 0.75rem 1rem;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
@@ -1290,7 +1290,7 @@ button {
 }
 
 .tv-details-note {
-    background: #ffef00;
+    background: #dce8ff;
     padding: 0.7rem 1.2rem;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);

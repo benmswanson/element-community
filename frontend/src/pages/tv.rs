@@ -9,6 +9,7 @@ struct TvCard {
     btn_label: &'static str,
     rotation: &'static str,
     pin_color: &'static str,
+    img_position: &'static str,
 }
 
 const TV_CARDS: [TvCard; 3] = [
@@ -21,6 +22,7 @@ const TV_CARDS: [TvCard; 3] = [
         btn_label: "RSVP",
         rotation: "-2deg",
         pin_color: "pin-blue",
+        img_position: "center",
     },
     TvCard {
         label: "Community Event",
@@ -31,6 +33,7 @@ const TV_CARDS: [TvCard; 3] = [
         btn_label: "RSVP",
         rotation: "1deg",
         pin_color: "pin-red",
+        img_position: "bottom",
     },
     TvCard {
         label: "Run Club",
@@ -41,6 +44,7 @@ const TV_CARDS: [TvCard; 3] = [
         btn_label: "View Route",
         rotation: "-1deg",
         pin_color: "pin-green",
+        img_position: "center",
     },
 ];
 
@@ -58,7 +62,7 @@ pub fn tv_display() -> Html {
                         <div class={format!("tv-pin {}", card.pin_color)}></div>
                         <div class="tv-flyer">
                             <div class="tv-flyer-img-wrap">
-                                <img src={card.image_url} alt={card.title} class="tv-flyer-img" />
+                                <img src={card.image_url} alt={card.title} class="tv-flyer-img" style={format!("object-position: {}", card.img_position)} />
                             </div>
                             <div class="tv-flyer-body">
                                 <p class="tv-flyer-label">{card.label}</p>
@@ -76,7 +80,7 @@ pub fn tv_display() -> Html {
                         <div class="tv-qr-postit">
                             <div class="tv-pin pin-green"></div>
                             <img
-                                src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=000000&bgcolor=ffef00"
+                                src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=000000&bgcolor=dce8ff"
                                 alt="WhatsApp QR Code"
                                 class="tv-qr-code"
                             />
@@ -98,7 +102,7 @@ pub fn tv_display() -> Html {
                         <div class="tv-qr-postit">
                             <div class="tv-pin pin-blue"></div>
                             <img
-                                src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Felement-community.com&color=000000&bgcolor=ffef00"
+                                src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Felement-community.com&color=000000&bgcolor=dce8ff"
                                 alt="element-community.com QR Code"
                                 class="tv-qr-code"
                             />
