@@ -1194,17 +1194,17 @@ button {
     gap: 0.5rem;
     filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.25));
     box-sizing: border-box;
-    width: 160px;
-    height: 160px;
-    padding: 1.6rem 1rem 1rem;
+    width: 180px;
+    height: 180px;
+    padding: 1.6rem 1rem 0.8rem;
 }
 
 .tv-qr-postit { transform: rotate(-2deg); }
 .tv-logo-postit { transform: rotate(0.5deg); }
 
 .tv-qr-code {
-    width: 100px;
-    height: 100px;
+    width: 108px;
+    height: 108px;
     display: block;
     border-radius: 2px;
 }
