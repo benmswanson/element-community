@@ -69,6 +69,10 @@ pub fn tv_display() -> Html {
                 }).collect::<Html>() }
             </div>
 
+            <div class="tv-suggest-note">
+                <p class="tv-qr-label">{"Have a community event you're excited about? We'll post it here!"}</p>
+            </div>
+
             <div class="tv-board-footer">
                 <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
                 <div class="tv-qr-center">

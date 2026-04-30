@@ -1224,3 +1224,14 @@ button {
     flex: 0 0 auto;
     width: 40px;
 }
+
+.tv-suggest-note {
+    background: #b8f0a0;
+    padding: 0.75rem 1.1rem;
+    border-radius: 2px;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
+    transform: rotate(-1deg);
+    filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.2));
+    align-self: flex-end;
+    max-width: 280px;
+}
