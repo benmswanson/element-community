@@ -33,7 +33,7 @@ const TV_CARDS: [TvCard; 3] = [
         btn_label: "RSVP",
         rotation: "1deg",
         pin_color: "pin-red",
-        img_position: "bottom",
+        img_position: "top",
     },
     TvCard {
         label: "Run Club",
