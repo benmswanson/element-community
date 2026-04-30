@@ -47,15 +47,19 @@ pub fn tv_display() -> Html {
 
             <div class="tv-upcoming-grid">
                 { TV_CARDS.iter().map(|card| html! {
-                    <div class="tv-event-card">
-                        <img src={card.image_url} alt={card.title} class="tv-event-card-img" />
-                        <div class="tv-event-card-overlay">
-                            <p class="tv-event-card-label">{card.label}</p>
-                            <h2 class="tv-event-card-title">{card.title}</h2>
-                            <p class="tv-event-card-date">{card.date}</p>
-                            if let Some(href) = card.href {
-                                <a href={href} class="tv-rsvp-btn" target="_blank">{card.btn_label}</a>
-                            }
+                    <div class="tv-card-wrapper">
+                        <div class="tv-card-date-bar">
+                            <span class="tv-card-date-label">{card.label}</span>
+                            <span class="tv-card-date-text">{card.date}</span>
+                        </div>
+                        <div class="tv-event-card">
+                            <img src={card.image_url} alt={card.title} class="tv-event-card-img" />
+                            <div class="tv-event-card-overlay">
+                                <h2 class="tv-event-card-title">{card.title}</h2>
+                                if let Some(href) = card.href {
+                                    <a href={href} class="tv-rsvp-btn" target="_blank">{card.btn_label}</a>
+                                }
+                            </div>
                         </div>
                     </div>
                 }).collect::<Html>() }
