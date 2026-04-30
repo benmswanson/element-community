@@ -1105,12 +1105,12 @@ button {
 }
 
 .tv-flyer-label {
-    font-size: 0.72rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--navy-950);
-    opacity: 0.45;
+    opacity: 0.55;
     margin: 0;
 }
 
