@@ -1192,7 +1192,7 @@ button {
 
 .tv-logo-postit {
     position: relative;
-    background: var(--navy-950);
+    background: #fde84a;
     padding: 1.4rem 1.6rem 1rem;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
