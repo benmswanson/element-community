@@ -30,7 +30,7 @@ const TV_CARDS: [TvCard; 3] = [
         rotation: "1deg",
     },
     TvCard {
-        label: "Saturday Run",
+        label: "Run Club",
         title: "A Park Named Maria",
         date: "May 3 · 9:00 AM",
         image_url: "https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OFIDOJU4DG24FLBVI2BE3AAXF5442KVELW42E53YNN3SCMJPXEDKAYMUEP34UFYFE2WOA6ZH2GEPMT2YDTDDMSCDQI74GD7LL7Q2ZG3ATTNEI55LAATLDVRVXZ4GYUHOHBWSJK3ZVXHEMCWUXPEQHHYN5OY3DWGPI5HQGZMYSZUXSU3Q7IXLUSHUV2RKNVPKOU======",
