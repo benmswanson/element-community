@@ -1202,6 +1202,40 @@ button {
 .tv-qr-postit { transform: rotate(-2deg); }
 .tv-logo-postit { transform: rotate(0.5deg); }
 
+.tv-footer-pair {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tv-text-postit {
+    position: relative;
+    background: #ffef00;
+    border-radius: 2px;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.25));
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    padding: 1.6rem 1rem 1rem;
+}
+
+.tv-postit-label {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgba(0,0,0,0.8);
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
 .tv-qr-code {
     width: 108px;
     height: 108px;
