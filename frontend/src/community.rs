@@ -69,12 +69,12 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "Community Meetup | April 25th",
-    date: "Friday, April 25",
+    title: "Good Saturdays: The Social",
+    date: "Saturday, May 2 · 2:00 PM ET",
     description: "Come hang with the Element community. Details on the Partiful page.",
     location: Some("667 Grand St, Brooklyn, NY 11211"),
-    image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FZOk91HF7JyNhpWXc1BhhxGPGWdG2%2Fs1Dk8hckJ9M7lbJJgZu75?alt=media&token=6a22e362-75eb-4f5f-8034-a21ca275389a"),
-    primary_href: Some("https://partiful.com/e/eK4W7NufhtWs20oXbeQV"),
+    image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FUHRiYw9aKMeD6W6RofPbz7sjeMx1%2FTIhQ5EdeplVHWC52RZJbm?alt=media&token=abaad7ae-1a79-4421-9c7e-9cf7f30a7e84"),
+    primary_href: Some("https://partiful.com/e/VoAlpsKNThTgyprJaSIU"),
     primary_label: Some("RSVP"),
     secondary_href: None,
     secondary_label: None,
@@ -171,11 +171,11 @@ pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 6] = [
     TimelineEntry {
         when: "Friday, April 25",
         title: "Community Meetup",
-        detail: "Upcoming",
+        detail: "Past event",
         href: Some("https://partiful.com/e/eK4W7NufhtWs20oXbeQV"),
-        link_label: Some("RSVP"),
+        link_label: Some("View Event"),
         image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FZOk91HF7JyNhpWXc1BhhxGPGWdG2%2Fs1Dk8hckJ9M7lbJJgZu75?alt=media&token=6a22e362-75eb-4f5f-8034-a21ca275389a"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Saturday, April 18",
