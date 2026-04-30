@@ -77,6 +77,9 @@ pub fn tv_display() -> Html {
                         <p class="tv-qr-sub">{"WhatsApp Community"}</p>
                     </div>
                 </div>
+                <div class="tv-footer-center">
+                    <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
+                </div>
                 <div class="tv-footer-right">
                     <div class="tv-qr-postit tv-details-note">
                         <img

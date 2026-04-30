@@ -1157,6 +1157,12 @@ button {
     justify-content: center;
 }
 
+.tv-footer-center {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
 .tv-footer-right {
     grid-column: 3;
     display: flex;
