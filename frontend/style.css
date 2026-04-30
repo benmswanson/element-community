@@ -1005,20 +1005,7 @@ button {
 /* ── TV Display / Bulletin Board (/tv) ─────────────────────── */
 .tv-board {
     min-height: 100vh;
-    background-color: #a0733a;
-    background-image:
-        repeating-linear-gradient(
-            42deg,
-            rgba(0,0,0,0.06) 0px, rgba(0,0,0,0.06) 1px,
-            transparent 1px, transparent 10px
-        ),
-        repeating-linear-gradient(
-            -42deg,
-            rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px,
-            transparent 1px, transparent 10px
-        ),
-        radial-gradient(ellipse at 20% 40%, rgba(180,130,60,0.3) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 60%, rgba(100,60,10,0.25) 0%, transparent 60%);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJz48ZGVmcz48ZmlsdGVyIGlkPSdjJyB4PScwJScgeT0nMCUnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPjxmZVR1cmJ1bGVuY2UgdHlwZT0nZnJhY3RhbE5vaXNlJyBiYXNlRnJlcXVlbmN5PScwLjkgMC4zNScgbnVtT2N0YXZlcz0nNCcgc2VlZD0nNScgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjxmZUNvbXBvbmVudFRyYW5zZmVyPjxmZUZ1bmNSIHR5cGU9J2xpbmVhcicgc2xvcGU9JzAuMzgnIGludGVyY2VwdD0nMC40MicvPjxmZUZ1bmNHIHR5cGU9J2xpbmVhcicgc2xvcGU9JzAuMjInIGludGVyY2VwdD0nMC4yNicvPjxmZUZ1bmNCIHR5cGU9J2xpbmVhcicgc2xvcGU9JzAuMDgnIGludGVyY2VwdD0nMC4wOScvPjwvZmVDb21wb25lbnRUcmFuc2Zlcj48L2ZpbHRlcj48L2RlZnM+PHJlY3Qgd2lkdGg9JzMwMCcgaGVpZ2h0PSczMDAnIGZpbHRlcj0ndXJsKCNjKScvPjwvc3ZnPg==");
     padding: 2.5rem 3rem;
     display: flex;
     flex-direction: column;
