@@ -1217,8 +1217,19 @@ button {
 .tv-qr-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1.2rem;
-    align-self: flex-end;
+}
+
+.tv-qr-center {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.tv-qr-spacer {
+    flex: 0 0 auto;
+    width: 40px; /* matches logo width to keep center balanced */
 }
 
 .tv-qr-code {
