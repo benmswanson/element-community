@@ -92,7 +92,7 @@ pub fn tv_display() -> Html {
                             alt="element-community.com QR Code"
                             class="tv-qr-code"
                         />
-                        <p class="tv-qr-sub">{"All Events"}<br/>{"Details"}</p>
+                        <p class="tv-qr-sub">{"All Event"}<br/>{"Details"}</p>
                     </div>
                 </div>
             </div>
