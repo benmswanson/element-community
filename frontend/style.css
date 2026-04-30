@@ -1000,3 +1000,174 @@ button {
     color: var(--navy-800);
     opacity: 0.6;
 }
+
+/* ── TV Display (/tv) ──────────────────────────────────────── */
+.tv-page {
+    min-height: 100vh;
+    background: var(--navy-950);
+    color: var(--cream);
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    box-sizing: border-box;
+}
+
+.tv-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tv-logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.tv-heading {
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cream);
+    opacity: 0.5;
+}
+
+.tv-upcoming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.tv-event-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 460px;
+    background: var(--navy-900);
+}
+
+.tv-event-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tv-event-card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem 2.2rem;
+    background: linear-gradient(to top, rgba(8,16,34,0.92) 0%, rgba(8,16,34,0.3) 55%, transparent 100%);
+}
+
+.tv-event-card-date {
+    font-size: 0.95rem;
+    color: var(--cream);
+    opacity: 0.65;
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+}
+
+.tv-event-card-title {
+    font-family: var(--title-font);
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--cream);
+    margin: 0 0 1.2rem;
+    line-height: 1.1;
+}
+
+.tv-rsvp-btn {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    background: var(--cream);
+    color: var(--navy-950);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: opacity 0.15s;
+}
+
+.tv-rsvp-btn:hover { opacity: 0.85; }
+
+/* Past events row */
+.tv-past-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tv-past-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cream);
+    opacity: 0.35;
+    margin: 0;
+}
+
+.tv-past-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+}
+
+.tv-past-scroll::-webkit-scrollbar { display: none; }
+
+.tv-past-card {
+    flex: 0 0 200px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--navy-900);
+    opacity: 0.6;
+}
+
+.tv-past-card-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.tv-past-card-body {
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.tv-past-card-date {
+    font-size: 0.72rem;
+    color: var(--cream);
+    opacity: 0.55;
+    margin: 0;
+}
+
+.tv-past-card-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin: 0;
+}
+
+.tv-past-card-link {
+    font-size: 0.75rem;
+    color: var(--cream);
+    opacity: 0.5;
+    text-decoration: none;
+    margin-top: 0.25rem;
+}

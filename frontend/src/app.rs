@@ -6,6 +6,7 @@ use crate::pages::{
     book_club::BookClub, classes::Classes, events::Events, home::Home,
     pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
     team_bio::{BioBlake, BioSierra, BioDaniel, BioMiguel, BioSimba, BioMaria},
+    tv::TvDisplay,
 };
 
 #[derive(Clone, Debug, PartialEq, Routable)]
@@ -38,6 +39,8 @@ pub enum Route {
     RunClub,
     #[at("/community-events")]
     Events,
+    #[at("/tv")]
+    Tv,
     #[not_found]
     #[at("/404")]
     NotFound,
@@ -59,7 +62,30 @@ fn switch(route: Route) -> Html {
         Route::BookClub => html! { <BookClub /> },
         Route::RunClub => html! { <RunClub /> },
         Route::Events => html! { <Events /> },
+        Route::Tv => html! { <TvDisplay /> },
         Route::NotFound => html! { <Redirect<Route> to={Route::Home} /> },
+    }
+}
+
+#[function_component(AppShell)]
+fn app_shell() -> Html {
+    let route = use_route::<Route>();
+    let is_tv = route == Some(Route::Tv);
+
+    if is_tv {
+        html! {
+            <Switch<Route> render={switch} />
+        }
+    } else {
+        html! {
+            <div class="site-shell">
+                <Nav />
+                <main class="site-main">
+                    <Switch<Route> render={switch} />
+                </main>
+                <Footer />
+            </div>
+        }
     }
 }
 
@@ -68,13 +94,7 @@ pub fn app() -> Html {
     html! {
         <BrowserRouter>
             <ScrollToTop />
-            <div class="site-shell">
-                <Nav />
-                <main class="site-main">
-                    <Switch<Route> render={switch} />
-                </main>
-                <Footer />
-            </div>
+            <AppShell />
         </BrowserRouter>
     }
 }

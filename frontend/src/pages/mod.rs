@@ -8,3 +8,4 @@ pub mod run_club;
 pub mod schedule;
 pub mod team;
 pub mod team_bio;
+pub mod tv;
