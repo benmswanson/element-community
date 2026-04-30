@@ -69,6 +69,7 @@ pub fn tv_display() -> Html {
             <div class="tv-board-footer">
                 <div class="tv-footer-left">
                     <div class="tv-qr-postit">
+                        <div class="tv-pin"></div>
                         <img
                             src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=000000&bgcolor=fde84a"
                             alt="WhatsApp QR Code"
@@ -78,10 +79,14 @@ pub fn tv_display() -> Html {
                     </div>
                 </div>
                 <div class="tv-footer-center">
-                    <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
+                    <div class="tv-logo-postit">
+                        <div class="tv-pin"></div>
+                        <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
+                    </div>
                 </div>
                 <div class="tv-footer-right">
                     <div class="tv-qr-postit tv-details-note">
+                        <div class="tv-pin"></div>
                         <img
                             src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Felement-community.com&color=000000&bgcolor=fde84a"
                             alt="element-community.com QR Code"

@@ -1177,8 +1177,9 @@ button {
 }
 
 .tv-qr-postit {
+    position: relative;
     background: #fde84a;
-    padding: 0.9rem 1rem;
+    padding: 1.4rem 1rem 0.9rem;
     border-radius: 2px;
     box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
     transform: rotate(-2deg);
@@ -1186,6 +1187,19 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 0.4rem;
+    filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.25));
+}
+
+.tv-logo-postit {
+    position: relative;
+    background: var(--navy-950);
+    padding: 1.4rem 1.6rem 1rem;
+    border-radius: 2px;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.3), inset 0 -2px 4px rgba(0,0,0,0.06);
+    transform: rotate(0.5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     filter: drop-shadow(2px 4px 8px rgba(0,0,0,0.25));
 }
 
