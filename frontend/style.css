@@ -1014,7 +1014,9 @@ button {
 }
 
 .tv-board-header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tv-heading {

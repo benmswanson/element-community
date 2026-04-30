@@ -45,7 +45,21 @@ pub fn tv_display() -> Html {
     html! {
         <div class="tv-page tv-board">
             <div class="tv-board-header">
+                <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
                 <span class="tv-heading">{"What's Coming Up"}</span>
+                <div class="tv-qr-center">
+                    <div class="tv-qr-postit">
+                        <img
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=000000&bgcolor=fde84a"
+                            alt="WhatsApp QR Code"
+                            class="tv-qr-code"
+                        />
+                        <p class="tv-qr-sub">{"Scan to join"}</p>
+                    </div>
+                    <div class="tv-qr-note">
+                        <p class="tv-qr-label">{"Join our WhatsApp community!"}</p>
+                    </div>
+                </div>
             </div>
 
             <div class="tv-upcoming-grid">
@@ -69,25 +83,6 @@ pub fn tv_display() -> Html {
                 }).collect::<Html>() }
             </div>
 
-            <div class="tv-board-footer">
-                <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
-                <div class="tv-qr-center">
-                    <div class="tv-qr-postit">
-                        <img
-                            src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=000000&bgcolor=fde84a"
-                            alt="WhatsApp QR Code"
-                            class="tv-qr-code"
-                        />
-                        <p class="tv-qr-sub">{"Scan to join"}</p>
-                    </div>
-                    <div class="tv-qr-note">
-                        <p class="tv-qr-label">{"Join our WhatsApp community!"}</p>
-                    </div>
-                </div>
-                <div class="tv-suggest-note">
-                    <p class="tv-qr-label">{"Have a community event you're excited about? We'll post it here!"}</p>
-                </div>
-            </div>
         </div>
     }
 }
