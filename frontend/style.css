@@ -1213,3 +1213,37 @@ button {
     text-decoration: none;
     margin-top: 0.25rem;
 }
+
+.tv-qr-bar {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    align-self: flex-end;
+}
+
+.tv-qr-code {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.tv-qr-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.tv-qr-label {
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--cream);
+    margin: 0;
+}
+
+.tv-qr-sub {
+    font-size: 0.8rem;
+    color: var(--cream);
+    opacity: 0.45;
+    margin: 0;
+}

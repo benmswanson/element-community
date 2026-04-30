@@ -64,6 +64,18 @@ pub fn tv_display() -> Html {
                     </div>
                 }).collect::<Html>() }
             </div>
+
+            <div class="tv-qr-bar">
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fchat.whatsapp.com%2FKfoam7bTX0K9obgDVC8QXP%3Fmode%3Dgi_t&color=e6e1db&bgcolor=13294b"
+                    alt="WhatsApp QR Code"
+                    class="tv-qr-code"
+                />
+                <div class="tv-qr-text">
+                    <p class="tv-qr-label">{"Join our WhatsApp community"}</p>
+                    <p class="tv-qr-sub">{"Scan to join"}</p>
+                </div>
+            </div>
         </div>
     }
 }
