@@ -74,7 +74,7 @@ pub fn tv_display() -> Html {
                             alt="WhatsApp QR Code"
                             class="tv-qr-code"
                         />
-                        <p class="tv-qr-sub">{"WhatsApp Community"}</p>
+                        <p class="tv-qr-sub">{"WhatsApp"}<br/>{"Community"}</p>
                     </div>
                 </div>
                 <div class="tv-footer-center">
