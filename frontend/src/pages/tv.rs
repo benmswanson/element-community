@@ -90,7 +90,7 @@ pub fn tv_display() -> Html {
                 <div class="tv-footer-center">
                     <div class="tv-logo-postit">
                         <div class="tv-pin pin-yellow"></div>
-                        <a href="/"><img src="/assets/etc-logo-white.png" class="tv-logo" alt="Element" /></a>
+                        <a href="/"><img src="/assets/etc-logo-blue.png" class="tv-logo" alt="Element" /></a>
                     </div>
                 </div>
                 <div class="tv-footer-right">
