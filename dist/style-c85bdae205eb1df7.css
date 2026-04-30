@@ -1146,10 +1146,21 @@ button {
 
 /* Bottom bar */
 .tv-board-footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+}
+
+.tv-footer-left {
+    grid-column: 1;
+    display: flex;
     justify-content: center;
-    gap: 1.2rem;
+}
+
+.tv-footer-right {
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
 }
 
 /* Post-it QR section */
