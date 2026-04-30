@@ -57,14 +57,14 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "The K it is",
-    date: "Wednesday, April 29 · 6:30 PM",
+    title: "A Park Named Maria",
+    date: "Saturday, May 3 · 9:00 AM",
     description: "Join this week's group run. All paces welcome. We start together and finish together.",
     location: None,
-    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/SMEKSUDCVLPYOFIOJO3CEW3IPCAD63AKQEQ7BARCNUG5GY3WIIS2GMGUMV32UJ6AF2U2CNT257TFUDQKC4VTSXMKGWBVN2NNQKSSI2XP3P2TUZPRYPJG7X7YE5NZZHUIKPPM5LBDQVNJR6DU47SMIZSBSHGHZ33QLQJ4NLYXSFUBU2RDCJYBS2M22UYXSHBGOI======"),
+    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OFIDOJU4DG24FLBVI2BE3AAXF5442KVELW42E53YNN3SCMJPXEDKAYMUEP34UFYFE2WOA6ZH2GEPMT2YDTDDMSCDQI74GD7LL7Q2ZG3ATTNEI55LAATLDVRVXZ4GYUHOHBWSJK3ZVXHEMCWUXPEQHHYN5OY3DWGPI5HQGZMYSZUXSU3Q7IXLUSHUV2RKNVPKOU======"),
     primary_href: None,
     primary_label: None,
-    secondary_href: Some("https://www.strava.com/routes/3484365772880850286"),
+    secondary_href: Some("https://www.strava.com/routes/3484708461539968178"),
     secondary_label: Some("View Route"),
 };
 
@@ -102,6 +102,15 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
 ];
 
 pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
+    TimelineEntry {
+        when: "Wednesday, April 29 · 6:30 PM",
+        title: "The K it is",
+        detail: "Past run",
+        href: Some("https://www.strava.com/routes/3484365772880850286"),
+        link_label: Some("View Route"),
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/SMEKSUDCVLPYOFIOJO3CEW3IPCAD63AKQEQ7BARCNUG5GY3WIIS2GMGUMV32UJ6AF2U2CNT257TFUDQKC4VTSXMKGWBVN2NNQKSSI2XP3P2TUZPRYPJG7X7YE5NZZHUIKPPM5LBDQVNJR6DU47SMIZSBSHGHZ33QLQJ4NLYXSFUBU2RDCJYBS2M22UYXSHBGOI======"),
+        active: false,
+    },
     TimelineEntry {
         when: "Wednesday, April 22 · 6:30 PM",
         title: "Park Pace",
@@ -145,15 +154,6 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
         href: Some("https://www.strava.com/routes/3476735579330903130"),
         link_label: Some("View Route"),
         image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/7QY2CPBLZZCBIPWTPLJIGORUHQP46QRN44B5Y273NANB6TH6RSXRFUTXSDACPSLTUBE7FSNWDLZYWHEBD6M4332NH767D6TMSZTL6CRA6DYAONETPY4WFCYV26MAX4OV7MQZEQD4IQXJZ7V3INEZUK7IT6V227DUKTLKOUJOU7INX6WZ2C67X32USIPUL7W5FY======"),
-        active: false,
-    },
-    TimelineEntry {
-        when: "Saturday, April 4 · 9:00 AM",
-        title: "Williamsburg Bri—",
-        detail: "Past run",
-        href: Some("https://www.strava.com/routes/3475160646034726692"),
-        link_label: Some("View Route"),
-        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/BJNOM7WQ7M6OU6ZJZUSUDZ7BF6ESHANZ3QJSZCFS6ZID6K3TZ37O43J43S5TG36NP3EHBDWKKXZKBUZLLH2FZZIXO5O4BVBJV453EDZO3B2U4UB7XCMGDRPUNJMTFLJJLSPTHAHXAHMF6KOIAOPQAXK4LHSAJMUQ2JHM6YJTU7UMQVCUBX7SDSUVLAR42725WM======"),
         active: false,
     },
 ];
