@@ -1063,46 +1063,18 @@ button {
     top: -13px;
     left: 50%;
     transform: translateX(-50%);
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.6) 0%, transparent 45%),
-                radial-gradient(circle at 38% 35%, #ff8a80, #c62828 45%, #7a0000 100%);
-    box-shadow: 1px 3px 6px rgba(0,0,0,0.55), 0 1px 0 rgba(255,255,255,0.15) inset;
+    background: #c62828;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
     z-index: 10;
 }
 
-.tv-pin::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 6px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.1));
-    border-radius: 0 0 2px 2px;
-}
-
-.tv-pin.pin-red {
-    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.6) 0%, transparent 45%),
-                radial-gradient(circle at 38% 35%, #ff8a80, #c62828 45%, #7a0000 100%);
-}
-
-.tv-pin.pin-blue {
-    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.6) 0%, transparent 45%),
-                radial-gradient(circle at 38% 35%, #82b1ff, #1565c0 45%, #0a2f6e 100%);
-}
-
-.tv-pin.pin-green {
-    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.6) 0%, transparent 45%),
-                radial-gradient(circle at 38% 35%, #a5d6a7, #2e7d32 45%, #0d3b10 100%);
-}
-
-.tv-pin.pin-yellow {
-    background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.7) 0%, transparent 45%),
-                radial-gradient(circle at 38% 35%, #fff59d, #f9a825 45%, #8d6200 100%);
-}
+.tv-pin.pin-red  { background: #c62828; }
+.tv-pin.pin-blue { background: #1565c0; }
+.tv-pin.pin-green { background: #2e7d32; }
+.tv-pin.pin-yellow { background: #f9a825; }
 
 /* The flyer card itself */
 .tv-flyer {
