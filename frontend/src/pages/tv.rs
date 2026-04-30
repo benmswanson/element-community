@@ -60,13 +60,14 @@ pub fn tv_display() -> Html {
                                 <p class="tv-flyer-label">{card.label}</p>
                                 <h2 class="tv-flyer-title">{card.title}</h2>
                                 <p class="tv-flyer-date">{card.date}</p>
-                                if let Some(href) = card.href {
-                                    <a href={href} class="tv-flyer-btn" target="_blank">{card.btn_label}</a>
-                                }
                             </div>
                         </div>
                     </div>
                 }).collect::<Html>() }
+            </div>
+
+            <div class="tv-details-note">
+                <p class="tv-qr-label">{"Event details at element-community.com"}</p>
             </div>
 
             <div class="tv-board-footer">
