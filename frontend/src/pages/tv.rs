@@ -47,7 +47,7 @@ const TV_CARDS: [TvCard; 3] = [
         btn_label: "RSVP",
         rotation: "-2deg",
         pin_color: "pin-blue",
-        img_position: "center 75%",
+        img_position: "center 30%",
         img_fit: "cover",
     },
 ];
