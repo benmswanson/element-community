@@ -69,13 +69,13 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "Good Saturdays: The Social",
-    date: "Saturday, May 2 · 2:00 PM ET",
-    description: "Come hang with the Element community. Details on the Partiful page.",
+    title: "HYROX Half Sim",
+    date: "Saturday, May 9 · 667 Grand St",
+    description: "Every station, half the distance. A HYROX simulation at Element — sign up to reserve your spot.",
     location: Some("667 Grand St, Brooklyn, NY 11211"),
-    image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FUHRiYw9aKMeD6W6RofPbz7sjeMx1%2FTIhQ5EdeplVHWC52RZJbm?alt=media&token=abaad7ae-1a79-4421-9c7e-9cf7f30a7e84"),
-    primary_href: Some("https://partiful.com/e/VoAlpsKNThTgyprJaSIU"),
-    primary_label: Some("RSVP"),
+    image_url: Some("/assets/sim.jpeg"),
+    primary_href: Some("https://docs.google.com/spreadsheets/d/1uqfHxSrWA6c35zo59BU4l4MNw2badp695jgBYMOnhi8/edit?gid=1161720329#gid=1161720329"),
+    primary_label: Some("Sign Up"),
     secondary_href: None,
     secondary_label: None,
 };
@@ -167,15 +167,24 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
     },
 ];
 
-pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 6] = [
+pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 7] = [
+    TimelineEntry {
+        when: "Saturday, May 9",
+        title: "HYROX Half Sim",
+        detail: "Upcoming",
+        href: Some("https://docs.google.com/spreadsheets/d/1uqfHxSrWA6c35zo59BU4l4MNw2badp695jgBYMOnhi8/edit?gid=1161720329#gid=1161720329"),
+        link_label: Some("Sign Up"),
+        image_url: Some("/assets/sim.jpeg"),
+        active: true,
+    },
     TimelineEntry {
         when: "Saturday, May 2 · 2:00 PM ET",
         title: "Good Saturdays: The Social",
-        detail: "Upcoming",
+        detail: "Past event",
         href: Some("https://partiful.com/e/VoAlpsKNThTgyprJaSIU"),
-        link_label: Some("RSVP"),
+        link_label: Some("View Event"),
         image_url: Some("https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FUHRiYw9aKMeD6W6RofPbz7sjeMx1%2FTIhQ5EdeplVHWC52RZJbm?alt=media&token=abaad7ae-1a79-4421-9c7e-9cf7f30a7e84"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Friday, April 25",
