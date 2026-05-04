@@ -57,15 +57,15 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "A Park Named Maria",
-    date: "Saturday, May 3 · 9:00 AM",
-    description: "Join this week's group run. All paces welcome. We start together and finish together.",
-    location: None,
-    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OFIDOJU4DG24FLBVI2BE3AAXF5442KVELW42E53YNN3SCMJPXEDKAYMUEP34UFYFE2WOA6ZH2GEPMT2YDTDDMSCDQI74GD7LL7Q2ZG3ATTNEI55LAATLDVRVXZ4GYUHOHBWSJK3ZVXHEMCWUXPEQHHYN5OY3DWGPI5HQGZMYSZUXSU3Q7IXLUSHUV2RKNVPKOU======"),
-    primary_href: None,
-    primary_label: None,
-    secondary_href: Some("https://www.strava.com/routes/3484708461539968178"),
-    secondary_label: Some("View Route"),
+    title: "Ralle Track Group With Element Run Club",
+    date: "Wednesday, May 6 · 7:00 PM",
+    description: "We're joining Ralle Movements for a track interval session — speed work, longer strides, and endurance. All paces welcome.",
+    location: Some("769 Lorimer St, Brooklyn, NY 11222"),
+    image_url: Some("https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l"),
+    primary_href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-06"),
+    primary_label: Some("Register"),
+    secondary_href: None,
+    secondary_label: None,
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
@@ -101,7 +101,16 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     },
 ];
 
-pub const RUN_CLUB_TIMELINE: [TimelineEntry; 6] = [
+pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
+    TimelineEntry {
+        when: "Saturday, May 3 · 9:00 AM",
+        title: "A Park Named Maria",
+        detail: "Past run",
+        href: Some("https://www.strava.com/routes/3484708461539968178"),
+        link_label: Some("View Route"),
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OFIDOJU4DG24FLBVI2BE3AAXF5442KVELW42E53YNN3SCMJPXEDKAYMUEP34UFYFE2WOA6ZH2GEPMT2YDTDDMSCDQI74GD7LL7Q2ZG3ATTNEI55LAATLDVRVXZ4GYUHOHBWSJK3ZVXHEMCWUXPEQHHYN5OY3DWGPI5HQGZMYSZUXSU3Q7IXLUSHUV2RKNVPKOU======"),
+        active: false,
+    },
     TimelineEntry {
         when: "Wednesday, April 29 · 6:30 PM",
         title: "The K it is",
