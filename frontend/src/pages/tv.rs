@@ -10,6 +10,7 @@ struct TvCard {
     rotation: &'static str,
     pin_color: &'static str,
     img_position: &'static str,
+    img_fit: &'static str,
 }
 
 const TV_CARDS: [TvCard; 3] = [
@@ -23,6 +24,7 @@ const TV_CARDS: [TvCard; 3] = [
         rotation: "-1deg",
         pin_color: "pin-green",
         img_position: "center",
+        img_fit: "cover",
     },
     TvCard {
         label: "Community Event",
@@ -34,17 +36,19 @@ const TV_CARDS: [TvCard; 3] = [
         rotation: "1deg",
         pin_color: "pin-red",
         img_position: "top",
+        img_fit: "cover",
     },
     TvCard {
         label: "Book Club",
         title: "Hamnet",
         date: "May 28 · 8:00 PM",
-        image_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1574943819i/43890641.jpg",
+        image_url: "/assets/ham.webp",
         href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
         btn_label: "RSVP",
         rotation: "-2deg",
         pin_color: "pin-blue",
-        img_position: "top",
+        img_position: "center",
+        img_fit: "contain",
     },
 ];
 
@@ -62,7 +66,7 @@ pub fn tv_display() -> Html {
                         <div class={format!("tv-pin {}", card.pin_color)}></div>
                         <div class="tv-flyer">
                             <div class="tv-flyer-img-wrap">
-                                <img src={card.image_url} alt={card.title} class="tv-flyer-img" style={format!("object-position: {}", card.img_position)} />
+                                <img src={card.image_url} alt={card.title} class="tv-flyer-img" style={format!("object-position: {}; object-fit: {}", card.img_position, card.img_fit)} />
                             </div>
                             <div class="tv-flyer-body">
                                 <p class="tv-flyer-label">{card.label}</p>
