@@ -16,7 +16,7 @@ struct TvCard {
 const TV_CARDS: [TvCard; 3] = [
     TvCard {
         label: "Run Club",
-        title: "Ralle Track Group",
+        title: "Weds Night Track",
         date: "May 6 · 7:00 PM",
         image_url: "https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l",
         href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-06"),
