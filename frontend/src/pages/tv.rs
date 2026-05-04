@@ -15,10 +15,10 @@ struct TvCard {
 const TV_CARDS: [TvCard; 3] = [
     TvCard {
         label: "Book Club",
-        title: "Headshot",
-        date: "April 30 · 8:00 PM",
-        image_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691077222i/174156218.jpg",
-        href: Some("https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML"),
+        title: "Hamnet",
+        date: "May 28 · 8:00 PM",
+        image_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1574943819i/43890641.jpg",
+        href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
         btn_label: "RSVP",
         rotation: "-2deg",
         pin_color: "pin-blue",

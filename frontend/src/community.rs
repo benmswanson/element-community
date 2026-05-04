@@ -45,14 +45,14 @@ pub struct CommunityInfoCard {
 }
 
 pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
-    title: "Headshot",
-    author: "Rita Bullwinkel",
-    description: "An electrifying novel about a women's boxing tournament in Reno, Nevada, following eight teenage competitors and the lives pressing in around each of them.",
-    cover_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691077222i/174156218.jpg",
-    month: "April 30, 2026 · 8:00 PM",
-    primary_href: Some("https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr?c=AfUZfvML"),
+    title: "Hamnet",
+    author: "Maggie O'Farrell",
+    description: "A stunning historical novel about Shakespeare's wife Agnes and the death of their son Hamnet during the plague of 1596 — and the grief that may have given rise to Hamlet.",
+    cover_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1574943819i/43890641.jpg",
+    month: "May 28, 2026 · 8:00 PM",
+    primary_href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
     primary_label: Some("RSVP"),
-    secondary_href: Some("https://www.goodreads.com/book/show/174156218"),
+    secondary_href: Some("https://www.goodreads.com/book/show/43890641-hamnet"),
     secondary_label: Some("Goodreads"),
 };
 
@@ -82,20 +82,20 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
 
 pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     TimelineEntry {
+        when: "May 28, 2026",
+        title: "Hamnet",
+        detail: "Maggie O'Farrell",
+        href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
+        link_label: Some("RSVP"),
+        image_url: None,
+        active: true,
+    },
+    TimelineEntry {
         when: "April 30, 2026",
         title: "Headshot",
         detail: "Rita Bullwinkel",
         href: None,
         link_label: None,
-        image_url: None,
-        active: true,
-    },
-    TimelineEntry {
-        when: "May 2026",
-        title: "TBD",
-        detail: "Suggest the next read.",
-        href: Some("https://forms.gle/eQFo1SqXJwRfr3tX6"),
-        link_label: Some("Submit a pick"),
         image_url: None,
         active: false,
     },
@@ -227,14 +227,14 @@ pub const BOOK_CLUB_INFO: [CommunityInfoCard; 3] = [
         label: "Read",
         title: "Read the Book",
         description: "Read at your own pace and show up for the conversation when the meetup date arrives.",
-        href: Some("https://www.amazon.com/Headshot-Novel-Rita-Bullwinkel/dp/0593654129/ref=sr_1_1?crid=2N3LASO74LGJ0&dib=eyJ2IjoiMSJ9.RD3JcqgbdTOwTE51qHLMkZAlUbG1xjeraIG3g9A_HNKz0_3kRe5w_8-iBrzGVXu-mkHGTOORebyKBX0y0TGg43fklHJlEQImpjh_9Nn_Kc4.ohSsz7HmFfDu8aW96Brx9KnlwOwmX0O1iBkGAiUOglo&dib_tag=se&keywords=headshot+rita+bullwinkel&qid=1776451187&sprefix=headshot+rita+%2Caps%2C139&sr=8-1"),
+        href: Some("https://www.amazon.com/dp/0525657746"),
         primary: false,
     },
     CommunityInfoCard {
         label: "Discuss",
         title: "Meet and Discuss",
         description: "RSVP to the meetup and come talk through the monthly pick together.",
-        href: Some("https://partiful.com/e/Z0UI3U0H7Ooe1XgYdfHr"),
+        href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
         primary: false,
     },
 ];
