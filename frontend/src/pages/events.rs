@@ -35,6 +35,7 @@ pub fn events() -> Html {
                         badge={Some(AttrValue::from("Upcoming"))}
                         location={COMMUNITY_EVENT_FEATURED.location.map(AttrValue::from)}
                         image_url={COMMUNITY_EVENT_FEATURED.image_url.map(AttrValue::from)}
+                        img_transform={COMMUNITY_EVENT_FEATURED.img_transform.map(AttrValue::from)}
                         primary_href={COMMUNITY_EVENT_FEATURED.primary_href.map(AttrValue::from)}
                         primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
                         secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}

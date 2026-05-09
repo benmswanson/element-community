@@ -15,6 +15,8 @@ pub struct EventCardProps {
     #[prop_or_default]
     pub image_url: Option<AttrValue>,
     #[prop_or_default]
+    pub img_transform: Option<AttrValue>,
+    #[prop_or_default]
     pub primary_href: Option<AttrValue>,
     #[prop_or_default]
     pub primary_label: Option<AttrValue>,
@@ -42,6 +44,7 @@ pub fn event_card(props: &EventCardProps) -> Html {
                     src={url.clone()}
                     alt={props.title.clone()}
                     loading="lazy"
+                    style={props.img_transform.as_ref().map(|t| format!("transform: {}", t)).unwrap_or_default()}
                 />
             } else {
                 <div class="community-card-media community-card-media-fallback">

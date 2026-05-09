@@ -18,6 +18,7 @@ pub struct EventCardData {
     pub description: &'static str,
     pub location: Option<&'static str>,
     pub image_url: Option<&'static str>,
+    pub img_transform: Option<&'static str>,
     pub primary_href: Option<&'static str>,
     pub primary_label: Option<&'static str>,
     pub secondary_href: Option<&'static str>,
@@ -57,13 +58,14 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "Saturday Morning Run",
-    date: "Saturday, May 9 · 9:00 AM",
-    description: "Join Element Run Club for today's 9:00 AM group run. All paces welcome, and we'll head out together on this week's Strava route.",
-    location: None,
-    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======"),
-    primary_href: Some("https://www.strava.com/routes/3476595695882355858"),
-    primary_label: Some("View Route"),
+    title: "Ralle Track Group with Element Run Club",
+    date: "Wednesday, May 13 · 7:00 PM",
+    description: "We're joining Ralle Movements for a track interval session at 769 Lorimer St. Speed work, longer strides, and endurance. All paces welcome.",
+    location: Some("769 Lorimer St, Brooklyn, NY 11222"),
+    image_url: Some("https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l"),
+    img_transform: None,
+    primary_href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-13"),
+    primary_label: Some("Register"),
     secondary_href: None,
     secondary_label: None,
 };
@@ -74,6 +76,7 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     description: "Element x Ralle bring Good Saturdays back, pick two of three formats: HYROX-style relay, Mat HIIT, or group run. Workout from 12–2 PM, social from 2–4 PM, plus a food pop-up and vendors.",
     location: Some("Element Training Club, Grand St, Brooklyn"),
     image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
+    img_transform: Some("scale(1.5)"),
     primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
     primary_label: Some("Register"),
     secondary_href: None,
