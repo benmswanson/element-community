@@ -47,7 +47,7 @@ pub struct CommunityInfoCard {
 pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
     title: "Hamnet",
     author: "Maggie O'Farrell",
-    description: "A stunning historical novel about Shakespeare's wife Agnes and the death of their son Hamnet during the plague of 1596 — and the grief that may have given rise to Hamlet.",
+    description: "A stunning historical novel about Shakespeare's wife Agnes and the death of their son Hamnet during the plague of 1596, and the grief that may have given rise to Hamlet.",
     cover_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1574943819i/43890641.jpg",
     month: "May 28, 2026 · 8:00 PM",
     primary_href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
@@ -71,7 +71,7 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     title: "Good Saturdays 02: The Workout",
     date: "Saturday, May 30 · 12:00 PM",
-    description: "Element x Ralle bring Good Saturdays back — pick two of three formats: HYROX-style relay, Mat HIIT, or group run. Workout from 12–2 PM, social from 2–4 PM, plus a food pop-up and vendors.",
+    description: "Element x Ralle bring Good Saturdays back, pick two of three formats: HYROX-style relay, Mat HIIT, or group run. Workout from 12–2 PM, social from 2–4 PM, plus a food pop-up and vendors.",
     location: Some("Element Training Club, Grand St, Brooklyn"),
     image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
     primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
