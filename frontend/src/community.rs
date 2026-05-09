@@ -69,13 +69,13 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "HYROX Half Sim",
-    date: "Saturday, May 9 · 667 Grand St",
-    description: "Every station, half the distance. A HYROX simulation at Element — sign up to reserve your spot.",
-    location: Some("667 Grand St, Brooklyn, NY 11211"),
-    image_url: Some("/assets/sim.jpeg"),
-    primary_href: Some("https://docs.google.com/spreadsheets/d/1uqfHxSrWA6c35zo59BU4l4MNw2badp695jgBYMOnhi8/edit?gid=1161720329#gid=1161720329"),
-    primary_label: Some("Sign Up"),
+    title: "Good Saturdays 02: The Workout",
+    date: "Saturday, May 30 · 12:00 PM",
+    description: "Element x Ralle bring Good Saturdays back — pick two of three formats: HYROX-style relay, Mat HIIT, or group run. Workout from 12–2 PM, social from 2–4 PM, plus a food pop-up and vendors.",
+    location: Some("Element Training Club, Grand St, Brooklyn"),
+    image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
+    primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
+    primary_label: Some("Register"),
     secondary_href: None,
     secondary_label: None,
 };
@@ -167,15 +167,24 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
     },
 ];
 
-pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 7] = [
+pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 8] = [
+    TimelineEntry {
+        when: "Saturday, May 30",
+        title: "Good Saturdays 02: The Workout",
+        detail: "Upcoming",
+        href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
+        link_label: Some("Register"),
+        image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
+        active: true,
+    },
     TimelineEntry {
         when: "Saturday, May 9",
         title: "HYROX Half Sim",
-        detail: "Upcoming",
+        detail: "Past event",
         href: Some("https://docs.google.com/spreadsheets/d/1uqfHxSrWA6c35zo59BU4l4MNw2badp695jgBYMOnhi8/edit?gid=1161720329#gid=1161720329"),
-        link_label: Some("Sign Up"),
+        link_label: Some("View Event"),
         image_url: Some("/assets/sim.jpeg"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Saturday, May 2 · 2:00 PM ET",
