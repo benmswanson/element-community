@@ -973,6 +973,13 @@ button {
 }
 
 /* ── Events two-column layout ── */
+
+.community-featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    align-items: start;
+}
 .events-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;

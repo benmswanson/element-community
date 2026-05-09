@@ -3,7 +3,7 @@ use yew_router::prelude::*;
 
 use crate::components::{footer::Footer, nav::Nav, scroll_to_top::ScrollToTop};
 use crate::pages::{
-    book_club::BookClub, classes::Classes, events::Events, home::Home,
+    classes::Classes, events::Events, home::Home,
     pricing::Pricing, run_club::RunClub, schedule::Schedule, team::Team,
     team_bio::{BioBlake, BioSierra, BioDaniel, BioMiguel, BioSimba, BioMaria},
     tv::TvDisplay,
@@ -33,8 +33,6 @@ pub enum Route {
     Pricing,
     #[at("/classes")]
     Classes,
-    #[at("/book-club")]
-    BookClub,
     #[at("/run-club")]
     RunClub,
     #[at("/community-events")]
@@ -59,7 +57,6 @@ fn switch(route: Route) -> Html {
         Route::Schedule => html! { <Schedule /> },
         Route::Pricing => html! { <Pricing /> },
         Route::Classes => html! { <Classes /> },
-        Route::BookClub => html! { <BookClub /> },
         Route::RunClub => html! { <RunClub /> },
         Route::Events => html! { <Events /> },
         Route::Tv => html! { <TvDisplay /> },

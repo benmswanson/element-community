@@ -127,8 +127,8 @@ pub fn home() -> Html {
                         primary_label={BOOK_CLUB_CURRENT.primary_label.map(AttrValue::from)}
                         secondary_href={BOOK_CLUB_CURRENT.secondary_href.map(AttrValue::from)}
                         secondary_label={BOOK_CLUB_CURRENT.secondary_label.map(AttrValue::from)}
-                        detail_route={Some(Route::BookClub)}
-                        detail_label={Some(AttrValue::from("See Book Club"))}
+                        detail_route={Some(Route::Events)}
+                        detail_label={Some(AttrValue::from("See Community Events"))}
                     />
                 </div>
             </Section>

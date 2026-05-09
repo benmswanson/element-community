@@ -57,9 +57,8 @@ pub fn nav() -> Html {
                     {nav_link(Route::Schedule, "Schedule")}
                     {nav_link(Route::Pricing, "Pricing")}
                     {nav_link(Route::Classes, "Classes")}
-                    {nav_link(Route::BookClub, "Book Club")}
                     {nav_link(Route::RunClub, "Run Club")}
-                    {nav_link(Route::Events, "Community Events")}
+                    {nav_link(Route::Events, "Community")}
                     <a
                         class="site-nav-cta"
                         href="https://clients.mindbodyonline.com/classic/ws?studioid=5743626&stype=43&prodid=100036"
