@@ -16,11 +16,11 @@ struct TvCard {
 const TV_CARDS: [TvCard; 3] = [
     TvCard {
         label: "Run Club",
-        title: "Weds Night Track",
-        date: "May 6 · 7:00 PM",
-        image_url: "https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l",
-        href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-06"),
-        btn_label: "Register",
+        title: "Saturday Morning Run",
+        date: "May 9 · 9:00 AM",
+        image_url: "https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======",
+        href: Some("https://www.strava.com/routes/3476595695882355858"),
+        btn_label: "View Route",
         rotation: "-1deg",
         pin_color: "pin-green",
         img_position: "center",

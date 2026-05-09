@@ -57,13 +57,13 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
-    title: "Ralle Track Group With Element Run Club",
-    date: "Wednesday, May 6 · 7:00 PM",
-    description: "We're joining Ralle Movements for a track interval session — speed work, longer strides, and endurance. All paces welcome.",
-    location: Some("769 Lorimer St, Brooklyn, NY 11222"),
-    image_url: Some("https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l"),
-    primary_href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-06"),
-    primary_label: Some("Register"),
+    title: "Saturday Morning Run",
+    date: "Saturday, May 9 · 9:00 AM",
+    description: "Join Element Run Club for today's 9:00 AM group run. All paces welcome, and we'll head out together on this week's Strava route.",
+    location: None,
+    image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======"),
+    primary_href: Some("https://www.strava.com/routes/3476595695882355858"),
+    primary_label: Some("View Route"),
     secondary_href: None,
     secondary_label: None,
 };
@@ -102,6 +102,15 @@ pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
 ];
 
 pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
+    TimelineEntry {
+        when: "Saturday, May 9 · 9:00 AM",
+        title: "Saturday Morning Run",
+        detail: "Today's run",
+        href: Some("https://www.strava.com/routes/3476595695882355858"),
+        link_label: Some("View Route"),
+        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======"),
+        active: true,
+    },
     TimelineEntry {
         when: "Saturday, May 3 · 9:00 AM",
         title: "A Park Named Maria",
@@ -154,15 +163,6 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
         href: Some("https://www.strava.com/routes/3476595695882355858"),
         link_label: Some("View Route"),
         image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/OJ2BG6YW5JETPDEGRSS6RUHPVFMPRSFORDDOZN6CMJNFQF7S5SP442ZAFB7YKPKIODEJA42Q7ARRM6XRF5QYPR5UN5UMYWOFL7NZ4NN5GNUD34GEWVFRI2NKTDA6F6JGTDEOENUQAAWBPPI3UL4CHNOK2IOXULUCXNGTRPZVR4AOQ34EP6H5R7KEBJSRAGWNYI======"),
-        active: false,
-    },
-    TimelineEntry {
-        when: "Wednesday, April 8 · 6:30 PM",
-        title: "I'm Just Kent",
-        detail: "Past run",
-        href: Some("https://www.strava.com/routes/3476735579330903130"),
-        link_label: Some("View Route"),
-        image_url: Some("https://d3o5xota0a1fcr.cloudfront.net/v6/maps/7QY2CPBLZZCBIPWTPLJIGORUHQP46QRN44B5Y273NANB6TH6RSXRFUTXSDACPSLTUBE7FSNWDLZYWHEBD6M4332NH767D6TMSZTL6CRA6DYAONETPY4WFCYV26MAX4OV7MQZEQD4IQXJZ7V3INEZUK7IT6V227DUKTLKOUJOU7INX6WZ2C67X32USIPUL7W5FY======"),
         active: false,
     },
 ];
