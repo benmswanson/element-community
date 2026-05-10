@@ -69,8 +69,8 @@ pub fn tv_display() -> Html {
                                 <img src={card.image_url} alt={card.title} class="tv-flyer-img" style={format!("object-position: {}; object-fit: {}", card.img_position, card.img_fit)} />
                             </div>
                             <div class="tv-flyer-body">
-                                <p class="tv-flyer-label">{card.date}</p>
                                 <h2 class="tv-flyer-title">{card.title}</h2>
+                                <p class="tv-flyer-date">{card.date}</p>
                             </div>
                         </div>
                     </div>
