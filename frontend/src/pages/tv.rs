@@ -40,7 +40,7 @@ const TV_CARDS: [TvCard; 3] = [
     },
     TvCard {
         label: "Book Club",
-        title: "Hamnet",
+        title: "May Book Club",
         date: "May 28 · 8:00 PM",
         image_url: "/assets/ham.webp",
         href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
