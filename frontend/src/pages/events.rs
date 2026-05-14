@@ -32,7 +32,7 @@ pub fn events() -> Html {
                         title={COMMUNITY_EVENT_FEATURED.title}
                         date={COMMUNITY_EVENT_FEATURED.date}
                         description={COMMUNITY_EVENT_FEATURED.description}
-                        badge={Some(AttrValue::from("Upcoming"))}
+                        badge={Some(AttrValue::from("Community Event"))}
                         location={COMMUNITY_EVENT_FEATURED.location.map(AttrValue::from)}
                         image_url={COMMUNITY_EVENT_FEATURED.image_url.map(AttrValue::from)}
                         img_transform={COMMUNITY_EVENT_FEATURED.img_transform.map(AttrValue::from)}

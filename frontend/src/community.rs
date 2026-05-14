@@ -76,7 +76,7 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     description: "",
     location: Some("Element Training Club, Grand St, Brooklyn"),
     image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
-    img_transform: Some("scale(1.5)"),
+    img_transform: None,
     primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
     primary_label: Some("Register"),
     secondary_href: None,
