@@ -60,8 +60,8 @@ pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
     title: "Ralle Track Group with Element Run Club",
     date: "Wednesday, May 13 · 7:00 PM",
-    description: "We're joining Ralle Movements for a track interval session at 769 Lorimer St. Speed work, longer strides, and endurance. All paces welcome.",
-    location: Some("769 Lorimer St, Brooklyn, NY 11222"),
+    description: "",
+    location: Some("McCarren Park"),
     image_url: Some("https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l"),
     img_transform: None,
     primary_href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-13"),
