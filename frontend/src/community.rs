@@ -71,7 +71,7 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "Good Saturdays 02: The Workout",
+    title: "Good Saturdays 02",
     date: "Saturday, May 30 · 12:00 PM",
     description: "",
     location: Some("Element Training Club, Grand St, Brooklyn"),
@@ -86,7 +86,7 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
 pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
     TimelineEntry {
         when: "May 28, 2026",
-        title: "Hamnet",
+        title: "May Book Club",
         detail: "Maggie O'Farrell",
         href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
         link_label: Some("RSVP"),
@@ -173,7 +173,7 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
 pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 8] = [
     TimelineEntry {
         when: "Saturday, May 30",
-        title: "Good Saturdays 02: The Workout",
+        title: "Good Saturdays 02",
         detail: "Upcoming",
         href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
         link_label: Some("Register"),
