@@ -27,40 +27,35 @@ pub fn events() -> Html {
                 title=""
                 description=""
             >
-                <EventCard
-                    title={COMMUNITY_EVENT_FEATURED.title}
-                    date={COMMUNITY_EVENT_FEATURED.date}
-                    description={COMMUNITY_EVENT_FEATURED.description}
-                    badge={Some(AttrValue::from("Upcoming"))}
-                    location={COMMUNITY_EVENT_FEATURED.location.map(AttrValue::from)}
-                    image_url={COMMUNITY_EVENT_FEATURED.image_url.map(AttrValue::from)}
-                    img_transform={COMMUNITY_EVENT_FEATURED.img_transform.map(AttrValue::from)}
-                    primary_href={COMMUNITY_EVENT_FEATURED.primary_href.map(AttrValue::from)}
-                    primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
-                    secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}
-                    secondary_label={COMMUNITY_EVENT_FEATURED.secondary_label.map(AttrValue::from)}
-                    featured=true
-                />
-            </Section>
-
-            <Section
-                eyebrow="Also Upcoming"
-                title=""
-                description=""
-            >
-                <BookCard
-                    title={BOOK_CLUB_CURRENT.title}
-                    author={BOOK_CLUB_CURRENT.author}
-                    description={BOOK_CLUB_CURRENT.description}
-                    cover_url={BOOK_CLUB_CURRENT.cover_url}
-                    month={BOOK_CLUB_CURRENT.month}
-                    badge={Some(AttrValue::from("Book Club"))}
-                    primary_href={BOOK_CLUB_CURRENT.primary_href.map(AttrValue::from)}
-                    primary_label={BOOK_CLUB_CURRENT.primary_label.map(AttrValue::from)}
-                    secondary_href={BOOK_CLUB_CURRENT.secondary_href.map(AttrValue::from)}
-                    secondary_label={BOOK_CLUB_CURRENT.secondary_label.map(AttrValue::from)}
-                    featured=true
-                />
+                <div class="community-featured-grid upcoming-large-grid">
+                    <EventCard
+                        title={COMMUNITY_EVENT_FEATURED.title}
+                        date={COMMUNITY_EVENT_FEATURED.date}
+                        description={COMMUNITY_EVENT_FEATURED.description}
+                        badge={Some(AttrValue::from("Upcoming"))}
+                        location={COMMUNITY_EVENT_FEATURED.location.map(AttrValue::from)}
+                        image_url={COMMUNITY_EVENT_FEATURED.image_url.map(AttrValue::from)}
+                        img_transform={COMMUNITY_EVENT_FEATURED.img_transform.map(AttrValue::from)}
+                        primary_href={COMMUNITY_EVENT_FEATURED.primary_href.map(AttrValue::from)}
+                        primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
+                        secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}
+                        secondary_label={COMMUNITY_EVENT_FEATURED.secondary_label.map(AttrValue::from)}
+                        featured=false
+                    />
+                    <BookCard
+                        title={BOOK_CLUB_CURRENT.title}
+                        author={BOOK_CLUB_CURRENT.author}
+                        description={BOOK_CLUB_CURRENT.description}
+                        cover_url={BOOK_CLUB_CURRENT.cover_url}
+                        month={BOOK_CLUB_CURRENT.month}
+                        badge={Some(AttrValue::from("Book Club"))}
+                        primary_href={BOOK_CLUB_CURRENT.primary_href.map(AttrValue::from)}
+                        primary_label={BOOK_CLUB_CURRENT.primary_label.map(AttrValue::from)}
+                        secondary_href={BOOK_CLUB_CURRENT.secondary_href.map(AttrValue::from)}
+                        secondary_label={BOOK_CLUB_CURRENT.secondary_label.map(AttrValue::from)}
+                        featured=false
+                    />
+                </div>
             </Section>
 
             <Section

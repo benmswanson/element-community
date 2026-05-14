@@ -980,6 +980,22 @@ button {
     gap: 32px;
     align-items: start;
 }
+
+.upcoming-large-grid .community-card-media {
+    aspect-ratio: 16 / 9;
+    min-height: unset;
+    width: 100%;
+    object-fit: cover;
+}
+
+.upcoming-large-grid .community-card-title {
+    font-size: 2.6rem;
+}
+
+.upcoming-large-grid .community-card-body {
+    padding: 20px 24px 24px;
+    gap: 10px;
+}
 .events-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
