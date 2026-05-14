@@ -996,6 +996,10 @@ button {
     padding: 20px 24px 24px;
     gap: 10px;
 }
+
+.upcoming-large-grid .community-card-overline {
+    font-size: 1.25rem;
+}
 .events-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
