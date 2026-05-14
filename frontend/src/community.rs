@@ -46,10 +46,10 @@ pub struct CommunityInfoCard {
 }
 
 pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
-    title: "Hamnet",
+    title: "May Book Club",
     author: "Maggie O'Farrell",
     description: "",
-    cover_url: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1574943819i/43890641.jpg",
+    cover_url: "/assets/ham.webp",
     month: "May 28, 2026 · 8:00 PM",
     primary_href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
     primary_label: Some("RSVP"),
