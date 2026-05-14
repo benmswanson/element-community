@@ -46,7 +46,9 @@ pub fn book_card(props: &BookCardProps) -> Html {
                 }
                 <p class="community-card-overline">{props.month.clone()}</p>
                 <h3 class="community-card-title">{props.title.clone()}</h3>
-                <p class="community-card-subtitle">{format!("by {}", props.author)}</p>
+                if !props.author.is_empty() {
+                    <p class="community-card-subtitle">{format!("by {}", props.author)}</p>
+                }
                 <p class="community-card-copy">{props.description.clone()}</p>
                 <div class="community-card-actions">
                     if let (Some(route), Some(label)) = (&props.detail_route, &props.detail_label) {

@@ -47,7 +47,7 @@ pub struct CommunityInfoCard {
 
 pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
     title: "May Book Club",
-    author: "Maggie O'Farrell",
+    author: "",
     description: "",
     cover_url: "/assets/ham.webp",
     month: "May 28, 2026 · 8:00 PM",
@@ -74,7 +74,7 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     title: "Good Saturdays 02",
     date: "Saturday, May 30 · 12:00 PM",
     description: "",
-    location: Some("Element Training Club, Grand St, Brooklyn"),
+    location: None,
     image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
     img_transform: None,
     primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
