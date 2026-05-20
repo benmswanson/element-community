@@ -17,7 +17,7 @@ const TV_CARDS: [TvCard; 3] = [
     TvCard {
         label: "Run Club",
         title: "Weds Night Track",
-        date: "May 13 · 7:00 PM",
+        date: "Weekly · 7pm",
         image_url: "https://ilove.sweatpals.com/api/files/9b735b97-c4a3-400e-ad3c-3306ce357957?variant=l",
         href: Some("https://sweatpals.com/event/ralle-track-group/2026-05-13"),
         btn_label: "Register",
