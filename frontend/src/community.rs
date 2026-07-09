@@ -46,15 +46,15 @@ pub struct CommunityInfoCard {
 }
 
 pub const BOOK_CLUB_CURRENT: BookCardData = BookCardData {
-    title: "May Book Club",
+    title: "July Book Club",
     author: "",
     description: "",
-    cover_url: "/assets/ham.webp",
-    month: "May 28, 2026 · 8:00 PM",
-    primary_href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
+    cover_url: "/assets/klara.png",
+    month: "July 30, 2026 · 8:00 PM",
+    primary_href: Some("https://partiful.com/e/ppHQfZX9N1xsuv3WnUsz"),
     primary_label: Some("RSVP"),
-    secondary_href: Some("https://www.goodreads.com/book/show/43890641-hamnet"),
-    secondary_label: Some("Goodreads"),
+    secondary_href: None,
+    secondary_label: None,
 };
 
 pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
@@ -71,27 +71,36 @@ pub const RUN_CLUB_FEATURED: EventCardData = EventCardData {
 };
 
 pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
-    title: "Good Saturdays 02",
-    date: "Saturday, May 30 · 12:00 PM",
+    title: "Good Saturdays 04",
+    date: "Saturday, July 11 · 12:00 PM",
     description: "",
     location: None,
-    image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
+    image_url: Some("https://ilove.sweatpals.com/api/files/3471db1b-7ac3-47ad-90ea-647efce13865?variant=l"),
     img_transform: None,
-    primary_href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
+    primary_href: Some("https://sweatpals.com/event/good-saturdays-03-the-workout-presented-by-element-training-club-x-ralle-e5ce4/2026-07-11"),
     primary_label: Some("Explore"),
     secondary_href: None,
     secondary_label: None,
 };
 
-pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 2] = [
+pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 3] = [
     TimelineEntry {
-        when: "May 28, 2026",
-        title: "May Book Club",
-        detail: "Maggie O'Farrell",
-        href: Some("https://partiful.com/e/kHobWBFIKZg7PHB8zQC6?c=At7wGl2m"),
+        when: "July 30, 2026",
+        title: "July Book Club",
+        detail: "Klara and the Sun",
+        href: Some("https://partiful.com/e/ppHQfZX9N1xsuv3WnUsz"),
         link_label: Some("RSVP"),
         image_url: None,
         active: true,
+    },
+    TimelineEntry {
+        when: "May 28, 2026",
+        title: "May Book Club",
+        detail: "Hamnet",
+        href: None,
+        link_label: None,
+        image_url: None,
+        active: false,
     },
     TimelineEntry {
         when: "April 30, 2026",
@@ -170,15 +179,33 @@ pub const RUN_CLUB_TIMELINE: [TimelineEntry; 7] = [
     },
 ];
 
-pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 8] = [
+pub const COMMUNITY_EVENTS_TIMELINE: [TimelineEntry; 10] = [
+    TimelineEntry {
+        when: "Saturday, July 11 · 12:00 PM",
+        title: "Good Saturdays 04",
+        detail: "Upcoming",
+        href: Some("https://sweatpals.com/event/good-saturdays-03-the-workout-presented-by-element-training-club-x-ralle-e5ce4/2026-07-11"),
+        link_label: Some("Register"),
+        image_url: Some("https://ilove.sweatpals.com/api/files/3471db1b-7ac3-47ad-90ea-647efce13865?variant=l"),
+        active: true,
+    },
+    TimelineEntry {
+        when: "Saturday, July 18 · 5:00 PM",
+        title: "Saturday Social",
+        detail: "Upcoming",
+        href: Some("https://partiful.com/e/5SZrGeomVoGQzkQ0S79p"),
+        link_label: Some("RSVP"),
+        image_url: Some("/assets/sat.webp"),
+        active: true,
+    },
     TimelineEntry {
         when: "Saturday, May 30",
         title: "Good Saturdays 02",
-        detail: "Upcoming",
+        detail: "Past event",
         href: Some("https://sweatpals.com/event/good-saturdays-02-the-workout-presented-by-element-training-club-x-ralle"),
-        link_label: Some("Register"),
+        link_label: Some("View Event"),
         image_url: Some("https://ilove.sweatpals.com/api/files/2924d997-9787-4afa-9a2a-1b76fdc491c3?variant=l"),
-        active: true,
+        active: false,
     },
     TimelineEntry {
         when: "Saturday, May 9",
