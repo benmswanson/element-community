@@ -42,7 +42,7 @@ const TV_CARDS: [TvCard; 3] = [
         label: "Book Club",
         title: "July Book Club",
         date: "July 30 · 8:00 PM",
-        image_url: "https://firebasestorage.googleapis.com/v0/b/getpartiful.appspot.com/o/external%2Fuser%2FGonXOV5jWsbNkEFPKS35tFTi66O2%2FuD0hcxuoskqx9OC_h7s9U?alt=media&token=02b3d82b-4877-499e-b042-9c85396192a7",
+        image_url: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602907969i/54120408.jpg",
         href: Some("https://partiful.com/e/ppHQfZX9N1xsuv3WnUsz"),
         btn_label: "RSVP",
         rotation: "-2deg",
