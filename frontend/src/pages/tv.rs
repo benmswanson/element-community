@@ -42,7 +42,7 @@ const TV_CARDS: [TvCard; 3] = [
         label: "Book Club",
         title: "July Book Club",
         date: "July 30 · 8:00 PM",
-        image_url: "https://covers.openlibrary.org/b/isbn/9780593311295-L.jpg",
+        image_url: "/assets/klara.jpg",
         href: Some("https://partiful.com/e/ppHQfZX9N1xsuv3WnUsz"),
         btn_label: "RSVP",
         rotation: "-2deg",
