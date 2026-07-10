@@ -78,7 +78,7 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     image_url: Some("https://ilove.sweatpals.com/api/files/3471db1b-7ac3-47ad-90ea-647efce13865?variant=l"),
     img_transform: None,
     primary_href: Some("https://sweatpals.com/event/good-saturdays-03-the-workout-presented-by-element-training-club-x-ralle-e5ce4/2026-07-11"),
-    primary_label: Some("Explore"),
+    primary_label: Some("RSVP"),
     secondary_href: None,
     secondary_label: None,
 };
