@@ -83,6 +83,19 @@ pub const COMMUNITY_EVENT_FEATURED: EventCardData = EventCardData {
     secondary_label: None,
 };
 
+pub const SATURDAY_SOCIAL_FEATURED: EventCardData = EventCardData {
+    title: "Saturday Social",
+    date: "Saturday, July 18 · 5:00 PM",
+    description: "",
+    location: Some("Harefield Road Bar"),
+    image_url: Some("/assets/sat.webp"),
+    img_transform: None,
+    primary_href: Some("https://partiful.com/e/5SZrGeomVoGQzkQ0S79p"),
+    primary_label: Some("RSVP"),
+    secondary_href: None,
+    secondary_label: None,
+};
+
 pub const BOOK_CLUB_TIMELINE: [TimelineEntry; 3] = [
     TimelineEntry {
         when: "July 30, 2026",

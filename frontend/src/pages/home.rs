@@ -2,7 +2,7 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 use crate::app::Route;
-use crate::community::{BOOK_CLUB_CURRENT, COMMUNITY_EVENT_FEATURED, RUN_CLUB_FEATURED};
+use crate::community::{BOOK_CLUB_CURRENT, COMMUNITY_EVENT_FEATURED, SATURDAY_SOCIAL_FEATURED};
 use crate::components::{
     book_card::BookCard, cta_button::CtaButton, event_card::EventCard, pricing_card::PricingCard,
     section::Section,
@@ -89,20 +89,6 @@ pub fn home() -> Html {
             >
                 <div class="community-preview-grid">
                     <EventCard
-                        title={RUN_CLUB_FEATURED.title}
-                        date={RUN_CLUB_FEATURED.date}
-                        description={RUN_CLUB_FEATURED.description}
-                        badge={Some(AttrValue::from("Run Club"))}
-                        location={RUN_CLUB_FEATURED.location.map(AttrValue::from)}
-                        image_url={RUN_CLUB_FEATURED.image_url.map(AttrValue::from)}
-                        primary_href={RUN_CLUB_FEATURED.primary_href.map(AttrValue::from)}
-                        primary_label={RUN_CLUB_FEATURED.primary_label.map(AttrValue::from)}
-                        secondary_href={RUN_CLUB_FEATURED.secondary_href.map(AttrValue::from)}
-                        secondary_label={RUN_CLUB_FEATURED.secondary_label.map(AttrValue::from)}
-                        detail_route={Some(Route::RunClub)}
-                        detail_label={Some(AttrValue::from("See Run Club"))}
-                    />
-                    <EventCard
                         title={COMMUNITY_EVENT_FEATURED.title}
                         date={COMMUNITY_EVENT_FEATURED.date}
                         description={COMMUNITY_EVENT_FEATURED.description}
@@ -113,6 +99,20 @@ pub fn home() -> Html {
                         primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
                         secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}
                         secondary_label={COMMUNITY_EVENT_FEATURED.secondary_label.map(AttrValue::from)}
+                        detail_route={Some(Route::Events)}
+                        detail_label={Some(AttrValue::from("See Community Events"))}
+                    />
+                    <EventCard
+                        title={SATURDAY_SOCIAL_FEATURED.title}
+                        date={SATURDAY_SOCIAL_FEATURED.date}
+                        description={SATURDAY_SOCIAL_FEATURED.description}
+                        badge={Some(AttrValue::from("Community Event"))}
+                        location={SATURDAY_SOCIAL_FEATURED.location.map(AttrValue::from)}
+                        image_url={SATURDAY_SOCIAL_FEATURED.image_url.map(AttrValue::from)}
+                        primary_href={SATURDAY_SOCIAL_FEATURED.primary_href.map(AttrValue::from)}
+                        primary_label={SATURDAY_SOCIAL_FEATURED.primary_label.map(AttrValue::from)}
+                        secondary_href={SATURDAY_SOCIAL_FEATURED.secondary_href.map(AttrValue::from)}
+                        secondary_label={SATURDAY_SOCIAL_FEATURED.secondary_label.map(AttrValue::from)}
                         detail_route={Some(Route::Events)}
                         detail_label={Some(AttrValue::from("See Community Events"))}
                     />
