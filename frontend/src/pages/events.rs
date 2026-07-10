@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_TIMELINE, COMMUNITY_EVENT_FEATURED, COMMUNITY_EVENTS_TIMELINE};
+use crate::community::{BOOK_CLUB_CURRENT, BOOK_CLUB_TIMELINE, COMMUNITY_EVENT_FEATURED, COMMUNITY_EVENTS_TIMELINE, SATURDAY_SOCIAL_FEATURED};
 use crate::components::{
     book_card::BookCard, cta_button::CtaButton, event_card::EventCard, section::Section,
     timeline::Timeline,
@@ -40,6 +40,20 @@ pub fn events() -> Html {
                         primary_label={COMMUNITY_EVENT_FEATURED.primary_label.map(AttrValue::from)}
                         secondary_href={COMMUNITY_EVENT_FEATURED.secondary_href.map(AttrValue::from)}
                         secondary_label={COMMUNITY_EVENT_FEATURED.secondary_label.map(AttrValue::from)}
+                        featured=false
+                    />
+                    <EventCard
+                        title={SATURDAY_SOCIAL_FEATURED.title}
+                        date={SATURDAY_SOCIAL_FEATURED.date}
+                        description={SATURDAY_SOCIAL_FEATURED.description}
+                        badge={Some(AttrValue::from("Community Event"))}
+                        location={SATURDAY_SOCIAL_FEATURED.location.map(AttrValue::from)}
+                        image_url={SATURDAY_SOCIAL_FEATURED.image_url.map(AttrValue::from)}
+                        img_transform={SATURDAY_SOCIAL_FEATURED.img_transform.map(AttrValue::from)}
+                        primary_href={SATURDAY_SOCIAL_FEATURED.primary_href.map(AttrValue::from)}
+                        primary_label={SATURDAY_SOCIAL_FEATURED.primary_label.map(AttrValue::from)}
+                        secondary_href={SATURDAY_SOCIAL_FEATURED.secondary_href.map(AttrValue::from)}
+                        secondary_label={SATURDAY_SOCIAL_FEATURED.secondary_label.map(AttrValue::from)}
                         featured=false
                     />
                     <BookCard
